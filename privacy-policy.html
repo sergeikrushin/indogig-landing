@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — Indogig</title>
-    <meta name="description" content="Indogig Privacy Policy — how we collect, use, store, and protect your personal data.">
+    <meta name="description" content="Indogig Privacy Policy — full legal document in English and Indonesian.">
     <link rel="canonical" href="https://indogig.com/privacy-policy.html">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -36,11 +36,13 @@
             text-decoration: none;
         }
         nav a.logo span { color: var(--primary-yellow); }
+        nav .nav-links { display: flex; align-items: center; }
         nav .nav-links a {
             color: var(--text-gray); text-decoration: none; margin-left: 1.5rem;
             font-size: 0.9rem; font-weight: 500;
         }
         nav .nav-links a:hover { color: var(--dark-slate); }
+        nav .nav-links a.active { color: var(--dark-slate); font-weight: 600; }
         .lang-switch {
             display: inline-flex; gap: 0.5rem; margin-left: 1.5rem;
         }
@@ -53,43 +55,58 @@
             background: var(--dark-slate); color: #fff; border-color: var(--dark-slate);
         }
         .container {
-            max-width: 800px; margin: 0 auto;
-            padding: 7rem 2rem 4rem;
+            max-width: 820px; margin: 0 auto;
+            padding: 6.5rem 2rem 4rem;
         }
-        h1 {
-            font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;
+        .legal-content h1 {
+            font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem;
             color: var(--dark-slate);
         }
-        .subtitle {
-            color: var(--text-gray); font-size: 0.95rem; margin-bottom: 2rem;
-            padding-bottom: 2rem; border-bottom: 1px solid var(--border-light);
+        .legal-content h2 {
+            font-size: 1.3rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 0.75rem;
+            color: var(--dark-slate);
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-light);
         }
-        h2 {
-            font-size: 1.3rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem;
+        .legal-content h2:first-of-type {
+            border-top: none; padding-top: 0;
+        }
+        .legal-content h3 {
+            font-size: 1.05rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem;
             color: var(--dark-slate);
         }
-        h3 {
-            font-size: 1.05rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem;
-            color: var(--dark-slate);
+        .legal-content p {
+            font-size: 0.95rem; color: #374151; margin-bottom: 0.75rem;
         }
-        p, li { font-size: 0.95rem; color: #374151; margin-bottom: 0.75rem; }
-        ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
-        li { margin-bottom: 0.4rem; }
-        table {
+        .legal-content ul, .legal-content ol {
+            padding-left: 1.5rem; margin-bottom: 1rem;
+        }
+        .legal-content li {
+            font-size: 0.95rem; color: #374151; margin-bottom: 0.4rem;
+        }
+        .legal-content table {
             width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
         }
-        th, td {
-            text-align: left; padding: 0.6rem 0.8rem;
+        .legal-content th, .legal-content td {
+            text-align: left; padding: 0.55rem 0.7rem;
             border: 1px solid var(--border-light);
+            vertical-align: top;
         }
-        th { background: #F9FAFB; font-weight: 600; color: var(--dark-slate); }
-        td { color: #374151; }
-        strong { font-weight: 600; }
-        a { color: #2563EB; }
-        .highlight {
-            background: #FEF3C7; padding: 1rem 1.25rem; border-radius: 8px;
-            border-left: 4px solid var(--primary-yellow); margin: 1.5rem 0;
+        .legal-content th {
+            background: #F9FAFB; font-weight: 600; color: var(--dark-slate);
+        }
+        .legal-content td { color: #374151; }
+        .legal-content strong { font-weight: 600; }
+        .legal-content em { font-style: italic; }
+        .legal-content a { color: #2563EB; }
+        .legal-content hr {
+            border: none; border-top: 1px solid var(--border-light);
+            margin: 2rem 0;
+        }
+        .effective-date {
+            color: var(--text-gray); font-size: 0.95rem; margin-bottom: 2rem;
+            padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-light);
         }
         footer {
             background: var(--dark-slate); color: rgba(255,255,255,0.7);
@@ -101,9 +118,10 @@
         .lang-content.active { display: block; }
         @media (max-width: 640px) {
             .container { padding: 5.5rem 1.25rem 3rem; }
-            h1 { font-size: 1.5rem; }
-            table { font-size: 0.8rem; }
-            th, td { padding: 0.4rem 0.5rem; }
+            .legal-content h1 { font-size: 1.5rem; }
+            .legal-content h2 { font-size: 1.15rem; }
+            .legal-content table { font-size: 0.8rem; }
+            .legal-content th, .legal-content td { padding: 0.4rem 0.5rem; }
             nav .nav-links a { margin-left: 0.75rem; font-size: 0.8rem; }
         }
     </style>
@@ -113,8 +131,8 @@
         <a href="index.html" class="logo">Indo<span>gig</span></a>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="user-agreement.html">Terms</a>
-            <a href="privacy-policy.html" style="color: var(--dark-slate);">Privacy</a>
+            <a href="user-agreement.html" class="">Terms</a>
+            <a href="privacy-policy.html" class="active">Privacy</a>
             <div class="lang-switch">
                 <button id="btn-en" class="active" onclick="switchLang('en')">EN</button>
                 <button id="btn-id" onclick="switchLang('id')">ID</button>
@@ -123,312 +141,856 @@
     </nav>
 
     <div class="container">
-        <!-- ENGLISH VERSION -->
         <div id="content-en" class="lang-content active">
-            <h1>Privacy Policy</h1>
-            <p class="subtitle">Effective: May 1, 2026 &nbsp;|&nbsp; Last modified: May 1, 2026</p>
-
-            <h2>1. Introduction</h2>
-            <p>This Privacy Policy ("Policy") describes how <strong>PT INDOGIG HRTECH INDONESIA</strong> ("Indogig," "we," "us," or "our") collects, uses, stores, shares, and protects the personal data of users who access and use the Indogig platform, including our website, mobile applications, and related services (collectively, the "Services").</p>
-            <p><strong>PT INDOGIG HRTECH INDONESIA</strong> is registered at Jalan Sunset Road Tengah Building No. 9, Seminyak, Kuta, Badung, Bali, Indonesia (AHU-0090431.AH.01.01.Tahun 2023, NIB 2911230067256, Sertifikat Standar KBLI 78104, TD PSE Domestik).</p>
-            <p>Indogig operates a workforce platform connecting businesses ("Companies") with part-time, temporary, and gig-based workers ("Workers") for shift-based work opportunities in Indonesia. Indogig acts as a <strong>technology platform that facilitates labor supply connections</strong> between Companies and Workers.</p>
-            <div class="highlight">
-                <p style="margin:0;">Under UU PDP No. 27/2022, users are <strong>Data Subjects</strong> (<em>Subjek Data Pribadi</em>), and PT INDOGIG HRTECH INDONESIA acts as the <strong>Data Controller</strong> (<em>Pengendali Data Pribadi</em>).</p>
+            <div class="legal-content">
+                <h1>INDOGIG PRIVACY POLICY</h1>
+<p><strong>Effective date:</strong> May 1, 2026
+<strong>Last modified:</strong> May 1, 2026</p>
+<hr />
+<h2>1. INTRODUCTION</h2>
+<p>Welcome to Indogig. This Privacy Policy ("Policy") describes how <strong>PT INDOGIG HRTECH INDONESIA</strong> ("Indogig," "we," "us," or "our") collects, uses, stores, shares, and protects the personal data of users who access and use the Indogig platform, including our website, mobile applications, and related services (collectively, the "Services").</p>
+<p><strong>PT INDOGIG HRTECH INDONESIA</strong> is a company focused on HR technology, registered and based at Jalan Sunset Road Tengah Building No. 9, Seminyak, Kuta, Badung, Bali, Indonesia. Indogig is officially registered in Indonesia under registration number AHU-0090431.AH.01.01.Tahun 2023 dated November 27, 2023, NIB 2911230067256, and holds Sertifikat Standar KBLI 78104 (Aktivitas Penyediaan Tenaga Kerja Lainnya) as well as TD PSE Domestik registration with the Ministry of Communication and Digital Affairs (Komdigi).</p>
+<p>Indogig operates a workforce platform connecting businesses ("Companies") with part-time, temporary, and gig-based workers ("Workers") for shift-based work opportunities in Indonesia. Indogig acts as a <strong>technology platform that facilitates labor supply connections</strong> between Companies and Workers.</p>
+<p>In the context of the Personal Data Protection Law No. 27 of 2022 ("UU PDP"), users of the Services are <strong>Data Subjects</strong> (<em>Subjek Data Pribadi</em>), and PT INDOGIG HRTECH INDONESIA acts as the <strong>Data Controller</strong> (<em>Pengendali Data Pribadi</em>). When Companies access Worker data through the platform, Companies act as independent Data Controllers for the data they process in connection with their own hiring and employment decisions.</p>
+<p>By accessing or using our Services, you agree to the collection, use, retention, and disclosure of your information as described in this Policy. If you do not agree, please discontinue use of the Services.</p>
+<p>For questions about this Policy, contact our Data Protection Officer: <strong>info@indogig.com</strong>
+General inquiries: <strong>info@indogig.com</strong> | <strong>+62 818 0370 8605</strong></p>
+<hr />
+<h2>2. INFORMATION WE COLLECT</h2>
+<h3>2.1 Information You Provide Directly</h3>
+<p><strong>For Workers (Gig Seekers):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Data Collected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td>Full name, profile photo</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>Phone number (required), email address (optional)</td>
+</tr>
+<tr>
+<td>Professional</td>
+<td>Work experience level, preferred job roles/categories, preferred work location, availability (how soon ready to start)</td>
+</tr>
+<tr>
+<td>Documents</td>
+<td>CV/resume (file upload), video self-presentation (up to 1 minute, MP4/MOV) — classified as <strong>Specific Personal Data</strong> under UU PDP Art. 4(2) as video captures biometric-capable facial and voice data</td>
+</tr>
+<tr>
+<td>Financial</td>
+<td>Bank account details (bank name, account number, account holder name) or e-wallet details (e.g., GoPay) for receiving payments</td>
+</tr>
+<tr>
+<td>Recommendations</td>
+<td>Names, phone numbers, and relationships of persons providing professional references</td>
+</tr>
+<tr>
+<td>Work Records</td>
+<td>Selfie photos taken during check-in and check-out (classified as <strong>Specific Personal Data</strong> under UU PDP Art. 4(2)), shift attendance data, working hours, check-in/check-out timestamps, worked minutes</td>
+</tr>
+<tr>
+<td>Ratings &amp; Reputation</td>
+<td>Ratings received from Companies, completion rate, no-show count, Profile Strength percentage</td>
+</tr>
+<tr>
+<td>Application History</td>
+<td>Shifts applied for, acceptance/rejection status</td>
+</tr>
+<tr>
+<td>Authentication</td>
+<td>Password (stored as cryptographic hash), OTP verification status</td>
+</tr>
+</tbody>
+</table>
+<p><strong>For Companies (Employers):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Data Collected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td>Company name, company type (Cafe, Restaurant, Bar, Hotel, Event &amp; Catering, Other), business address</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>Phone number (required), email address (optional)</td>
+</tr>
+<tr>
+<td>Account Creator</td>
+<td>Full name, role within the company</td>
+</tr>
+<tr>
+<td>Operational</td>
+<td>Work locations (including address and coordinates), required worker roles, shift frequency and duration, general and role-specific instructions, file attachments (dress code, forms)</td>
+</tr>
+<tr>
+<td>Financial</td>
+<td>Billing information, balance/wallet data, payment authorization references (reference codes in format INDO-ORG-YYYY-XXXX), top-up transaction data</td>
+</tr>
+<tr>
+<td>Authentication</td>
+<td>Password (stored as cryptographic hash), OTP verification status</td>
+</tr>
+</tbody>
+</table>
+<p><strong>For Recommenders (via public web form):</strong></p>
+<p>A separate privacy notice is presented to Recommenders at the point of data collection on the recommendation web form. Recommenders are not required to read this full Policy. The data collected from Recommenders includes:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Data Collected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td>Full name, phone number (verified via WhatsApp OTP)</td>
+</tr>
+<tr>
+<td>Recommendation</td>
+<td>Relationship type (coworker, manager, subordinate, client, friend), strength tags, free-text comments, optional email</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 Information Collected Automatically</h3>
+<p>When you use our Services, we may automatically collect:</p>
+<ul>
+<li><strong>Device Information:</strong> Device type, operating system, unique device identifiers, mobile network information</li>
+<li><strong>Log Data:</strong> IP address, browser type and version, pages visited, timestamps, time spent on pages</li>
+<li><strong>Usage Data:</strong> Navigation paths, feature interactions, search queries, app usage patterns</li>
+<li><strong>Location Data:</strong> General location derived from IP address or device settings (we do not use precise GPS tracking)</li>
+</ul>
+<h3>2.3 Information from Third Parties</h3>
+<ul>
+<li><strong>WhatsApp OTP verification:</strong> We use the WhatsApp Business API (provided by Meta Platforms, Inc., headquartered in the United States) to send One-Time Password (OTP) codes for account registration and identity verification. Your phone number is transmitted to Meta's servers for this purpose. Please refer to Meta's Privacy Policy for information on how Meta handles this data.</li>
+<li><strong>Telegram notifications:</strong> Internal administrative notifications are sent via Telegram (operated by Telegram FZE, Dubai) for operational purposes (new registrations, document submissions, payment requests). Only minimal data is included (e.g., "New worker registered" with a name — no bank details, no phone numbers, no document contents). This constitutes a cross-border data transfer; see Section 11.</li>
+</ul>
+<hr />
+<h2>3. LEGAL BASIS FOR PROCESSING</h2>
+<p>Under UU PDP Art. 20, we process your personal data based on the following legal grounds:</p>
+<table>
+<thead>
+<tr>
+<th>Legal Basis</th>
+<th>Data Categories</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Consent</strong> (Art. 20(2)(a))</td>
+<td>Selfie photos (check-in/out), video self-presentation, profile photo</td>
+<td>Specific Personal Data requires explicit, separate consent collected at the point of capture</td>
+</tr>
+<tr>
+<td><strong>Performance of Contract</strong> (Art. 20(2)(b))</td>
+<td>Identity, contact, professional, financial, work records, application history</td>
+<td>Necessary to provide the Services you have registered for</td>
+</tr>
+<tr>
+<td><strong>Legal Obligation</strong> (Art. 20(2)(c))</td>
+<td>Financial/payment records, identity data</td>
+<td>Tax compliance, labor regulation compliance, responding to lawful government requests</td>
+</tr>
+<tr>
+<td><strong>Legitimate Interest</strong> (Art. 20(2)(f))</td>
+<td>Usage data, device/log data, ratings, Profile Strength</td>
+<td>Platform improvement, fraud prevention, security monitoring, maintaining trust and safety</td>
+</tr>
+</tbody>
+</table>
+<p>Where processing is based on consent, you may withdraw consent at any time (see Section 9). Withdrawal does not affect the lawfulness of processing before withdrawal but may limit your ability to use certain features of the Services.</p>
+<hr />
+<h2>4. HOW WE USE YOUR INFORMATION</h2>
+<h3>4.1 Core Platform Operations</h3>
+<ul>
+<li><strong>Account creation and authentication</strong> — registering accounts and verifying identity via WhatsApp OTP</li>
+<li><strong>Profile management</strong> — building and maintaining Worker and Company profiles, calculating Profile Strength</li>
+<li><strong>Job matching</strong> — connecting Workers with relevant shift opportunities based on skills, location, and preferences; Profile Strength scoring affects Worker visibility in Company search results</li>
+<li><strong>Shift management</strong> — facilitating the process of applying for, hiring, checking in/out, and completing shifts</li>
+<li><strong>Payment processing</strong> — managing Company balance top-ups, Worker payment disbursements, and maintaining financial records</li>
+<li><strong>Document verification</strong> — reviewing and approving/rejecting Worker-submitted CVs and video presentations</li>
+<li><strong>Recommendation system</strong> — enabling Workers to collect and display verified professional references</li>
+<li><strong>Rating and reputation</strong> — calculating and displaying Worker ratings, completion rates, and reliability indicators</li>
+</ul>
+<h3>4.2 Communication</h3>
+<ul>
+<li>Sending notifications about application status, shift updates, and payment confirmations</li>
+<li>Communicating platform updates, policy changes, and service announcements</li>
+<li>Responding to support requests and inquiries</li>
+</ul>
+<h3>4.3 Platform Improvement</h3>
+<ul>
+<li>Analyzing usage patterns and trends to improve platform functionality</li>
+<li>Conducting research and analysis to develop new features</li>
+<li>Monitoring and preventing fraud, abuse, and security threats</li>
+</ul>
+<h3>4.4 Legal Compliance</h3>
+<ul>
+<li>Complying with applicable Indonesian laws and regulations, including labor laws (UU 13/2003, UU Cipta Kerja), tax regulations, and data protection requirements (UU PDP No. 27/2022)</li>
+<li>Responding to lawful requests from government authorities and courts</li>
+<li>Protecting our rights, property, and the safety of our users</li>
+</ul>
+<hr />
+<h2>5. HOW WE SHARE YOUR INFORMATION</h2>
+<h3>5.1 Between Platform Users</h3>
+<ul>
+<li><strong>Worker profiles</strong> (including name, photo, work experience, verified documents, recommendations, rating, Profile Strength, and reliability indicators) are visible to Companies when reviewing applications and hiring for shifts.</li>
+<li><strong>Company information</strong> (including company name, type, location, and job details) is visible to Workers when browsing and applying for available shifts.</li>
+<li><strong>Recommender information</strong> is displayed on the Worker's profile as part of their professional references, subject to the Worker's control (Workers may show, hide, or delete recommendations).</li>
+</ul>
+<h3>5.2 With Service Providers (Data Processors)</h3>
+<p>We engage trusted third-party Data Processors (<em>Prosesor Data Pribadi</em>) who assist us in operating the platform. We maintain Data Processing Agreements (<em>Perjanjian Pemrosesan Data</em>) with each processor in accordance with UU PDP Art. 35. These processors include:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Provider</th>
+<th>Data Processed</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cloud hosting &amp; storage</td>
+<td>Bubble.io (US-based)</td>
+<td>All platform data</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>OTP verification</td>
+<td>WhatsApp Business API (Meta, US)</td>
+<td>Phone numbers</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>Admin notifications</td>
+<td>Telegram (Telegram FZE, Dubai)</td>
+<td>Minimal operational data (names only)</td>
+<td>Dubai/International</td>
+</tr>
+<tr>
+<td>Analytics</td>
+<td>Platform analytics tools</td>
+<td>Anonymized usage data</td>
+<td>Various</td>
+</tr>
+</tbody>
+</table>
+<p>These providers are contractually obligated to protect your data, use it solely for the purposes of delivering services to us, and comply with data protection standards equivalent to those required by UU PDP.</p>
+<h3>5.3 For Legal Purposes</h3>
+<p>We may disclose your information when required by law, regulation, or legal process, or when we believe in good faith that disclosure is necessary to:</p>
+<ul>
+<li>Comply with applicable laws or respond to valid government requests (including requests under PP 71/2019 Art. 21)</li>
+<li>Protect the rights, property, or safety of Indogig, our users, or the public</li>
+<li>Detect and prevent fraud, security threats, or technical issues</li>
+</ul>
+<h3>5.4 Business Transfers</h3>
+<p>In the event of a merger, acquisition, reorganization, or sale of assets, your information may be transferred as part of that transaction. We will notify you of any such change at least 30 days in advance and inform you of any choices you may have regarding your information, including the right to delete your account.</p>
+<h3>5.5 What We Do NOT Share</h3>
+<ul>
+<li>We do <strong>not</strong> sell your personal data to third parties.</li>
+<li>We do <strong>not</strong> share your data with advertisers for targeted advertising without your explicit consent.</li>
+<li>We do <strong>not</strong> share Worker bank account or e-wallet details with Companies. Financial data is used solely by Indogig's administration for payment disbursement.</li>
+</ul>
+<hr />
+<h2>6. SELFIE AND PHOTO DATA (SPECIFIC PERSONAL DATA)</h2>
+<p>Selfie photos and video presentations are classified as <strong>Specific Personal Data</strong> (<em>Data Pribadi yang Bersifat Spesifik</em>) under UU PDP Art. 4(2), as they contain biometric-capable facial data. We apply heightened protections to this data:</p>
+<h3>6.1 Check-in and Check-out Selfies</h3>
+<p>As part of our shift verification system, Workers are required to take selfie photos during check-in (before the shift begins) and check-out (after the shift ends). <strong>Separate explicit consent</strong> is collected at the point of first selfie capture. These photos:</p>
+<ul>
+<li>Are used solely for attendance verification and shift time tracking</li>
+<li>Are viewable by the Company that posted the shift and by Indogig administrators</li>
+<li>Are stored securely with access controls limiting who can view them</li>
+<li>Are retained for 3 years from the shift date (see Section 7)</li>
+<li>Are <strong>not</strong> used for facial recognition technology, biometric profiling, surveillance, or any purpose other than attendance verification</li>
+<li>May be used as evidence in payment or attendance disputes between Companies and Workers</li>
+</ul>
+<h3>6.2 Profile Photos and Video Presentations</h3>
+<ul>
+<li>Profile photos uploaded during onboarding are displayed on your Worker profile and are visible to Companies</li>
+<li>Video self-presentations (up to 1 minute) are reviewed by Indogig administrators for quality and appropriateness, and may be viewable by Companies as part of the Worker's profile</li>
+<li><strong>Separate explicit consent</strong> is collected when you first upload a video presentation</li>
+<li>You may update, replace, or delete your profile photo and video at any time through the app</li>
+</ul>
+<hr />
+<h2>7. DATA RETENTION</h2>
+<p>We retain your personal data only for as long as necessary to fulfill the purposes described in this Policy, comply with our legal obligations, resolve disputes, and enforce our agreements.</p>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Retention Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Account data</td>
+<td>Duration of active account + 2 years after deletion</td>
+</tr>
+<tr>
+<td>Shift records and check-in/out selfies</td>
+<td>3 years from shift date</td>
+</tr>
+<tr>
+<td>Financial/payment records</td>
+<td>5 years (per Indonesian tax law requirements)</td>
+</tr>
+<tr>
+<td>Worker documents (CV, video)</td>
+<td>Duration of active account + 1 year</td>
+</tr>
+<tr>
+<td>Recommendation data (Worker-controlled)</td>
+<td>Duration of Worker's active account or until Worker deletes it</td>
+</tr>
+<tr>
+<td>Recommender personal data (third-party)</td>
+<td>Until the associated recommendation is deleted by the Worker, or 2 years from submission, whichever is earlier</td>
+</tr>
+<tr>
+<td>Log and usage data</td>
+<td>1 year</td>
+</tr>
+<tr>
+<td>Ratings and reputation data</td>
+<td>Duration of active account + 1 year</td>
+</tr>
+</tbody>
+</table>
+<p>After the applicable retention period, data will be securely deleted or anonymized. If you delete your account, we will remove your personal data within a reasonable timeframe, subject to any legal retention obligations.</p>
+<hr />
+<h2>8. DATA SECURITY</h2>
+<p>We implement industry-standard security measures to protect your personal data, including:</p>
+<ul>
+<li>Encryption of data in transit (TLS/SSL) and at rest</li>
+<li>Secure server infrastructure with access controls</li>
+<li>Regular security audits and vulnerability assessments</li>
+<li>Employee and contractor access limited to need-to-know basis</li>
+<li>Secure handling of payment-related information</li>
+<li>Specific Personal Data (selfies, videos) stored with additional access restrictions</li>
+</ul>
+<p>Despite our efforts, no method of electronic transmission or storage is 100% secure. You are responsible for:</p>
+<ul>
+<li>Maintaining the confidentiality of your account password</li>
+<li>Not sharing your OTP codes with anyone</li>
+<li>Ensuring the security of the device you use to access our Services</li>
+<li>Reporting any suspected unauthorized access to your account immediately to info@indogig.com</li>
+</ul>
+<hr />
+<h2>9. YOUR RIGHTS</h2>
+<p>Under UU PDP No. 27/2022, you have the following rights as a Data Subject (<em>Subjek Data Pribadi</em>):</p>
+<ul>
+<li><strong>Right to Information</strong> (Art. 5-7): Be informed about the identity of the Data Controller, the legal basis for processing, the purpose of processing, and the retention period</li>
+<li><strong>Right to Access</strong> (Art. 8): Request a copy of the personal data we hold about you</li>
+<li><strong>Right to Correction</strong> (Art. 8): Request correction of inaccurate or incomplete data</li>
+<li><strong>Right to Deletion</strong> (Art. 8): Request deletion of your personal data, subject to legal retention requirements</li>
+<li><strong>Right to Restrict Processing</strong> (Art. 10): Request that we limit the processing of your data in certain circumstances</li>
+<li><strong>Right to Data Portability</strong> (Art. 12): Request a copy of your data in a structured, commonly used, and machine-readable format</li>
+<li><strong>Right to Withdraw Consent</strong> (Art. 9): Withdraw your consent to data processing at any time (this will not affect the lawfulness of processing before withdrawal)</li>
+<li><strong>Right to Object</strong> (Art. 11): Object to the processing of your data based on legitimate interest or for direct marketing purposes</li>
+<li><strong>Right to Explanation of Automated Decisions</strong> (Art. 27): Request an explanation of automated processing that significantly affects you, including Profile Strength scoring and job matching algorithms that affect your access to job opportunities</li>
+</ul>
+<p>To exercise any of these rights, contact our Data Protection Officer at <strong>info@indogig.com</strong>. We will respond to your request without undue delay, and in any event within <strong>30 days</strong>. We may require verification of your identity before processing your request.</p>
+<p>If your request is denied (in whole or in part), we will provide a written explanation of the reasons. You have the right to lodge a complaint with the supervisory authority responsible for personal data protection under UU PDP Art. 58-60.</p>
+<p>We do not discriminate against users who exercise their privacy rights.</p>
+<hr />
+<h2>10. DATA BREACH NOTIFICATION</h2>
+<p>In accordance with UU PDP Art. 46, in the event of a personal data breach that affects your data, we will:</p>
+<ol>
+<li><strong>Notify the supervisory authority (Komdigi)</strong> within <strong>3 x 24 hours</strong> of discovering the breach, providing: a description of the breach, the types of data affected, the number of data subjects affected, and the measures taken to address and mitigate the breach.</li>
+<li><strong>Notify affected Data Subjects</strong> within the same timeframe via the communication channels available to us (email, in-app notification, or phone), providing: a description of the breach, the types of your data affected, and recommended protective measures you can take.</li>
+</ol>
+<hr />
+<h2>11. INTERNATIONAL DATA TRANSFERS</h2>
+<p>Your information is primarily stored and processed on servers operated by our cloud hosting provider, which may be located outside of Indonesia (currently in the United States). Additionally, your phone number is transmitted to Meta (US) for WhatsApp OTP verification, and minimal operational data is transmitted via Telegram (Dubai).</p>
+<p>In accordance with UU PDP Art. 56, we ensure that:</p>
+<ul>
+<li>The receiving countries or organizations provide a level of personal data protection equivalent to that required by UU PDP</li>
+<li>We maintain binding Data Processing Agreements with all overseas processors</li>
+<li>Appropriate contractual safeguards (including standard contractual clauses) are in place</li>
+<li>We will inform you if the data protection standard in a receiving country changes materially</li>
+</ul>
+<p>By using our Services, you consent to the transfer of your data to these jurisdictions as described in this section. You may withdraw consent for non-essential transfers by contacting info@indogig.com, though this may limit your ability to use the Services.</p>
+<hr />
+<h2>12. COOKIES AND TRACKING TECHNOLOGIES</h2>
+<p>We may use cookies and similar tracking technologies on our website and applications to:</p>
+<ul>
+<li><strong>Essential cookies:</strong> Maintain your login session and ensure the platform functions correctly (no consent required)</li>
+<li><strong>Analytics cookies:</strong> Understand how users interact with our Services and improve platform performance (consent required)</li>
+</ul>
+<p>We do not use marketing or advertising cookies. You can manage cookie preferences through your browser or device settings. Disabling essential cookies may prevent you from using the Services.</p>
+<hr />
+<h2>13. CHILDREN'S PRIVACY</h2>
+<p>Our Services are not intended for individuals under the age of 18. We do not knowingly collect personal data from children under 18. If we become aware that we have collected data from a person under 18 without appropriate consent, we will take steps to delete such information promptly.</p>
+<p>Workers must be at least <strong>18 years of age</strong> to register on the platform. See the Terms of Use for age requirements and any exceptions for Workers aged 15-17 with parental consent and additional safeguards, in accordance with UU Ketenagakerjaan No. 13/2003 Art. 68-69.</p>
+<hr />
+<h2>14. THIRD-PARTY LINKS AND SERVICES</h2>
+<p>Our Services may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to review the privacy policies of any third-party services before providing your personal data.</p>
+<p>Communication between users conducted outside our platform (e.g., via WhatsApp, phone calls, or other channels) is not covered by this Policy. Users are responsible for any personal data shared outside the Indogig platform.</p>
+<hr />
+<h2>15. CHANGES TO THIS POLICY</h2>
+<p>We may update this Privacy Policy from time to time. When we make significant changes, we will:</p>
+<ul>
+<li>Update the "Last modified" date at the top of this Policy</li>
+<li>Notify users through the Services or via email at least <strong>30 days</strong> before the changes take effect</li>
+<li>For material changes affecting legal basis or data categories, seek fresh explicit consent where required</li>
+</ul>
+<p>Your continued use of the Services after the updated Policy takes effect constitutes your acceptance of the changes. If you do not agree with the changes, you may delete your account and discontinue use of the Services.</p>
+<hr />
+<h2>16. CONTACT US</h2>
+<p><strong>Data Protection Officer (DPO):</strong>
+Email: <strong>info@indogig.com</strong></p>
+<p><strong>PT INDOGIG HRTECH INDONESIA</strong>
+Jalan Sunset Road Tengah Building No. 9
+Seminyak, Kuta, Badung, Bali 80361
+Indonesia</p>
+<p>General inquiries: <strong>info@indogig.com</strong>
+Phone: <strong>+62 818 0370 8605</strong></p>
+<p>This Policy was made and takes effect on the date stated above.</p>
+<hr />
             </div>
-            <p>Contact our Data Protection Officer: <strong>info@indogig.com</strong> | <strong>+62 818 0370 8605</strong></p>
-
-            <h2>2. Information We Collect</h2>
-
-            <h3>2.1 From Workers</h3>
-            <table>
-                <tr><th>Category</th><th>Data Collected</th></tr>
-                <tr><td>Identity</td><td>Full name, profile photo</td></tr>
-                <tr><td>Contact</td><td>Phone number (required), email (optional)</td></tr>
-                <tr><td>Professional</td><td>Work experience, preferred roles/categories, preferred location, availability</td></tr>
-                <tr><td>Documents</td><td>CV/resume, video self-presentation (up to 1 min) — classified as <strong>Specific Personal Data</strong> (UU PDP Art. 4(2))</td></tr>
-                <tr><td>Financial</td><td>Bank account or e-wallet details for receiving payments</td></tr>
-                <tr><td>Recommendations</td><td>Names, phone numbers, relationships of professional references</td></tr>
-                <tr><td>Work Records</td><td>Check-in/out selfie photos (<strong>Specific Personal Data</strong>), attendance data, timestamps, worked minutes</td></tr>
-                <tr><td>Ratings</td><td>Ratings from Companies, completion rate, no-show count, Profile Strength</td></tr>
-                <tr><td>Authentication</td><td>Password (stored as cryptographic hash), OTP verification status</td></tr>
-            </table>
-
-            <h3>2.2 From Companies</h3>
-            <table>
-                <tr><th>Category</th><th>Data Collected</th></tr>
-                <tr><td>Identity</td><td>Company name, type, business address</td></tr>
-                <tr><td>Contact</td><td>Phone number (required), email (optional)</td></tr>
-                <tr><td>Account Creator</td><td>Full name, role within company</td></tr>
-                <tr><td>Operational</td><td>Work locations (incl. coordinates), worker roles, shift details, instructions, file attachments</td></tr>
-                <tr><td>Financial</td><td>Billing info, balance/wallet data, payment reference codes, top-up transactions</td></tr>
-            </table>
-
-            <h3>2.3 Automatically Collected</h3>
-            <ul>
-                <li><strong>Device Info:</strong> Device type, OS, unique identifiers</li>
-                <li><strong>Log Data:</strong> IP address, browser type, pages visited, timestamps</li>
-                <li><strong>Usage Data:</strong> Navigation paths, feature interactions, search queries</li>
-                <li><strong>Location:</strong> General location from IP (no precise GPS tracking)</li>
-            </ul>
-
-            <h3>2.4 From Third Parties</h3>
-            <ul>
-                <li><strong>WhatsApp OTP:</strong> Via Meta Platforms, Inc. (US) — phone numbers transmitted for verification</li>
-                <li><strong>Telegram:</strong> Via Telegram FZE (Dubai) — minimal admin notifications (names only, no bank/phone data)</li>
-            </ul>
-
-            <h2>3. Legal Basis for Processing</h2>
-            <table>
-                <tr><th>Legal Basis (UU PDP Art. 20)</th><th>Data</th><th>Purpose</th></tr>
-                <tr><td><strong>Consent</strong> (Art. 20(2)(a))</td><td>Selfies, video, profile photo</td><td>Specific Personal Data requires explicit consent</td></tr>
-                <tr><td><strong>Contract</strong> (Art. 20(2)(b))</td><td>Identity, contact, professional, financial, work records</td><td>Necessary to provide the Services</td></tr>
-                <tr><td><strong>Legal Obligation</strong> (Art. 20(2)(c))</td><td>Financial records, identity</td><td>Tax and labor law compliance</td></tr>
-                <tr><td><strong>Legitimate Interest</strong> (Art. 20(2)(f))</td><td>Usage data, ratings, Profile Strength</td><td>Platform improvement, fraud prevention, security</td></tr>
-            </table>
-
-            <h2>4. How We Use Your Information</h2>
-            <ul>
-                <li>Account creation, authentication (WhatsApp OTP), and profile management</li>
-                <li>Job matching — connecting Workers with relevant shifts; Profile Strength affects visibility</li>
-                <li>Shift management — applications, hiring, check-in/out, completion</li>
-                <li>Payment processing — Company balance top-ups, Worker payment disbursements</li>
-                <li>Document verification — admin review of CVs and videos</li>
-                <li>Recommendation system and rating/reputation management</li>
-                <li>Communication — notifications, updates, support</li>
-                <li>Platform improvement — analytics, research, fraud prevention</li>
-                <li>Legal compliance — Indonesian labor, tax, and data protection laws</li>
-            </ul>
-
-            <h2>5. How We Share Your Information</h2>
-            <h3>5.1 Between Users</h3>
-            <p>Worker profiles (name, photo, experience, documents, recommendations, rating, Profile Strength) are visible to Companies. Company information is visible to Workers when browsing shifts.</p>
-
-            <h3>5.2 With Service Providers</h3>
-            <table>
-                <tr><th>Provider</th><th>Data</th><th>Location</th></tr>
-                <tr><td>Bubble.io (hosting)</td><td>All platform data</td><td>United States</td></tr>
-                <tr><td>WhatsApp/Meta (OTP)</td><td>Phone numbers</td><td>United States</td></tr>
-                <tr><td>Telegram (admin alerts)</td><td>Minimal (names only)</td><td>Dubai</td></tr>
-            </table>
-            <p>All processors are bound by Data Processing Agreements per UU PDP Art. 35.</p>
-
-            <h3>5.3 What We Do NOT Share</h3>
-            <ul>
-                <li>We do <strong>not sell</strong> your personal data</li>
-                <li>We do <strong>not share</strong> data with advertisers without explicit consent</li>
-                <li>We do <strong>not share</strong> Worker bank/e-wallet details with Companies</li>
-            </ul>
-
-            <h2>6. Selfie and Photo Data</h2>
-            <p>Selfie photos and video presentations are classified as <strong>Specific Personal Data</strong> (<em>Data Pribadi yang Bersifat Spesifik</em>) under UU PDP Art. 4(2). Separate explicit consent is collected at the point of capture. Photos are:</p>
-            <ul>
-                <li>Used solely for attendance verification</li>
-                <li>Viewable by the hiring Company and Indogig admins</li>
-                <li>Retained for 3 years from shift date</li>
-                <li><strong>Not</strong> used for facial recognition or biometric profiling</li>
-            </ul>
-
-            <h2>7. Data Retention</h2>
-            <table>
-                <tr><th>Data Type</th><th>Retention</th></tr>
-                <tr><td>Account data</td><td>Active account + 2 years</td></tr>
-                <tr><td>Shift records & selfies</td><td>3 years from shift date</td></tr>
-                <tr><td>Financial records</td><td>5 years (tax law)</td></tr>
-                <tr><td>Documents (CV, video)</td><td>Active account + 1 year</td></tr>
-                <tr><td>Recommendations</td><td>Until Worker deletes</td></tr>
-                <tr><td>Recommender data (3rd party)</td><td>Until deleted or 2 years</td></tr>
-                <tr><td>Log/usage data</td><td>1 year</td></tr>
-            </table>
-
-            <h2>8. Data Security</h2>
-            <p>We implement encryption (TLS/SSL), secure infrastructure, access controls, regular audits, and additional restrictions for Specific Personal Data. You are responsible for keeping your password and OTP codes confidential.</p>
-
-            <h2>9. Your Rights (UU PDP No. 27/2022)</h2>
-            <ul>
-                <li><strong>Access</strong> — request a copy of your data</li>
-                <li><strong>Correction</strong> — fix inaccurate data</li>
-                <li><strong>Deletion</strong> — request data removal (subject to legal retention)</li>
-                <li><strong>Restrict Processing</strong> — limit processing in certain cases</li>
-                <li><strong>Data Portability</strong> — receive data in machine-readable format</li>
-                <li><strong>Withdraw Consent</strong> — at any time</li>
-                <li><strong>Object</strong> — to processing based on legitimate interest or direct marketing</li>
-                <li><strong>Explanation of Automated Decisions</strong> — including Profile Strength scoring</li>
-            </ul>
-            <p>Contact: <strong>info@indogig.com</strong>. Response within 30 days. Right to complain to supervisory authority (UU PDP Art. 58-60).</p>
-
-            <h2>10. Data Breach Notification</h2>
-            <p>Per UU PDP Art. 46, in the event of a breach we will notify the supervisory authority (Komdigi) and affected users within <strong>3 x 24 hours</strong>.</p>
-
-            <h2>11. International Data Transfers</h2>
-            <p>Data may be stored/processed in the United States (Bubble.io, Meta) and Dubai (Telegram). Per UU PDP Art. 56, we ensure equivalent protection standards and maintain binding Data Processing Agreements with all overseas processors.</p>
-
-            <h2>12. Changes to This Policy</h2>
-            <p>Significant changes will be notified at least <strong>30 days</strong> in advance. For material changes affecting legal basis or data categories, we will seek fresh consent where required.</p>
-
-            <h2>13. Contact Us</h2>
-            <p><strong>PT INDOGIG HRTECH INDONESIA</strong><br>
-            Jalan Sunset Road Tengah Building No. 9<br>
-            Seminyak, Kuta, Badung, Bali 80361, Indonesia</p>
-            <p>Email: <strong>info@indogig.com</strong><br>
-            Phone: <strong>+62 818 0370 8605</strong></p>
         </div>
-
-        <!-- INDONESIAN VERSION -->
         <div id="content-id" class="lang-content">
-            <h1>Kebijakan Privasi</h1>
-            <p class="subtitle">Berlaku: 1 Mei 2026 &nbsp;|&nbsp; Terakhir diubah: 1 Mei 2026</p>
-
-            <h2>1. Pendahuluan</h2>
-            <p>Kebijakan Privasi ("Kebijakan") ini menjelaskan bagaimana <strong>PT INDOGIG HRTECH INDONESIA</strong> ("Indogig," "kami") mengumpulkan, menggunakan, menyimpan, membagikan, dan melindungi data pribadi pengguna yang mengakses dan menggunakan platform Indogig, termasuk situs web, aplikasi seluler, dan layanan terkait (secara kolektif, "Layanan").</p>
-            <p><strong>PT INDOGIG HRTECH INDONESIA</strong> terdaftar dan berkedudukan di Jalan Sunset Road Tengah Bangunan No. 9, Seminyak, Kuta, Badung, Bali, Indonesia (AHU-0090431.AH.01.01.Tahun 2023, NIB 2911230067256, Sertifikat Standar KBLI 78104, TD PSE Domestik).</p>
-            <p>Indogig mengoperasikan platform tenaga kerja yang menghubungkan bisnis ("Perusahaan") dengan pekerja paruh waktu, sementara, dan berbasis gig ("Pekerja") untuk peluang kerja berbasis shift di Indonesia. Indogig bertindak sebagai <strong>platform teknologi yang memfasilitasi koneksi penyediaan tenaga kerja</strong> antara Perusahaan dan Pekerja.</p>
-            <div class="highlight">
-                <p style="margin:0;">Berdasarkan UU PDP No. 27/2022, pengguna Layanan merupakan <strong>Subjek Data Pribadi</strong>, dan PT INDOGIG HRTECH INDONESIA bertindak sebagai <strong>Pengendali Data Pribadi</strong>.</p>
+            <div class="legal-content">
+                <h1>KEBIJAKAN PRIVASI INDOGIG</h1>
+<p><strong>Tanggal berlaku:</strong> 1 Mei 2026
+<strong>Terakhir diubah:</strong> 1 Mei 2026</p>
+<hr />
+<h2>1. PENDAHULUAN</h2>
+<p>Selamat datang di Indogig. Kebijakan Privasi ("Kebijakan") ini menjelaskan bagaimana <strong>PT INDOGIG HRTECH INDONESIA</strong> ("Indogig," "kami") mengumpulkan, menggunakan, menyimpan, membagikan, dan melindungi data pribadi pengguna yang mengakses dan menggunakan platform Indogig, termasuk situs web, aplikasi seluler, dan layanan terkait (secara kolektif, "Layanan").</p>
+<p><strong>PT INDOGIG HRTECH INDONESIA</strong> adalah perusahaan teknologi SDM yang terdaftar dan berkedudukan di Jalan Sunset Road Tengah Bangunan No. 9, Seminyak, Kuta, Badung, Bali, Indonesia. Indogig terdaftar secara resmi di Indonesia dengan nomor pendaftaran AHU-0090431.AH.01.01.Tahun 2023 tertanggal 27 November 2023, NIB 2911230067256, dan memiliki Sertifikat Standar KBLI 78104 (Aktivitas Penyediaan Tenaga Kerja Lainnya) serta pendaftaran TD PSE Domestik pada Kementerian Komunikasi dan Digital (Komdigi).</p>
+<p>Indogig mengoperasikan platform tenaga kerja yang menghubungkan bisnis ("Perusahaan") dengan pekerja paruh waktu, sementara, dan berbasis gig ("Pekerja") untuk peluang kerja berbasis shift di Indonesia. Indogig bertindak sebagai <strong>platform teknologi yang memfasilitasi koneksi penyediaan tenaga kerja</strong> antara Perusahaan dan Pekerja.</p>
+<p>Dalam konteks Undang-Undang Perlindungan Data Pribadi No. 27 Tahun 2022 ("UU PDP"), pengguna Layanan merupakan <strong>Subjek Data Pribadi</strong>, dan PT INDOGIG HRTECH INDONESIA bertindak sebagai <strong>Pengendali Data Pribadi</strong>. Apabila Perusahaan mengakses data Pekerja melalui platform, Perusahaan bertindak sebagai Pengendali Data Pribadi yang independen untuk data yang mereka proses sehubungan dengan keputusan perekrutan dan ketenagakerjaan mereka sendiri.</p>
+<p>Dengan mengakses atau menggunakan Layanan kami, Anda menyetujui pengumpulan, penggunaan, penyimpanan, dan pengungkapan informasi Anda sebagaimana dijelaskan dalam Kebijakan ini. Jika Anda tidak setuju, silakan hentikan penggunaan Layanan.</p>
+<p>Untuk pertanyaan tentang Kebijakan ini, hubungi Pejabat Pelindungan Data Pribadi kami: <strong>info@indogig.com</strong>
+Pertanyaan umum: <strong>info@indogig.com</strong> | <strong>+62 818 0370 8605</strong></p>
+<hr />
+<h2>2. INFORMASI YANG KAMI KUMPULKAN</h2>
+<h3>2.1 Informasi yang Anda Berikan Secara Langsung</h3>
+<p><strong>Untuk Pekerja (Pencari Gig):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Kategori</th>
+<th>Data yang Dikumpulkan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identitas</td>
+<td>Nama lengkap, foto profil</td>
+</tr>
+<tr>
+<td>Kontak</td>
+<td>Nomor telepon (wajib), alamat email (opsional)</td>
+</tr>
+<tr>
+<td>Profesional</td>
+<td>Tingkat pengalaman kerja, peran/kategori pekerjaan yang diinginkan, lokasi kerja yang diinginkan, ketersediaan (seberapa cepat siap mulai)</td>
+</tr>
+<tr>
+<td>Dokumen</td>
+<td>CV/resume (unggahan file), video presentasi diri (maksimal 1 menit, MP4/MOV) — diklasifikasikan sebagai <strong>Data Pribadi yang Bersifat Spesifik</strong> berdasarkan UU PDP Pasal 4 ayat (2) karena video menangkap data wajah dan suara yang bersifat biometrik</td>
+</tr>
+<tr>
+<td>Keuangan</td>
+<td>Detail rekening bank (nama bank, nomor rekening, nama pemegang rekening) atau detail e-wallet (misalnya GoPay) untuk menerima pembayaran</td>
+</tr>
+<tr>
+<td>Rekomendasi</td>
+<td>Nama, nomor telepon, dan hubungan orang yang memberikan referensi profesional</td>
+</tr>
+<tr>
+<td>Catatan Kerja</td>
+<td>Foto selfie saat check-in dan check-out (diklasifikasikan sebagai <strong>Data Pribadi yang Bersifat Spesifik</strong> berdasarkan UU PDP Pasal 4 ayat (2)), data kehadiran shift, jam kerja, cap waktu check-in/check-out, menit kerja</td>
+</tr>
+<tr>
+<td>Rating &amp; Reputasi</td>
+<td>Rating dari Perusahaan, tingkat penyelesaian, jumlah ketidakhadiran (no-show), persentase <em>Profile Strength</em></td>
+</tr>
+<tr>
+<td>Riwayat Lamaran</td>
+<td>Shift yang dilamar, status penerimaan/penolakan</td>
+</tr>
+<tr>
+<td>Autentikasi</td>
+<td>Kata sandi (disimpan sebagai hash kriptografis), status verifikasi OTP</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Untuk Perusahaan (Pemberi Kerja):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Kategori</th>
+<th>Data yang Dikumpulkan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identitas</td>
+<td>Nama perusahaan, jenis perusahaan (Cafe, Restaurant, Bar, Hotel, Event &amp; Catering, Lainnya), alamat bisnis</td>
+</tr>
+<tr>
+<td>Kontak</td>
+<td>Nomor telepon (wajib), alamat email (opsional)</td>
+</tr>
+<tr>
+<td>Pembuat Akun</td>
+<td>Nama lengkap, peran dalam perusahaan</td>
+</tr>
+<tr>
+<td>Operasional</td>
+<td>Lokasi kerja (termasuk alamat dan koordinat), peran pekerja yang dibutuhkan, frekuensi dan durasi shift, instruksi umum dan khusus per posisi, lampiran file (kode berpakaian, formulir)</td>
+</tr>
+<tr>
+<td>Keuangan</td>
+<td>Informasi penagihan, data saldo/dompet, referensi otorisasi pembayaran (kode referensi dalam format INDO-ORG-YYYY-XXXX), data transaksi pengisian saldo</td>
+</tr>
+<tr>
+<td>Autentikasi</td>
+<td>Kata sandi (disimpan sebagai hash kriptografis), status verifikasi OTP</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Untuk Pemberi Rekomendasi (melalui formulir web publik):</strong></p>
+<p>Pemberitahuan privasi terpisah ditampilkan kepada Pemberi Rekomendasi pada saat pengumpulan data di formulir web rekomendasi. Pemberi Rekomendasi tidak diwajibkan membaca Kebijakan ini secara lengkap. Data yang dikumpulkan meliputi:</p>
+<table>
+<thead>
+<tr>
+<th>Kategori</th>
+<th>Data yang Dikumpulkan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identitas</td>
+<td>Nama lengkap, nomor telepon (diverifikasi melalui WhatsApp OTP)</td>
+</tr>
+<tr>
+<td>Rekomendasi</td>
+<td>Jenis hubungan (rekan kerja, manajer, bawahan, klien, teman), tag kekuatan, komentar teks bebas, email opsional</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 Informasi yang Dikumpulkan Secara Otomatis</h3>
+<p>Saat Anda menggunakan Layanan kami, kami dapat secara otomatis mengumpulkan:</p>
+<ul>
+<li><strong>Informasi Perangkat:</strong> Jenis perangkat, sistem operasi, pengenal perangkat unik, informasi jaringan seluler</li>
+<li><strong>Data Log:</strong> Alamat IP, jenis dan versi browser, halaman yang dikunjungi, cap waktu, waktu yang dihabiskan di halaman</li>
+<li><strong>Data Penggunaan:</strong> Jalur navigasi, interaksi fitur, kueri pencarian, pola penggunaan aplikasi</li>
+<li><strong>Data Lokasi:</strong> Lokasi umum yang diperoleh dari alamat IP atau pengaturan perangkat (kami tidak menggunakan pelacakan GPS secara presisi)</li>
+</ul>
+<h3>2.3 Informasi dari Pihak Ketiga</h3>
+<ul>
+<li><strong>Verifikasi OTP WhatsApp:</strong> Kami menggunakan WhatsApp Business API (disediakan oleh Meta Platforms, Inc., berkedudukan di Amerika Serikat) untuk mengirim kode One-Time Password (OTP) untuk pendaftaran akun dan verifikasi identitas. Nomor telepon Anda dikirimkan ke server Meta untuk tujuan ini. Silakan merujuk pada Kebijakan Privasi Meta untuk informasi tentang bagaimana Meta menangani data ini.</li>
+<li><strong>Notifikasi Telegram:</strong> Notifikasi administratif internal dikirim melalui Telegram (dioperasikan oleh Telegram FZE, Dubai) untuk tujuan operasional (pendaftaran baru, pengiriman dokumen, permintaan pembayaran). Hanya data minimal yang disertakan (misalnya, "Pekerja baru terdaftar" dengan nama — tanpa detail bank, tanpa nomor telepon, tanpa isi dokumen). Ini merupakan transfer data lintas batas; lihat Bagian 11.</li>
+</ul>
+<hr />
+<h2>3. DASAR HUKUM PEMROSESAN</h2>
+<p>Berdasarkan UU PDP Pasal 20, kami memproses data pribadi Anda berdasarkan dasar hukum berikut:</p>
+<table>
+<thead>
+<tr>
+<th>Dasar Hukum</th>
+<th>Kategori Data</th>
+<th>Tujuan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Persetujuan</strong> (Pasal 20 ayat (2) huruf a)</td>
+<td>Foto selfie (check-in/out), video presentasi diri, foto profil</td>
+<td>Data Pribadi yang Bersifat Spesifik memerlukan persetujuan eksplisit dan terpisah yang dikumpulkan pada saat pengambilan</td>
+</tr>
+<tr>
+<td><strong>Pelaksanaan Perjanjian</strong> (Pasal 20 ayat (2) huruf b)</td>
+<td>Identitas, kontak, profesional, keuangan, catatan kerja, riwayat lamaran</td>
+<td>Diperlukan untuk menyediakan Layanan yang telah Anda daftarkan</td>
+</tr>
+<tr>
+<td><strong>Kewajiban Hukum</strong> (Pasal 20 ayat (2) huruf c)</td>
+<td>Catatan keuangan/pembayaran, data identitas</td>
+<td>Kepatuhan pajak, kepatuhan regulasi ketenagakerjaan, merespons permintaan pemerintah yang sah</td>
+</tr>
+<tr>
+<td><strong>Kepentingan Sah</strong> (Pasal 20 ayat (2) huruf f)</td>
+<td>Data penggunaan, data perangkat/log, rating, <em>Profile Strength</em></td>
+<td>Peningkatan platform, pencegahan penipuan, pemantauan keamanan, menjaga kepercayaan dan keselamatan</td>
+</tr>
+</tbody>
+</table>
+<p>Apabila pemrosesan didasarkan pada persetujuan, Anda dapat menarik persetujuan kapan saja (lihat Bagian 9). Penarikan tidak mempengaruhi keabsahan pemrosesan sebelum penarikan, tetapi dapat membatasi kemampuan Anda untuk menggunakan fitur-fitur tertentu dari Layanan.</p>
+<hr />
+<h2>4. BAGAIMANA KAMI MENGGUNAKAN INFORMASI ANDA</h2>
+<h3>4.1 Operasi Inti Platform</h3>
+<ul>
+<li><strong>Pembuatan dan autentikasi akun</strong> — mendaftarkan akun dan memverifikasi identitas melalui WhatsApp OTP</li>
+<li><strong>Manajemen profil</strong> — membangun dan memelihara profil Pekerja dan Perusahaan, menghitung <em>Profile Strength</em></li>
+<li><strong>Pencocokan pekerjaan</strong> — menghubungkan Pekerja dengan peluang shift yang relevan berdasarkan keterampilan, lokasi, dan preferensi; skor <em>Profile Strength</em> mempengaruhi visibilitas Pekerja dalam hasil pencarian Perusahaan</li>
+<li><strong>Manajemen shift</strong> — memfasilitasi proses melamar, mempekerjakan, check-in/out, dan menyelesaikan shift</li>
+<li><strong>Pemrosesan pembayaran</strong> — mengelola pengisian saldo Perusahaan, pencairan pembayaran Pekerja, dan memelihara catatan keuangan</li>
+<li><strong>Verifikasi dokumen</strong> — meninjau dan menyetujui/menolak CV dan video presentasi yang dikirimkan Pekerja</li>
+<li><strong>Sistem rekomendasi</strong> — memungkinkan Pekerja mengumpulkan dan menampilkan referensi profesional yang terverifikasi</li>
+<li><strong>Rating dan reputasi</strong> — menghitung dan menampilkan rating Pekerja, tingkat penyelesaian, dan indikator keandalan</li>
+</ul>
+<h3>4.2 Komunikasi</h3>
+<ul>
+<li>Mengirim notifikasi tentang status lamaran, pembaruan shift, dan konfirmasi pembayaran</li>
+<li>Mengkomunikasikan pembaruan platform, perubahan kebijakan, dan pengumuman layanan</li>
+<li>Merespons permintaan dukungan dan pertanyaan</li>
+</ul>
+<h3>4.3 Peningkatan Platform</h3>
+<ul>
+<li>Menganalisis pola dan tren penggunaan untuk meningkatkan fungsionalitas platform</li>
+<li>Melakukan riset dan analisis untuk mengembangkan fitur baru</li>
+<li>Memantau dan mencegah penipuan, penyalahgunaan, dan ancaman keamanan</li>
+</ul>
+<h3>4.4 Kepatuhan Hukum</h3>
+<ul>
+<li>Mematuhi hukum dan peraturan Indonesia yang berlaku, termasuk hukum ketenagakerjaan (UU 13/2003, UU Cipta Kerja), peraturan perpajakan, dan persyaratan perlindungan data pribadi (UU PDP No. 27/2022)</li>
+<li>Merespons permintaan sah dari otoritas pemerintah dan pengadilan (termasuk permintaan berdasarkan PP 71/2019 Pasal 21)</li>
+<li>Melindungi hak, properti, dan keselamatan pengguna kami</li>
+</ul>
+<hr />
+<h2>5. BAGAIMANA KAMI MEMBAGIKAN INFORMASI ANDA</h2>
+<h3>5.1 Antar Pengguna Platform</h3>
+<ul>
+<li><strong>Profil Pekerja</strong> (termasuk nama, foto, pengalaman kerja, dokumen terverifikasi, rekomendasi, rating, <em>Profile Strength</em>, dan indikator keandalan) dapat dilihat oleh Perusahaan saat meninjau lamaran dan merekrut untuk shift.</li>
+<li><strong>Informasi Perusahaan</strong> (termasuk nama perusahaan, jenis, lokasi, dan detail pekerjaan) dapat dilihat oleh Pekerja saat menelusuri dan melamar shift yang tersedia.</li>
+<li><strong>Informasi Pemberi Rekomendasi</strong> ditampilkan di profil Pekerja sebagai bagian dari referensi profesional, tunduk pada kontrol Pekerja (Pekerja dapat menampilkan, menyembunyikan, atau menghapus rekomendasi).</li>
+</ul>
+<h3>5.2 Dengan Penyedia Layanan (Prosesor Data Pribadi)</h3>
+<p>Kami melibatkan Prosesor Data Pribadi pihak ketiga yang tepercaya untuk membantu mengoperasikan platform. Kami memelihara Perjanjian Pemrosesan Data dengan setiap prosesor sesuai dengan UU PDP Pasal 35. Prosesor ini meliputi:</p>
+<table>
+<thead>
+<tr>
+<th>Kategori</th>
+<th>Penyedia</th>
+<th>Data yang Diproses</th>
+<th>Lokasi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hosting &amp; penyimpanan cloud</td>
+<td>Bubble.io (berbasis AS)</td>
+<td>Semua data platform</td>
+<td>Amerika Serikat</td>
+</tr>
+<tr>
+<td>Verifikasi OTP</td>
+<td>WhatsApp Business API (Meta, AS)</td>
+<td>Nomor telepon</td>
+<td>Amerika Serikat</td>
+</tr>
+<tr>
+<td>Notifikasi admin</td>
+<td>Telegram (Telegram FZE, Dubai)</td>
+<td>Data operasional minimal (hanya nama)</td>
+<td>Dubai/Internasional</td>
+</tr>
+<tr>
+<td>Analitik</td>
+<td>Alat analitik platform</td>
+<td>Data penggunaan anonim</td>
+<td>Berbagai</td>
+</tr>
+</tbody>
+</table>
+<p>Penyedia ini diwajibkan secara kontraktual untuk melindungi data Anda, menggunakannya semata-mata untuk tujuan penyediaan layanan kepada kami, dan mematuhi standar perlindungan data yang setara dengan yang disyaratkan oleh UU PDP.</p>
+<h3>5.3 Untuk Tujuan Hukum</h3>
+<p>Kami dapat mengungkapkan informasi Anda bila diwajibkan oleh hukum, peraturan, atau proses hukum, atau bila kami percaya dengan itikad baik bahwa pengungkapan diperlukan untuk:</p>
+<ul>
+<li>Mematuhi hukum yang berlaku atau merespons permintaan pemerintah yang sah (termasuk permintaan berdasarkan PP 71/2019 Pasal 21)</li>
+<li>Melindungi hak, properti, atau keselamatan Indogig, pengguna kami, atau masyarakat</li>
+<li>Mendeteksi dan mencegah penipuan, ancaman keamanan, atau masalah teknis</li>
+</ul>
+<h3>5.4 Pengalihan Bisnis</h3>
+<p>Dalam hal terjadi penggabungan, akuisisi, reorganisasi, atau penjualan aset, informasi Anda dapat dialihkan sebagai bagian dari transaksi tersebut. Kami akan memberitahu Anda tentang perubahan tersebut setidaknya 30 hari sebelumnya dan menginformasikan pilihan yang Anda miliki terkait informasi Anda, termasuk hak untuk menghapus akun Anda.</p>
+<h3>5.5 Yang TIDAK Kami Bagikan</h3>
+<ul>
+<li>Kami <strong>tidak menjual</strong> data pribadi Anda kepada pihak ketiga.</li>
+<li>Kami <strong>tidak membagikan</strong> data Anda kepada pengiklan untuk iklan bertarget tanpa persetujuan eksplisit Anda.</li>
+<li>Kami <strong>tidak membagikan</strong> detail rekening bank atau e-wallet Pekerja kepada Perusahaan. Data keuangan hanya digunakan oleh administrasi Indogig untuk pencairan pembayaran.</li>
+</ul>
+<hr />
+<h2>6. DATA SELFIE DAN FOTO (DATA PRIBADI YANG BERSIFAT SPESIFIK)</h2>
+<p>Foto selfie dan video presentasi diklasifikasikan sebagai <strong>Data Pribadi yang Bersifat Spesifik</strong> berdasarkan UU PDP Pasal 4 ayat (2), karena mengandung data wajah yang bersifat biometrik. Kami menerapkan perlindungan yang ditingkatkan terhadap data ini:</p>
+<h3>6.1 Selfie Check-in dan Check-out</h3>
+<p>Sebagai bagian dari sistem verifikasi shift, Pekerja diwajibkan mengambil foto selfie saat check-in dan check-out. <strong>Persetujuan eksplisit terpisah</strong> dikumpulkan pada saat pengambilan selfie pertama. Foto-foto ini:</p>
+<ul>
+<li>Digunakan semata-mata untuk verifikasi kehadiran dan pelacakan waktu shift</li>
+<li>Dapat dilihat oleh Perusahaan yang memasang shift dan oleh administrator Indogig</li>
+<li>Disimpan dengan aman dengan kontrol akses yang membatasi siapa yang dapat melihatnya</li>
+<li>Disimpan selama 3 tahun dari tanggal shift (lihat Bagian 7)</li>
+<li><strong>Tidak</strong> digunakan untuk teknologi pengenalan wajah, profiling biometrik, pengawasan, atau tujuan lain selain verifikasi kehadiran</li>
+<li>Dapat digunakan sebagai bukti dalam sengketa pembayaran atau kehadiran antara Perusahaan dan Pekerja</li>
+</ul>
+<h3>6.2 Foto Profil dan Video Presentasi</h3>
+<ul>
+<li>Foto profil yang diunggah selama onboarding ditampilkan di profil Pekerja dan dapat dilihat oleh Perusahaan</li>
+<li>Video presentasi diri (maksimal 1 menit) ditinjau oleh administrator Indogig untuk kualitas dan kelayakan, dan dapat dilihat oleh Perusahaan sebagai bagian dari profil Pekerja</li>
+<li><strong>Persetujuan eksplisit terpisah</strong> dikumpulkan saat Anda pertama kali mengunggah video presentasi</li>
+<li>Anda dapat memperbarui, mengganti, atau menghapus foto profil dan video kapan saja melalui aplikasi</li>
+</ul>
+<hr />
+<h2>7. PENYIMPANAN DATA</h2>
+<p>Kami menyimpan data pribadi Anda hanya selama diperlukan untuk memenuhi tujuan yang dijelaskan dalam Kebijakan ini, mematuhi kewajiban hukum kami, menyelesaikan sengketa, dan menegakkan perjanjian kami.</p>
+<table>
+<thead>
+<tr>
+<th>Jenis Data</th>
+<th>Periode Penyimpanan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data akun</td>
+<td>Selama akun aktif + 2 tahun setelah penghapusan</td>
+</tr>
+<tr>
+<td>Catatan shift dan foto selfie check-in/out</td>
+<td>3 tahun dari tanggal shift</td>
+</tr>
+<tr>
+<td>Catatan keuangan/pembayaran</td>
+<td>5 tahun (sesuai ketentuan pajak Indonesia)</td>
+</tr>
+<tr>
+<td>Dokumen Pekerja (CV, video)</td>
+<td>Selama akun aktif + 1 tahun</td>
+</tr>
+<tr>
+<td>Data rekomendasi (dikontrol Pekerja)</td>
+<td>Selama akun Pekerja aktif atau sampai Pekerja menghapusnya</td>
+</tr>
+<tr>
+<td>Data pribadi Pemberi Rekomendasi (pihak ketiga)</td>
+<td>Sampai rekomendasi terkait dihapus oleh Pekerja, atau 2 tahun sejak pengiriman, mana yang lebih dahulu</td>
+</tr>
+<tr>
+<td>Data log dan penggunaan</td>
+<td>1 tahun</td>
+</tr>
+<tr>
+<td>Data rating dan reputasi</td>
+<td>Selama akun aktif + 1 tahun</td>
+</tr>
+</tbody>
+</table>
+<p>Setelah periode penyimpanan yang berlaku, data akan dihapus secara aman atau dianonimkan. Jika Anda menghapus akun Anda, kami akan menghapus data pribadi Anda dalam jangka waktu yang wajar, dengan tunduk pada kewajiban penyimpanan hukum yang berlaku.</p>
+<hr />
+<h2>8. KEAMANAN DATA</h2>
+<p>Kami menerapkan langkah-langkah keamanan standar industri untuk melindungi data pribadi Anda, termasuk:</p>
+<ul>
+<li>Enkripsi data dalam transit (TLS/SSL) dan saat disimpan</li>
+<li>Infrastruktur server yang aman dengan kontrol akses</li>
+<li>Audit keamanan dan penilaian kerentanan secara berkala</li>
+<li>Akses karyawan dan kontraktor dibatasi berdasarkan kebutuhan</li>
+<li>Penanganan informasi pembayaran yang aman</li>
+<li>Data Pribadi yang Bersifat Spesifik (selfie, video) disimpan dengan pembatasan akses tambahan</li>
+</ul>
+<p>Meskipun demikian, tidak ada metode transmisi atau penyimpanan elektronik yang 100% aman. Anda bertanggung jawab untuk:</p>
+<ul>
+<li>Menjaga kerahasiaan kata sandi akun Anda</li>
+<li>Tidak membagikan kode OTP Anda kepada siapa pun</li>
+<li>Memastikan keamanan perangkat yang Anda gunakan untuk mengakses Layanan kami</li>
+<li>Segera melaporkan dugaan akses tidak sah ke akun Anda ke info@indogig.com</li>
+</ul>
+<hr />
+<h2>9. HAK-HAK ANDA</h2>
+<p>Berdasarkan UU PDP No. 27 Tahun 2022, Anda memiliki hak-hak berikut sebagai Subjek Data Pribadi:</p>
+<ul>
+<li><strong>Hak atas Informasi</strong> (Pasal 5-7): Mendapatkan informasi tentang identitas Pengendali Data Pribadi, dasar hukum pemrosesan, tujuan pemrosesan, dan periode penyimpanan</li>
+<li><strong>Hak Akses</strong> (Pasal 8): Meminta salinan data pribadi yang kami simpan tentang Anda</li>
+<li><strong>Hak Koreksi</strong> (Pasal 8): Meminta perbaikan data yang tidak akurat atau tidak lengkap</li>
+<li><strong>Hak Penghapusan</strong> (Pasal 8): Meminta penghapusan data pribadi Anda, tunduk pada kewajiban penyimpanan hukum</li>
+<li><strong>Hak Pembatasan Pemrosesan</strong> (Pasal 10): Meminta pembatasan pemrosesan data Anda dalam keadaan tertentu</li>
+<li><strong>Hak Portabilitas Data</strong> (Pasal 12): Meminta salinan data Anda dalam format yang terstruktur, umum digunakan, dan dapat dibaca mesin</li>
+<li><strong>Hak Penarikan Persetujuan</strong> (Pasal 9): Menarik persetujuan Anda untuk pemrosesan data kapan saja (tidak mempengaruhi keabsahan pemrosesan sebelum penarikan)</li>
+<li><strong>Hak Keberatan</strong> (Pasal 11): Menolak pemrosesan data Anda berdasarkan kepentingan sah atau untuk tujuan pemasaran langsung</li>
+<li><strong>Hak atas Penjelasan Keputusan Otomatis</strong> (Pasal 27): Meminta penjelasan tentang pemrosesan otomatis yang secara signifikan mempengaruhi Anda, termasuk skor <em>Profile Strength</em> dan algoritma pencocokan pekerjaan</li>
+</ul>
+<p>Untuk menggunakan hak-hak ini, hubungi Pejabat Pelindungan Data Pribadi kami di <strong>info@indogig.com</strong>. Kami akan merespons permintaan Anda tanpa penundaan yang tidak semestinya, dan dalam hal apa pun dalam waktu <strong>30 hari</strong>. Kami dapat memerlukan verifikasi identitas Anda sebelum memproses permintaan Anda.</p>
+<p>Jika permintaan Anda ditolak (seluruhnya atau sebagian), kami akan memberikan penjelasan tertulis tentang alasannya. Anda berhak mengajukan keluhan kepada lembaga pengawas yang bertanggung jawab atas perlindungan data pribadi berdasarkan UU PDP Pasal 58-60.</p>
+<p>Kami tidak mendiskriminasi pengguna yang menggunakan hak privasi mereka.</p>
+<hr />
+<h2>10. PEMBERITAHUAN PELANGGARAN DATA</h2>
+<p>Sesuai dengan UU PDP Pasal 46, dalam hal terjadi pelanggaran data pribadi yang mempengaruhi data Anda, kami akan:</p>
+<ol>
+<li><strong>Memberitahu lembaga pengawas (Komdigi)</strong> dalam waktu <strong>3 x 24 jam</strong> sejak ditemukannya pelanggaran, menyediakan: deskripsi pelanggaran, jenis data yang terpengaruh, jumlah Subjek Data Pribadi yang terpengaruh, dan langkah-langkah yang diambil untuk mengatasi dan memitigasi pelanggaran.</li>
+<li><strong>Memberitahu Subjek Data Pribadi yang terpengaruh</strong> dalam jangka waktu yang sama melalui saluran komunikasi yang tersedia bagi kami (email, notifikasi dalam aplikasi, atau telepon), menyediakan: deskripsi pelanggaran, jenis data Anda yang terpengaruh, dan langkah-langkah perlindungan yang disarankan yang dapat Anda ambil.</li>
+</ol>
+<hr />
+<h2>11. TRANSFER DATA INTERNASIONAL</h2>
+<p>Informasi Anda terutama disimpan dan diproses di server yang dioperasikan oleh penyedia hosting cloud kami, yang mungkin berlokasi di luar Indonesia (saat ini di Amerika Serikat). Selain itu, nomor telepon Anda dikirimkan ke Meta (AS) untuk verifikasi WhatsApp OTP, dan data operasional minimal dikirimkan melalui Telegram (Dubai).</p>
+<p>Sesuai dengan UU PDP Pasal 56, kami memastikan bahwa:</p>
+<ul>
+<li>Negara atau organisasi penerima menyediakan tingkat perlindungan data pribadi yang setara dengan yang disyaratkan oleh UU PDP</li>
+<li>Kami memelihara Perjanjian Pemrosesan Data yang mengikat dengan semua prosesor di luar negeri</li>
+<li>Perlindungan kontraktual yang memadai (termasuk klausul kontraktual standar) telah diterapkan</li>
+<li>Kami akan menginformasikan Anda jika standar perlindungan data di negara penerima berubah secara material</li>
+</ul>
+<p>Dengan menggunakan Layanan kami, Anda menyetujui transfer data Anda ke yurisdiksi-yurisdiksi ini sebagaimana dijelaskan dalam bagian ini. Anda dapat menarik persetujuan untuk transfer yang tidak esensial dengan menghubungi info@indogig.com, meskipun hal ini dapat membatasi kemampuan Anda untuk menggunakan Layanan.</p>
+<hr />
+<h2>12. COOKIE DAN TEKNOLOGI PELACAKAN</h2>
+<p>Kami dapat menggunakan cookie dan teknologi pelacakan serupa di situs web dan aplikasi kami untuk:</p>
+<ul>
+<li><strong>Cookie esensial:</strong> Memelihara sesi login Anda dan memastikan platform berfungsi dengan benar (tidak memerlukan persetujuan)</li>
+<li><strong>Cookie analitik:</strong> Memahami bagaimana pengguna berinteraksi dengan Layanan kami dan meningkatkan kinerja platform (memerlukan persetujuan)</li>
+</ul>
+<p>Kami tidak menggunakan cookie pemasaran atau periklanan. Anda dapat mengelola preferensi cookie melalui pengaturan browser atau perangkat Anda. Menonaktifkan cookie esensial dapat mencegah Anda menggunakan Layanan.</p>
+<hr />
+<h2>13. PRIVASI ANAK</h2>
+<p>Layanan kami tidak ditujukan untuk individu di bawah usia 18 tahun. Kami tidak secara sadar mengumpulkan data pribadi dari anak di bawah 18 tahun. Jika kami mengetahui bahwa kami telah mengumpulkan data dari seseorang di bawah 18 tahun tanpa persetujuan yang memadai, kami akan segera mengambil langkah untuk menghapus informasi tersebut.</p>
+<p>Pekerja harus berusia minimal <strong>18 tahun</strong> untuk mendaftar di platform. Lihat Ketentuan Penggunaan untuk persyaratan usia dan pengecualian bagi Pekerja usia 15-17 tahun dengan persetujuan orang tua dan perlindungan tambahan, sesuai dengan UU Ketenagakerjaan No. 13/2003 Pasal 68-69.</p>
+<hr />
+<h2>14. TAUTAN DAN LAYANAN PIHAK KETIGA</h2>
+<p>Layanan kami mungkin berisi tautan ke situs web atau layanan pihak ketiga. Kami tidak bertanggung jawab atas praktik privasi pihak ketiga tersebut. Kami mendorong Anda untuk meninjau kebijakan privasi layanan pihak ketiga sebelum memberikan data pribadi Anda.</p>
+<p>Komunikasi antar pengguna yang dilakukan di luar platform kami (misalnya melalui WhatsApp, panggilan telepon, atau saluran lainnya) tidak tercakup oleh Kebijakan ini. Pengguna bertanggung jawab atas data pribadi yang dibagikan di luar platform Indogig.</p>
+<hr />
+<h2>15. PERUBAHAN KEBIJAKAN INI</h2>
+<p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Saat kami melakukan perubahan signifikan, kami akan:</p>
+<ul>
+<li>Memperbarui tanggal "Terakhir diubah" di bagian atas Kebijakan ini</li>
+<li>Memberitahu pengguna melalui Layanan atau email setidaknya <strong>30 hari</strong> sebelum perubahan berlaku</li>
+<li>Untuk perubahan material yang mempengaruhi dasar hukum atau kategori data, meminta persetujuan eksplisit baru bila diperlukan</li>
+</ul>
+<p>Penggunaan Layanan yang berkelanjutan setelah Kebijakan yang diperbarui berlaku merupakan penerimaan Anda terhadap perubahan tersebut. Jika Anda tidak setuju dengan perubahan, Anda dapat menghapus akun Anda dan menghentikan penggunaan Layanan.</p>
+<hr />
+<h2>16. HUBUNGI KAMI</h2>
+<p><strong>Pejabat Pelindungan Data Pribadi (DPO):</strong>
+Email: <strong>info@indogig.com</strong></p>
+<p><strong>PT INDOGIG HRTECH INDONESIA</strong>
+Jalan Sunset Road Tengah Bangunan No. 9
+Seminyak, Kuta, Badung, Bali 80361
+Indonesia</p>
+<p>Pertanyaan umum: <strong>info@indogig.com</strong>
+Telepon: <strong>+62 818 0370 8605</strong></p>
+<p>Kebijakan ini dibuat dan berlaku efektif pada tanggal yang tercantum di atas.</p>
             </div>
-            <p>Hubungi Pejabat Pelindungan Data Pribadi kami: <strong>info@indogig.com</strong> | <strong>+62 818 0370 8605</strong></p>
-
-            <h2>2. Informasi yang Kami Kumpulkan</h2>
-
-            <h3>2.1 Dari Pekerja</h3>
-            <table>
-                <tr><th>Kategori</th><th>Data yang Dikumpulkan</th></tr>
-                <tr><td>Identitas</td><td>Nama lengkap, foto profil</td></tr>
-                <tr><td>Kontak</td><td>Nomor telepon (wajib), email (opsional)</td></tr>
-                <tr><td>Profesional</td><td>Pengalaman kerja, peran/kategori yang diinginkan, lokasi, ketersediaan</td></tr>
-                <tr><td>Dokumen</td><td>CV/resume, video presentasi diri (maks 1 menit) — diklasifikasikan sebagai <strong>Data Pribadi yang Bersifat Spesifik</strong> (UU PDP Pasal 4(2))</td></tr>
-                <tr><td>Keuangan</td><td>Detail rekening bank atau e-wallet untuk menerima pembayaran</td></tr>
-                <tr><td>Rekomendasi</td><td>Nama, nomor telepon, dan hubungan pemberi referensi profesional</td></tr>
-                <tr><td>Catatan Kerja</td><td>Foto selfie check-in/out (<strong>Data Pribadi Spesifik</strong>), data kehadiran, cap waktu, menit kerja</td></tr>
-                <tr><td>Rating</td><td>Rating dari Perusahaan, tingkat penyelesaian, jumlah no-show, <em>Profile Strength</em></td></tr>
-                <tr><td>Autentikasi</td><td>Kata sandi (hash kriptografis), status verifikasi OTP</td></tr>
-            </table>
-
-            <h3>2.2 Dari Perusahaan</h3>
-            <table>
-                <tr><th>Kategori</th><th>Data yang Dikumpulkan</th></tr>
-                <tr><td>Identitas</td><td>Nama perusahaan, jenis, alamat bisnis</td></tr>
-                <tr><td>Kontak</td><td>Nomor telepon (wajib), email (opsional)</td></tr>
-                <tr><td>Pembuat Akun</td><td>Nama lengkap, peran dalam perusahaan</td></tr>
-                <tr><td>Operasional</td><td>Lokasi kerja (termasuk koordinat), peran pekerja, detail shift, instruksi, lampiran</td></tr>
-                <tr><td>Keuangan</td><td>Info penagihan, data saldo/dompet, kode referensi pembayaran, transaksi pengisian saldo</td></tr>
-            </table>
-
-            <h3>2.3 Dikumpulkan Otomatis</h3>
-            <ul>
-                <li><strong>Info Perangkat:</strong> Jenis perangkat, OS, pengenal unik</li>
-                <li><strong>Data Log:</strong> Alamat IP, jenis browser, halaman yang dikunjungi, cap waktu</li>
-                <li><strong>Data Penggunaan:</strong> Jalur navigasi, interaksi fitur, kueri pencarian</li>
-                <li><strong>Lokasi:</strong> Lokasi umum dari IP (tanpa pelacakan GPS presisi)</li>
-            </ul>
-
-            <h3>2.4 Dari Pihak Ketiga</h3>
-            <ul>
-                <li><strong>OTP WhatsApp:</strong> Melalui Meta Platforms, Inc. (AS) — nomor telepon dikirim untuk verifikasi</li>
-                <li><strong>Telegram:</strong> Melalui Telegram FZE (Dubai) — notifikasi admin minimal (hanya nama, tanpa data bank/telepon)</li>
-            </ul>
-
-            <h2>3. Dasar Hukum Pemrosesan</h2>
-            <table>
-                <tr><th>Dasar Hukum (UU PDP Pasal 20)</th><th>Data</th><th>Tujuan</th></tr>
-                <tr><td><strong>Persetujuan</strong> (Pasal 20(2)(a))</td><td>Selfie, video, foto profil</td><td>Data Pribadi Spesifik memerlukan persetujuan eksplisit</td></tr>
-                <tr><td><strong>Pelaksanaan Perjanjian</strong> (Pasal 20(2)(b))</td><td>Identitas, kontak, profesional, keuangan, catatan kerja</td><td>Diperlukan untuk menyediakan Layanan</td></tr>
-                <tr><td><strong>Kewajiban Hukum</strong> (Pasal 20(2)(c))</td><td>Catatan keuangan, identitas</td><td>Kepatuhan pajak dan hukum ketenagakerjaan</td></tr>
-                <tr><td><strong>Kepentingan Sah</strong> (Pasal 20(2)(f))</td><td>Data penggunaan, rating, <em>Profile Strength</em></td><td>Peningkatan platform, pencegahan penipuan, keamanan</td></tr>
-            </table>
-
-            <h2>4. Bagaimana Kami Menggunakan Informasi Anda</h2>
-            <ul>
-                <li>Pembuatan akun, autentikasi (WhatsApp OTP), dan manajemen profil</li>
-                <li>Pencocokan pekerjaan — menghubungkan Pekerja dengan shift yang relevan; <em>Profile Strength</em> mempengaruhi visibilitas</li>
-                <li>Manajemen shift — lamaran, perekrutan, check-in/out, penyelesaian</li>
-                <li>Pemrosesan pembayaran — pengisian saldo Perusahaan, pencairan pembayaran Pekerja</li>
-                <li>Verifikasi dokumen — peninjauan admin atas CV dan video</li>
-                <li>Sistem rekomendasi dan manajemen rating/reputasi</li>
-                <li>Komunikasi — notifikasi, pembaruan, dukungan</li>
-                <li>Peningkatan platform — analitik, riset, pencegahan penipuan</li>
-                <li>Kepatuhan hukum — hukum ketenagakerjaan, pajak, dan perlindungan data Indonesia</li>
-            </ul>
-
-            <h2>5. Bagaimana Kami Membagikan Informasi Anda</h2>
-            <h3>5.1 Antar Pengguna</h3>
-            <p>Profil Pekerja (nama, foto, pengalaman, dokumen, rekomendasi, rating, <em>Profile Strength</em>) dapat dilihat oleh Perusahaan. Informasi Perusahaan dapat dilihat oleh Pekerja saat menelusuri shift.</p>
-
-            <h3>5.2 Dengan Penyedia Layanan</h3>
-            <table>
-                <tr><th>Penyedia</th><th>Data</th><th>Lokasi</th></tr>
-                <tr><td>Bubble.io (hosting)</td><td>Semua data platform</td><td>Amerika Serikat</td></tr>
-                <tr><td>WhatsApp/Meta (OTP)</td><td>Nomor telepon</td><td>Amerika Serikat</td></tr>
-                <tr><td>Telegram (notifikasi admin)</td><td>Minimal (hanya nama)</td><td>Dubai</td></tr>
-            </table>
-            <p>Semua prosesor terikat oleh Perjanjian Pemrosesan Data sesuai UU PDP Pasal 35.</p>
-
-            <h3>5.3 Yang TIDAK Kami Bagikan</h3>
-            <ul>
-                <li>Kami <strong>tidak menjual</strong> data pribadi Anda</li>
-                <li>Kami <strong>tidak membagikan</strong> data kepada pengiklan tanpa persetujuan eksplisit</li>
-                <li>Kami <strong>tidak membagikan</strong> detail rekening bank/e-wallet Pekerja kepada Perusahaan</li>
-            </ul>
-
-            <h2>6. Data Selfie dan Foto</h2>
-            <p>Foto selfie dan video presentasi diklasifikasikan sebagai <strong>Data Pribadi yang Bersifat Spesifik</strong> berdasarkan UU PDP Pasal 4(2). Persetujuan eksplisit terpisah dikumpulkan pada saat pengambilan. Foto:</p>
-            <ul>
-                <li>Digunakan semata-mata untuk verifikasi kehadiran</li>
-                <li>Dapat dilihat oleh Perusahaan yang merekrut dan admin Indogig</li>
-                <li>Disimpan selama 3 tahun dari tanggal shift</li>
-                <li><strong>Tidak</strong> digunakan untuk pengenalan wajah atau profiling biometrik</li>
-            </ul>
-
-            <h2>7. Penyimpanan Data</h2>
-            <table>
-                <tr><th>Jenis Data</th><th>Penyimpanan</th></tr>
-                <tr><td>Data akun</td><td>Akun aktif + 2 tahun</td></tr>
-                <tr><td>Catatan shift & selfie</td><td>3 tahun dari tanggal shift</td></tr>
-                <tr><td>Catatan keuangan</td><td>5 tahun (hukum pajak)</td></tr>
-                <tr><td>Dokumen (CV, video)</td><td>Akun aktif + 1 tahun</td></tr>
-                <tr><td>Rekomendasi</td><td>Sampai Pekerja menghapus</td></tr>
-                <tr><td>Data Pemberi Rekomendasi</td><td>Sampai dihapus atau 2 tahun</td></tr>
-                <tr><td>Data log/penggunaan</td><td>1 tahun</td></tr>
-            </table>
-
-            <h2>8. Keamanan Data</h2>
-            <p>Kami menerapkan enkripsi (TLS/SSL), infrastruktur aman, kontrol akses, audit berkala, dan pembatasan tambahan untuk Data Pribadi Spesifik. Anda bertanggung jawab menjaga kerahasiaan kata sandi dan kode OTP Anda.</p>
-
-            <h2>9. Hak-Hak Anda (UU PDP No. 27/2022)</h2>
-            <ul>
-                <li><strong>Akses</strong> — meminta salinan data Anda</li>
-                <li><strong>Koreksi</strong> — memperbaiki data yang tidak akurat</li>
-                <li><strong>Penghapusan</strong> — meminta penghapusan data (tunduk pada kewajiban hukum)</li>
-                <li><strong>Pembatasan Pemrosesan</strong> — membatasi pemrosesan dalam keadaan tertentu</li>
-                <li><strong>Portabilitas Data</strong> — menerima data dalam format yang dapat dibaca mesin</li>
-                <li><strong>Penarikan Persetujuan</strong> — kapan saja</li>
-                <li><strong>Keberatan</strong> — terhadap pemrosesan berdasarkan kepentingan sah atau pemasaran langsung</li>
-                <li><strong>Penjelasan Keputusan Otomatis</strong> — termasuk skor <em>Profile Strength</em></li>
-            </ul>
-            <p>Hubungi: <strong>info@indogig.com</strong>. Respons dalam 30 hari. Hak mengajukan keluhan ke lembaga pengawas (UU PDP Pasal 58-60).</p>
-
-            <h2>10. Pemberitahuan Pelanggaran Data</h2>
-            <p>Sesuai UU PDP Pasal 46, dalam hal terjadi pelanggaran data, kami akan memberitahu lembaga pengawas (Komdigi) dan pengguna yang terpengaruh dalam <strong>3 x 24 jam</strong>.</p>
-
-            <h2>11. Transfer Data Internasional</h2>
-            <p>Data dapat disimpan/diproses di Amerika Serikat (Bubble.io, Meta) dan Dubai (Telegram). Sesuai UU PDP Pasal 56, kami memastikan standar perlindungan yang setara dan memelihara Perjanjian Pemrosesan Data dengan semua prosesor di luar negeri.</p>
-
-            <h2>12. Perubahan Kebijakan Ini</h2>
-            <p>Perubahan signifikan akan diberitahukan setidaknya <strong>30 hari</strong> sebelumnya. Untuk perubahan material yang mempengaruhi dasar hukum atau kategori data, kami akan meminta persetujuan baru bila diperlukan.</p>
-
-            <h2>13. Hubungi Kami</h2>
-            <p><strong>PT INDOGIG HRTECH INDONESIA</strong><br>
-            Jalan Sunset Road Tengah Bangunan No. 9<br>
-            Seminyak, Kuta, Badung, Bali 80361, Indonesia</p>
-            <p>Email: <strong>info@indogig.com</strong><br>
-            Telepon: <strong>+62 818 0370 8605</strong></p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Indogig. All rights reserved.</p>
+        <p>&copy; 2026 PT INDOGIG HRTECH INDONESIA. All rights reserved.</p>
         <p style="margin-top: 0.5rem;">
-            <a href="user-agreement.html">Terms</a>
-            <a href="privacy-policy.html">Privacy</a>
+            <a href="user-agreement.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
             <a href="index.html">Home</a>
         </p>
         <p style="margin-top: 0.5rem; font-size: 0.8rem;">Jalan Sunset Road Tengah Building No. 9, Seminyak, Kuta, Badung, Bali 80361</p>
@@ -440,6 +1002,7 @@
             document.querySelectorAll('.lang-switch button').forEach(el => el.classList.remove('active'));
             document.getElementById('content-' + lang).classList.add('active');
             document.getElementById('btn-' + lang).classList.add('active');
+            document.title = lang === 'id' ? 'Kebijakan Privasi — Indogig' : 'Privacy Policy — Indogig';
         }
     </script>
 </body>

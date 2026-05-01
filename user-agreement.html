@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Use — Indogig</title>
-    <meta name="description" content="Indogig Terms of Use — rules governing your use of our workforce platform.">
+    <meta name="description" content="Indogig Terms of Use — full legal document in English and Indonesian.">
     <link rel="canonical" href="https://indogig.com/user-agreement.html">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -36,11 +36,13 @@
             text-decoration: none;
         }
         nav a.logo span { color: var(--primary-yellow); }
+        nav .nav-links { display: flex; align-items: center; }
         nav .nav-links a {
             color: var(--text-gray); text-decoration: none; margin-left: 1.5rem;
             font-size: 0.9rem; font-weight: 500;
         }
         nav .nav-links a:hover { color: var(--dark-slate); }
+        nav .nav-links a.active { color: var(--dark-slate); font-weight: 600; }
         .lang-switch {
             display: inline-flex; gap: 0.5rem; margin-left: 1.5rem;
         }
@@ -53,47 +55,58 @@
             background: var(--dark-slate); color: #fff; border-color: var(--dark-slate);
         }
         .container {
-            max-width: 800px; margin: 0 auto;
-            padding: 7rem 2rem 4rem;
+            max-width: 820px; margin: 0 auto;
+            padding: 6.5rem 2rem 4rem;
         }
-        h1 {
-            font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;
+        .legal-content h1 {
+            font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem;
             color: var(--dark-slate);
         }
-        .subtitle {
-            color: var(--text-gray); font-size: 0.95rem; margin-bottom: 2rem;
-            padding-bottom: 2rem; border-bottom: 1px solid var(--border-light);
+        .legal-content h2 {
+            font-size: 1.3rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 0.75rem;
+            color: var(--dark-slate);
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-light);
         }
-        h2 {
-            font-size: 1.3rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem;
+        .legal-content h2:first-of-type {
+            border-top: none; padding-top: 0;
+        }
+        .legal-content h3 {
+            font-size: 1.05rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem;
             color: var(--dark-slate);
         }
-        h3 {
-            font-size: 1.05rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem;
-            color: var(--dark-slate);
+        .legal-content p {
+            font-size: 0.95rem; color: #374151; margin-bottom: 0.75rem;
         }
-        p, li { font-size: 0.95rem; color: #374151; margin-bottom: 0.75rem; }
-        ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
-        li { margin-bottom: 0.4rem; }
-        table {
+        .legal-content ul, .legal-content ol {
+            padding-left: 1.5rem; margin-bottom: 1rem;
+        }
+        .legal-content li {
+            font-size: 0.95rem; color: #374151; margin-bottom: 0.4rem;
+        }
+        .legal-content table {
             width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
         }
-        th, td {
-            text-align: left; padding: 0.6rem 0.8rem;
+        .legal-content th, .legal-content td {
+            text-align: left; padding: 0.55rem 0.7rem;
             border: 1px solid var(--border-light);
+            vertical-align: top;
         }
-        th { background: #F9FAFB; font-weight: 600; color: var(--dark-slate); }
-        td { color: #374151; }
-        strong { font-weight: 600; }
-        a { color: #2563EB; }
-        .highlight {
-            background: #FEF3C7; padding: 1rem 1.25rem; border-radius: 8px;
-            border-left: 4px solid var(--primary-yellow); margin: 1.5rem 0;
+        .legal-content th {
+            background: #F9FAFB; font-weight: 600; color: var(--dark-slate);
         }
-        .highlight-blue {
-            background: #EFF6FF; padding: 1rem 1.25rem; border-radius: 8px;
-            border-left: 4px solid #3B82F6; margin: 1.5rem 0;
+        .legal-content td { color: #374151; }
+        .legal-content strong { font-weight: 600; }
+        .legal-content em { font-style: italic; }
+        .legal-content a { color: #2563EB; }
+        .legal-content hr {
+            border: none; border-top: 1px solid var(--border-light);
+            margin: 2rem 0;
+        }
+        .effective-date {
+            color: var(--text-gray); font-size: 0.95rem; margin-bottom: 2rem;
+            padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-light);
         }
         footer {
             background: var(--dark-slate); color: rgba(255,255,255,0.7);
@@ -105,9 +118,10 @@
         .lang-content.active { display: block; }
         @media (max-width: 640px) {
             .container { padding: 5.5rem 1.25rem 3rem; }
-            h1 { font-size: 1.5rem; }
-            table { font-size: 0.8rem; }
-            th, td { padding: 0.4rem 0.5rem; }
+            .legal-content h1 { font-size: 1.5rem; }
+            .legal-content h2 { font-size: 1.15rem; }
+            .legal-content table { font-size: 0.8rem; }
+            .legal-content th, .legal-content td { padding: 0.4rem 0.5rem; }
             nav .nav-links a { margin-left: 0.75rem; font-size: 0.8rem; }
         }
     </style>
@@ -117,8 +131,8 @@
         <a href="index.html" class="logo">Indo<span>gig</span></a>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="user-agreement.html" style="color: var(--dark-slate);">Terms</a>
-            <a href="privacy-policy.html">Privacy</a>
+            <a href="user-agreement.html" class="active">Terms</a>
+            <a href="privacy-policy.html" class="">Privacy</a>
             <div class="lang-switch">
                 <button id="btn-en" class="active" onclick="switchLang('en')">EN</button>
                 <button id="btn-id" onclick="switchLang('id')">ID</button>
@@ -127,298 +141,978 @@
     </nav>
 
     <div class="container">
-        <!-- ENGLISH VERSION -->
         <div id="content-en" class="lang-content active">
-            <h1>Terms of Use</h1>
-            <p class="subtitle">Effective: May 1, 2026 &nbsp;|&nbsp; Last modified: May 1, 2026</p>
-
-            <h2>1. Introduction</h2>
-            <p>These Terms of Use ("Terms") govern your access to and use of the Indogig platform operated by <strong>PT INDOGIG HRTECH INDONESIA</strong> ("Indogig," "we," "us"), registered at Jalan Sunset Road Tengah Building No. 9, Seminyak, Kuta, Badung, Bali, Indonesia (AHU-0090431.AH.01.01.Tahun 2023, NIB 2911230067256, KBLI 78104, TD PSE Domestik).</p>
-            <p>By creating an account or using the Services, you agree to these Terms, our <a href="privacy-policy.html">Privacy Policy</a>, and applicable platform agreements.</p>
-
-            <h2>2. About Indogig</h2>
-            <p>Indogig is a workforce technology platform connecting Companies with Workers for shift-based work in Indonesia. Indogig is registered under KBLI 78104 and operates as a <strong>technology-enabled labor supply facilitator</strong>.</p>
-            <div class="highlight">
-                <p style="margin:0;">Indogig is <strong>not</strong> a co-employer. Indogig does <strong>not</strong> supervise or control day-to-day work. The direct relationship between Company and Worker is governed by the Direct Company-Worker Agreement.</p>
+            <div class="legal-content">
+                <h1>INDOGIG TERMS OF USE</h1>
+<p><strong>Effective date:</strong> May 1, 2026
+<strong>Last modified:</strong> May 1, 2026</p>
+<hr />
+<h2>1. INTRODUCTION AND ACCEPTANCE</h2>
+<p>Welcome to Indogig! These Terms of Use ("Terms") govern your access to and use of the Indogig platform, including our website, mobile applications, and all related services (collectively, the "Services") operated by <strong>PT INDOGIG HRTECH INDONESIA</strong> ("Indogig," "we," "us," or "our").</p>
+<p><strong>PT INDOGIG HRTECH INDONESIA</strong> is an HR technology company registered and based at Jalan Sunset Road Tengah Building No. 9, Seminyak, Kuta, Badung, Bali, Indonesia. Indogig is officially registered under AHU-0090431.AH.01.01.Tahun 2023 dated November 27, 2023, NIB 2911230067256, holding Sertifikat Standar KBLI 78104 (Aktivitas Penyediaan Tenaga Kerja Lainnya) and TD PSE Domestik.</p>
+<p>By creating an account, accessing, or using the Services, you agree to be bound by these Terms, our Privacy Policy, and any applicable platform agreements (including the Part-Time/Gig Worker Agreement, Company Registration Agreement, and Direct Company-Worker Agreement). If you do not agree to these Terms, do not use the Services.</p>
+<p>For questions about these Terms, contact us at: <strong>info@indogig.com</strong> or <strong>+62 818 0370 8605</strong>.</p>
+<hr />
+<h2>2. ABOUT INDOGIG AND THE SERVICES</h2>
+<h3>2.1 Platform Description</h3>
+<p>Indogig is a workforce technology platform that connects businesses ("Companies") with part-time, temporary, and gig-based workers ("Workers") for shift-based work opportunities in Indonesia. The platform enables:</p>
+<ul>
+<li><strong>Workers</strong> to create profiles, build professional reputations, apply for available shifts, track work hours, and receive payments</li>
+<li><strong>Companies</strong> to post shift-based job openings, review Worker profiles, hire and manage temporary staff, and process payments</li>
+</ul>
+<h3>2.2 Role of Indogig</h3>
+<p>Indogig is registered under KBLI 78104 (Aktivitas Penyediaan Tenaga Kerja Lainnya) and operates as a <strong>technology-enabled labor supply facilitator</strong>. Indogig provides the digital infrastructure that connects Companies with Workers but does not directly employ, supervise, or control Workers during their shift engagements.</p>
+<p>Specifically:</p>
+<ul>
+<li>Indogig is <strong>not</strong> a co-employer or joint employer of any Worker</li>
+<li>Indogig does <strong>not</strong> direct, supervise, or control the day-to-day work performed by Workers during shifts</li>
+<li>The direct work relationship between a Company and a Worker is governed by the Direct Company-Worker Agreement accepted by both parties through the platform</li>
+<li>Indogig facilitates payment processing as an optional service (IndoGig Payment) but is not a party to the compensation agreement between Company and Worker</li>
+</ul>
+<h3>2.3 Non-Discrimination</h3>
+<p>In accordance with UU Ketenagakerjaan No. 13/2003 Art. 5-6, Indogig prohibits discrimination on the platform. Companies must not discriminate against Workers based on gender, ethnicity, race, religion, skin color, political views, disability, or any other protected characteristic when posting jobs, reviewing applications, or making hiring decisions. Workers who experience discrimination may report it to info@indogig.com. Violations may result in account suspension or termination.</p>
+<hr />
+<h2>3. ELIGIBILITY AND ACCOUNT REGISTRATION</h2>
+<h3>3.1 Eligibility</h3>
+<p>To use the Services, you must:</p>
+<ul>
+<li>Be at least <strong>18 years of age</strong> (for Workers), unless the conditions in Section 3.2 are met</li>
+<li>Have legal authority to act on behalf of a company (for Company accounts)</li>
+<li>Have a valid Indonesian phone number capable of receiving WhatsApp messages</li>
+<li>Provide accurate, complete, and current registration information</li>
+</ul>
+<h3>3.2 Workers Aged 15-17 (With Parental Consent)</h3>
+<p>In accordance with UU Ketenagakerjaan No. 13/2003 Art. 68-69 and Kepmenaker 235/2003, Workers aged 15-17 may register only under the following conditions:</p>
+<ul>
+<li><strong>Written parental or guardian consent</strong> must be uploaded during registration</li>
+<li>Maximum <strong>3 hours of work per day</strong> for Workers aged 15</li>
+<li><strong>No night shifts</strong> (work must be performed between 06:00 and 18:00)</li>
+<li><strong>No hazardous work environments</strong> — prohibited categories include: bars, venues serving alcohol, jobs involving heavy lifting, sharp objects, hazardous chemicals, or other conditions specified under Kepmenaker 235/2003</li>
+<li>Work must not interfere with the Worker's schooling obligations</li>
+</ul>
+<p>Indogig reserves the right to restrict the job categories and shift times available to Workers under 18. Failure to comply with these requirements may result in account termination.</p>
+<h3>3.3 Account Creation</h3>
+<p>To access the Services, you must register for an account ("Account"):</p>
+<ol>
+<li>Select your role: <strong>Worker</strong> or <strong>Company</strong></li>
+<li>Enter your phone number and verify via <strong>WhatsApp OTP</strong> (One-Time Password)</li>
+<li>Complete registration by providing required personal or business information</li>
+<li>Create a secure password</li>
+<li>Complete the onboarding process</li>
+</ol>
+<h3>3.4 Account Security</h3>
+<p>You are solely responsible for:</p>
+<ul>
+<li>Maintaining the confidentiality of your password and OTP codes</li>
+<li>All activities that occur under your Account</li>
+<li>Immediately notifying us at info@indogig.com if you suspect unauthorized access</li>
+</ul>
+<p>You must <strong>not</strong>:</p>
+<ul>
+<li>Share your account credentials with any third party</li>
+<li>Create multiple accounts for the same person or entity</li>
+<li>Transfer or assign your Account to another person</li>
+</ul>
+<p>Indogig is not liable for any loss or damage arising from unauthorized use of your Account.</p>
+<hr />
+<h2>4. WORKER-SPECIFIC TERMS</h2>
+<h3>4.1 Profile and Onboarding</h3>
+<p>Workers must complete the onboarding process, which includes providing:</p>
+<ul>
+<li>Personal information and profile photo</li>
+<li>Preferred work location and job categories</li>
+<li>Work experience level and availability</li>
+<li>Notification preferences</li>
+</ul>
+<h3>4.2 Document Submission and Verification</h3>
+<p>To build a complete profile and maximize visibility to Companies, Workers should upload the following documents:</p>
+<ul>
+<li><strong>CV/Resume</strong> (any file format)</li>
+<li><strong>Video self-presentation</strong> (up to 1 minute, MP4/MOV, max 10 MB, recommended portrait 9:16, 24+ FPS)</li>
+</ul>
+<p>These documents significantly affect your Profile Strength and visibility in Company search results. All documents are subject to review and verification by Indogig administrators. Documents may be approved or rejected (with a stated reason). Rejected documents may be resubmitted. Review typically takes 24-72 hours.</p>
+<p><strong>Note:</strong> Indogig does <strong>not</strong> collect or store government-issued identification documents (KTP, SKCK, NPWP, etc.) on the platform.</p>
+<h3>4.3 Profile Strength</h3>
+<p>Workers have a Profile Strength indicator that reflects profile completeness:</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Profile Strength Increase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CV upload (verified)</td>
+<td>+20%</td>
+</tr>
+<tr>
+<td>Video presentation (verified)</td>
+<td>+40%</td>
+</tr>
+<tr>
+<td>Recommendation received</td>
+<td>+10%</td>
+</tr>
+<tr>
+<td>Other profile fields</td>
+<td>Remaining %</td>
+</tr>
+</tbody>
+</table>
+<p>Profile Strength affects visibility to Companies in search results. Workers with higher Profile Strength are more likely to be discovered by Companies. This constitutes automated profiling; Workers may request an explanation of how Profile Strength is calculated by contacting info@indogig.com.</p>
+<h3>4.4 Recommendations</h3>
+<p>Workers may request professional recommendations by sharing a unique link. Recommenders complete a web form (no app account required) that includes:</p>
+<ul>
+<li>Strength tags (Communication, Punctuality, Team Player, Follow Instructions, Dress Code, Fast Learner, Great Attitude, Highly Skilled)</li>
+<li>Free-text comment</li>
+<li>Relationship type (coworker, manager, subordinate, client, friend)</li>
+<li>Name and phone number (verified via WhatsApp OTP)</li>
+<li>Optional email</li>
+</ul>
+<p>Workers control the visibility of their recommendations (show, hide, or delete).</p>
+<h3>4.5 Applying for Shifts</h3>
+<ul>
+<li>Workers browse available positions filtered by category, location, date, and rate</li>
+<li>When applying, Workers select specific days they are available to work</li>
+<li>Applications are reviewed by Companies, who may approve specific days and issue a hire</li>
+<li>Workers can view their application status in "My Gig's Shifts"</li>
+</ul>
+<h3>4.6 Performing Work</h3>
+<p>Once hired:</p>
+<ul>
+<li>Workers can view confirmed shift details, schedules, and Company instructions</li>
+<li><strong>Check-in:</strong> Available 15 minutes before shift start. Requires a selfie photo (see Privacy Policy Section 6 for selfie data handling). Starts the work timer automatically.</li>
+<li><strong>Check-out:</strong> At the end of the shift. Requires a selfie photo. Records shift completion.</li>
+<li>Workers must perform work professionally, in compliance with applicable laws, workplace policies, and safety rules</li>
+</ul>
+<h3>4.7 Payment</h3>
+<ul>
+<li>Payment amounts and schedules are as stated in the job posting</li>
+<li>Two payment methods exist:</li>
+<li><strong>Direct Payment:</strong> Company pays the Worker on-site (cash). Indogig is not involved in the money flow and does not guarantee Direct Payments.</li>
+<li><strong>IndoGig Payment:</strong> After the Company confirms completed hours, Indogig's administration transfers payment to the Worker's registered bank account or e-wallet within <strong>24 hours</strong>. Workers must add a valid bank account or e-wallet to receive IndoGig Payment disbursements.</li>
+<li>Workers are solely responsible for personal taxes, insurance, and any legal obligations arising from their earnings</li>
+</ul>
+<h3>4.8 Social Security (BPJS Ketenagakerjaan)</h3>
+<p>In accordance with PP 35/2021 and PP 44/2015, Workers engaged through the platform may be entitled to workplace accident insurance (JKK) and death insurance (JKM) coverage. Indogig strongly encourages all Workers to register for BPJS Ketenagakerjaan BPU (Bukan Penerima Upah) through the official channels (daftar.bpjsketenagakerjaan.go.id or JMO app). Companies engaging Workers through IndoGig Payment are encouraged to ensure basic JKK coverage is in place for Workers performing shifts at their premises (see Section 5.7).</p>
+<h3>4.9 Worker Conduct</h3>
+<p>Workers agree to:</p>
+<ul>
+<li>Perform duties professionally and responsibly</li>
+<li>Arrive on time and complete shifts as agreed</li>
+<li>Follow Company instructions within the scope of the posted job</li>
+<li>Keep confidential any non-public Company information obtained during work (this obligation continues after the engagement ends)</li>
+<li>Not engage in any illegal, unsafe, or unprofessional conduct during shifts</li>
+</ul>
+<hr />
+<h2>5. COMPANY-SPECIFIC TERMS</h2>
+<h3>5.1 Registration and Onboarding</h3>
+<p>Companies must complete the onboarding process, providing:</p>
+<ul>
+<li>Company name and type (Cafe, Restaurant, Bar, Hotel, Event &amp; Catering, Other)</li>
+<li>Work location(s)</li>
+<li>Account creator's role within the company</li>
+<li>Required Worker roles</li>
+<li>Shift frequency and duration preferences</li>
+<li>Financial/billing information</li>
+</ul>
+<p>The person registering confirms they have authority to act on behalf of the Company.</p>
+<h3>5.2 Balance and Payments</h3>
+<p>To use <strong>IndoGig Payment</strong> (platform-facilitated payments):</p>
+<ol>
+<li>Navigate to Billing &amp; Wallet and request a top-up amount</li>
+<li>The system generates a unique <strong>reference code</strong> (format: INDO-ORG-YYYY-XXXX)</li>
+<li>Make a bank transfer including the reference code</li>
+<li>Submit the payment confirmation through the app</li>
+<li>Indogig administration verifies the transfer and credits the balance (processing time: up to 24 hours)</li>
+</ol>
+<p>Balance funds are held by Indogig in a designated account and are earmarked for Worker payment disbursements. These funds are not general Indogig operating assets and are protected for their intended purpose of paying Workers for completed shifts.</p>
+<p>For <strong>Direct Payment</strong> shifts, the Company pays Workers directly (cash on-site). Indogig does not participate in or guarantee direct payments. However, Indogig's shift records (check-in/out selfies and timestamps) constitute evidence of work performed, and Companies selecting Direct Payment acknowledge an obligation to pay the posted rate for confirmed and completed hours.</p>
+<h3>5.3 Creating Orders and Positions</h3>
+<p>Companies create orders ("Orders") specifying:</p>
+<ul>
+<li>Location, date range, shift times, and break duration</li>
+<li>Payment method (Direct Payment or IndoGig Payment)</li>
+<li>Assigned manager</li>
+<li>One or more Positions (roles), each with: role name, quantity of Workers needed, hourly rate (IDR), general and role-specific instructions, optional file attachments (dress code, forms, etc.)</li>
+</ul>
+<p><strong>Break duration</strong> affects pay calculation: worked hours = shift end time - shift start time - break minutes. This is clearly displayed in the Order review before publishing.</p>
+<h3>5.4 Hiring and Managing Workers</h3>
+<p>After publishing an Order:</p>
+<ul>
+<li>Companies review incoming Worker applications including profiles, documents, and selected days</li>
+<li>Companies may approve specific Workers for specific days (Hire)</li>
+<li>Companies can cancel individual shifts or assignments as needed (see Section 7 for cancellation policy)</li>
+<li>Communication with Workers is facilitated via WhatsApp integration ("Message Worker" opens WhatsApp)</li>
+</ul>
+<h3>5.5 Shift Confirmation and Hour Adjustment</h3>
+<p>On the day of the shift:</p>
+<ul>
+<li>Companies can view Worker check-in status (selfie photo and timestamp)</li>
+<li>After the shift, Companies review check-in/check-out times and automatically calculated worked hours</li>
+<li>Companies may adjust reported hours with a written explanation</li>
+<li>If a Worker disagrees with an hour adjustment, the Worker may contact Indogig support for dispute mediation (see Section 7.2)</li>
+<li>Companies confirm the shift as completed, triggering the payment process (for IndoGig Payment)</li>
+<li>Companies may rate Workers after shift completion</li>
+</ul>
+<h3>5.6 Company Responsibilities</h3>
+<p>Companies agree that:</p>
+<ol>
+<li>They are fully responsible for Worker supervision, workplace safety, and legal compliance during shifts</li>
+<li>Workers may perform work <strong>only according to the scope, hours, duration, and location</strong> posted on the Indogig app. Any work, task, or instruction outside the posted job details is solely the responsibility of the Company and the Worker. Indogig bears no responsibility for work performed outside the job details listed on the platform.</li>
+<li>They are responsible for all payments to Workers, including timely payment at the posted rate for confirmed hours</li>
+<li>They will resolve disputes directly with Workers, with Indogig available to provide platform data (shift records, selfies, timestamps) upon request</li>
+<li>Indogig is indemnified from claims, disputes, or damages arising from Company actions, workplace conditions, or job postings</li>
+<li>Companies must comply with all applicable Indonesian labor laws, including UU 13/2003 and UU Cipta Kerja, in their engagement of Workers</li>
+</ol>
+<h3>5.7 Social Security and Insurance</h3>
+<p>Companies are strongly encouraged to ensure that Workers performing shifts at their premises have basic workplace accident insurance (JKK) coverage under BPJS Ketenagakerjaan, either through the Company's own BPJS enrollment or by verifying that Workers have self-enrolled as BPU participants. Indogig may, in the future, integrate BPJS enrollment as a platform feature.</p>
+<h3>5.8 Non-Circumvention</h3>
+<p>Companies are prohibited from entering into direct employment agreements, long-term contracts, or any engagement outside the Indogig platform with Workers first introduced through the app, for a period of <strong>12 months</strong> from the date of the last shift completed through the platform with that Worker.</p>
+<p><strong>Alternative:</strong> Instead of circumventing the platform, Companies may:</p>
+<ul>
+<li>Continue engaging Workers through Indogig's platform features for extended or recurring work</li>
+<li>Pay a one-time <strong>placement fee</strong> equal to the equivalent of 1 month of the Worker's average shift earnings on the platform to transition the Worker to a direct employment arrangement</li>
+</ul>
+<p>Violation of this clause without paying the placement fee may result in account suspension or termination and may give rise to a claim for damages.</p>
+<hr />
+<h2>6. PAYMENTS AND FEES</h2>
+<h3>6.1 Platform Fees</h3>
+<p>Indogig may charge service fees for the use of certain platform features. Any applicable fees will be clearly communicated before you incur them. Current fee structure is displayed in the app.</p>
+<h3>6.2 IndoGig Payment Process</h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Company pre-funds balance via bank transfer with unique reference code</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Indogig admin verifies and credits the balance</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Worker completes shift (check-in selfie → work → check-out selfie)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Company reviews and confirms worked hours (may adjust with explanation)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Indogig admin transfers payment to Worker's bank/e-wallet within 24 hours</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Shift status updates to "Paid"</td>
+</tr>
+</tbody>
+</table>
+<h3>6.3 Payment Disputes</h3>
+<ul>
+<li>Disagreements about hours worked should first be discussed between the Company and the Worker</li>
+<li>Indogig will provide shift records (check-in/out timestamps, selfie photos, confirmed hours, and any hour adjustments with explanations) upon request from either party</li>
+<li>If a Company has confirmed shift completion and IndoGig Payment is selected, Indogig will process the payment to the Worker as confirmed</li>
+<li>For Direct Payment disputes, Indogig's shift records serve as evidence but Indogig does not guarantee or enforce direct payments</li>
+</ul>
+<h3>6.4 Taxes</h3>
+<ul>
+<li>Workers are solely responsible for any personal income taxes arising from their earnings</li>
+<li>Companies are responsible for any applicable tax obligations related to engaging Workers</li>
+<li>Indogig does not withhold taxes on behalf of either party unless required by law</li>
+</ul>
+<hr />
+<h2>7. CANCELLATIONS, NO-SHOWS, AND SHIFT DISPUTES</h2>
+<h3>7.1 Cancellation Policy</h3>
+<p><strong>By Workers:</strong>
+- Workers may cancel a confirmed shift at any time before check-in
+- Cancellations less than <strong>24 hours</strong> before the shift start time are recorded on the Worker's profile and negatively affect their reliability rating
+- Repeated late cancellations (3 or more within 30 days) may result in temporary account suspension</p>
+<p><strong>By Companies:</strong>
+- Companies may cancel a shift or individual Worker assignment at any time before the shift starts
+- If a Worker has already been hired and the Company cancels less than <strong>12 hours</strong> before the shift start time, the Company acknowledges that the Worker may have foregone other opportunities. Companies are encouraged (but not required by these Terms) to offer partial compensation in such cases.
+- Repeated cancellations after hiring may negatively affect the Company's reputation on the platform</p>
+<h3>7.2 No-Shows</h3>
+<ul>
+<li>If a Worker does not check in within <strong>30 minutes</strong> of the scheduled shift start time, the Company may mark the Worker as a <strong>no-show</strong></li>
+<li>No-shows are recorded on the Worker's profile, reduce their reliability rating, and affect their Profile Strength</li>
+<li>Workers who believe they were incorrectly marked as a no-show may dispute it by contacting info@indogig.com within <strong>48 hours</strong>, providing evidence (e.g., communication with Company, travel disruption)</li>
+<li>Repeated no-shows (3 or more within 30 days) may result in temporary or permanent account suspension</li>
+</ul>
+<h3>7.3 Hour Adjustment Disputes</h3>
+<ul>
+<li>If a Worker disagrees with a Company's hour adjustment, the Worker may contact info@indogig.com within <strong>72 hours</strong> of the shift confirmation</li>
+<li>Indogig will review the check-in/check-out timestamps and selfie evidence, the Company's stated reason for the adjustment, and any additional information from both parties</li>
+<li>Indogig's determination is advisory and non-binding, but for IndoGig Payment shifts, Indogig will process payment based on the reviewed evidence</li>
+</ul>
+<h3>7.4 Force Majeure for Shifts</h3>
+<p>Neither Companies nor Workers shall be penalized for cancellations or no-shows caused by force majeure events, including but not limited to: natural disasters (earthquakes, volcanic eruptions, floods), severe weather, pandemics, government-imposed restrictions, or public safety emergencies. Workers and Companies should notify each other and Indogig as soon as possible. No-show or cancellation penalties will not be applied in verified force majeure situations.</p>
+<h3>7.5 Rating Disputes</h3>
+<ul>
+<li>Companies may rate Workers after shift completion (1-5 scale)</li>
+<li>Workers who believe they received an unfair rating may submit a dispute to info@indogig.com within <strong>14 days</strong> of receiving the rating, explaining why the rating is unjust</li>
+<li>Indogig may review the dispute and, at its discretion, remove or adjust ratings that are found to be: clearly fraudulent, discriminatory, retaliatory (e.g., in response to a legitimate dispute), or based on factors outside the Worker's control</li>
+<li>Ratings removed by Indogig do not affect the Company's standing unless a pattern of abuse is identified</li>
+</ul>
+<hr />
+<h2>8. INTELLECTUAL PROPERTY</h2>
+<h3>8.1 Indogig's Intellectual Property</h3>
+<p>All rights, title, and interest in the Services (including software, design, logos, trademarks, content, and documentation) belong to Indogig or its licensors. You may not:</p>
+<ul>
+<li>Copy, modify, distribute, sell, or lease any part of the Services</li>
+<li>Reverse engineer, decompile, or disassemble the Services</li>
+<li>Use Indogig's trademarks, logos, or brand elements without prior written permission</li>
+<li>Create derivative works based on the Services</li>
+</ul>
+<h3>8.2 User Content</h3>
+<p>You retain ownership of content you submit to the platform (CV, videos, profile information, job postings, reviews). By submitting content, you grant Indogig a non-exclusive, royalty-free license to use, display, reproduce, and distribute your content <strong>as necessary to operate the Services within Indonesia and to promote the Services</strong>. This license does not extend to uses unrelated to the platform. You may opt out of promotional use of your content by contacting info@indogig.com.</p>
+<p>You agree not to submit content that is unlawful, defamatory, infringing on third-party rights, or otherwise objectionable.</p>
+<h3>8.3 Feedback</h3>
+<p>If you provide suggestions, ideas, or feedback about the Services, you grant Indogig the right to use such feedback without compensation or obligation to you.</p>
+<h3>8.4 Work Product</h3>
+<p>These Terms do not govern intellectual property rights in work product created by Workers during shifts. Any IP rights in work product are a matter between the Company and the Worker, governed by their direct agreement and applicable law.</p>
+<hr />
+<h2>9. PROHIBITED ACTIVITIES</h2>
+<p>When using the Services, you must <strong>not</strong>:</p>
+<ul>
+<li>Provide false, misleading, or inaccurate information during registration or use</li>
+<li>Impersonate another person or entity</li>
+<li>Use the Services for any illegal purpose</li>
+<li>Harass, discriminate against, threaten, or abuse other users</li>
+<li>Discriminate in hiring decisions based on gender, ethnicity, race, religion, skin color, political views, disability, or other protected characteristics</li>
+<li>Scrape, crawl, or use automated tools (such as robots or spiders) to extract data from the Services</li>
+<li>Attempt to compromise the security or integrity of the Services</li>
+<li>Interfere with other users' access to the Services</li>
+<li>Use the Services to send spam, unsolicited messages, or advertisements</li>
+<li>Circumvent the platform to engage Workers or Companies directly in violation of these Terms</li>
+<li>Post content containing malware, viruses, or harmful code</li>
+<li>Violate any applicable laws, regulations, or third-party rights</li>
+</ul>
+<p>Violation of these rules may result in immediate account suspension or termination.</p>
+<hr />
+<h2>10. CONFIDENTIALITY</h2>
+<h3>10.1 User Obligations</h3>
+<p>By using the Services, you may gain access to non-public information about other users, Companies, or Workers ("Confidential Information"). You agree to:</p>
+<ul>
+<li>Use Confidential Information solely in connection with your use of the Services</li>
+<li>Not disclose Confidential Information to any third party</li>
+<li>Keep Company operational information, Worker personal details, and platform data confidential</li>
+</ul>
+<h3>10.2 Worker Confidentiality</h3>
+<p>Workers agree to keep confidential any non-public information obtained during shift assignments. This obligation continues after the engagement ends.</p>
+<hr />
+<h2>11. LIMITATION OF LIABILITY</h2>
+<h3>11.1 Platform Disclaimer</h3>
+<p>The Services are provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis. We do not warrant that:</p>
+<ul>
+<li>The Services will be uninterrupted, timely, secure, or error-free</li>
+<li>The results obtained from the Services will be accurate or reliable</li>
+<li>Any specific number of shift opportunities will be available</li>
+<li>Any specific Worker quality, reliability, or performance level is guaranteed</li>
+</ul>
+<p><strong>However</strong>, Indogig acknowledges liability for direct losses caused by demonstrable platform malfunctions within Indogig's control (e.g., a confirmed IndoGig Payment that was not disbursed due to a system error). In such cases, Indogig will rectify the issue and process the payment.</p>
+<h3>11.2 Indogig's Limited Role</h3>
+<p>Indogig:</p>
+<ul>
+<li><strong>Does not verify</strong> the qualifications, background, identity, or abilities of Workers beyond document review on the platform</li>
+<li><strong>Does not supervise</strong> the work performed by Workers during shifts</li>
+<li><strong>Does not guarantee</strong> Worker attendance, quality of work, or professional conduct</li>
+<li><strong>Does not guarantee</strong> Company payment (for Direct Payment shifts), workplace safety, or compliance with labor laws</li>
+<li><strong>Is not liable</strong> for disputes, injuries, losses, property damage, or any damages arising from the work engagement between Companies and Workers</li>
+</ul>
+<h3>11.3 Limitation of Damages</h3>
+<p>To the fullest extent permitted by Indonesian law (subject to UU 8/1999 on Consumer Protection):</p>
+<ul>
+<li>Indogig shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, business opportunities, or goodwill</li>
+<li>Indogig's total aggregate liability for all claims related to the Services shall not exceed the greater of: (a) the amount paid by you to Indogig during the twelve (12) months immediately preceding the claim, or (b) <strong>IDR 5,000,000</strong> (five million Rupiah)</li>
+<li>This limitation applies regardless of the theory of liability (contract, tort, negligence, or otherwise)</li>
+</ul>
+<p>Nothing in these Terms excludes or limits liability that cannot be excluded under applicable Indonesian law, including liability for willful misconduct (<em>kesengajaan</em>) or gross negligence (<em>kelalaian berat</em>).</p>
+<hr />
+<h2>12. INDEMNIFICATION</h2>
+<h3>12.1 By Users</h3>
+<p>You agree to indemnify, defend, and hold harmless Indogig, its directors, officers, employees, and agents from and against claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising from:</p>
+<ul>
+<li>Your violation of these Terms or any applicable law</li>
+<li>Content you submit to the platform that infringes third-party rights</li>
+<li>Your willful misconduct or gross negligence in connection with the Services</li>
+</ul>
+<h3>12.2 By Indogig</h3>
+<p>Indogig agrees to indemnify and hold harmless users from and against claims, liabilities, and damages directly caused by:</p>
+<ul>
+<li>Indogig's willful misconduct or gross negligence in operating the platform</li>
+<li>Indogig's failure to process a confirmed IndoGig Payment within the stated timeframe, resulting in direct financial loss to the Worker</li>
+</ul>
+<h3>12.3 Limitations</h3>
+<ul>
+<li>Individual Workers' indemnification obligations under Section 12.1 are capped at the total amount earned by the Worker through the platform in the preceding 12 months</li>
+<li>The indemnification in Section 12.1 does not cover disputes between Companies and Workers arising from the work engagement itself — such disputes are governed by the Direct Company-Worker Agreement</li>
+</ul>
+<hr />
+<h2>13. DISPUTE RESOLUTION</h2>
+<h3>13.1 Between Users</h3>
+<p>Disputes between Companies and Workers regarding work engagements, payments, hours, or conduct shall be resolved directly between the parties. Indogig may, at its discretion, provide shift records and platform data to assist in resolution but is not obligated to mediate or arbitrate.</p>
+<h3>13.2 Between You and Indogig</h3>
+<p>Any dispute arising from these Terms or your use of the Services shall be resolved as follows:</p>
+<ol>
+<li><strong>Negotiation:</strong> The parties will first attempt to resolve the dispute through good-faith negotiation within 30 days</li>
+<li><strong>Mediation:</strong> If negotiation fails, either party may request mediation through a mutually agreed mediator</li>
+<li><strong>Litigation:</strong> If mediation fails, the dispute shall be submitted to the competent court in <strong>Denpasar, Bali, Indonesia</strong></li>
+</ol>
+<h3>13.3 Labor Disputes</h3>
+<p>Notwithstanding Section 13.2, if a Worker claims that an employment relationship exists with Indogig or a Company, such dispute may be subject to mandatory labor dispute resolution procedures under UU No. 2/2004 (Penyelesaian Perselisihan Hubungan Industrial), including bipartite negotiation, tripartite mediation through Dinas Ketenagakerjaan, and the Industrial Relations Court (Pengadilan Hubungan Industrial). These Terms do not and cannot override mandatory labor dispute resolution procedures.</p>
+<h3>13.4 Governing Law</h3>
+<p>These Terms shall be governed by and construed in accordance with the laws of the <strong>Republic of Indonesia</strong>.</p>
+<hr />
+<h2>14. ACCOUNT SUSPENSION AND TERMINATION</h2>
+<h3>14.1 By Indogig</h3>
+<p>We may suspend or terminate your Account if:</p>
+<ul>
+<li>You violate these Terms or any applicable platform agreement</li>
+<li>You engage in fraudulent, illegal, or harmful activities</li>
+<li>You circumvent the platform to engage Workers/Companies directly without paying the applicable placement fee</li>
+<li>We are required to do so by law or government order</li>
+<li>Your Account has been inactive for more than 12 consecutive months</li>
+</ul>
+<p><strong>Process:</strong> Except in cases of fraud, illegal activity, or imminent harm, Indogig will provide at least <strong>7 days' written notice</strong> before terminating an Account, specifying the reason. You may appeal the decision by responding to the notice within the 7-day period. Indogig will review appeals in good faith.</p>
+<p><strong>During suspension or after termination:</strong> The right to receive payment for completed and confirmed shifts is preserved. Indogig will process any pending IndoGig Payments for shifts completed before the suspension/termination date.</p>
+<h3>14.2 By You</h3>
+<p>You may request termination of your Account at any time by contacting info@indogig.com. Upon termination:</p>
+<ul>
+<li>Your access to the Services will be revoked</li>
+<li>Any outstanding payment obligations (from either party) remain due</li>
+<li>Completed shift data and financial records will be retained as per our Privacy Policy</li>
+<li>Content you have shared may continue to be visible to other users as necessary for platform integrity (e.g., completed shift records, ratings)</li>
+</ul>
+<h3>14.3 Survival</h3>
+<p>The following provisions survive termination: Sections 8 (Intellectual Property), 10 (Confidentiality), 11 (Limitation of Liability), 12 (Indemnification), 13 (Dispute Resolution), and any payment obligations incurred before termination.</p>
+<hr />
+<h2>15. MODIFICATIONS TO THESE TERMS</h2>
+<p>We may update these Terms from time to time. When we make significant changes:</p>
+<ul>
+<li>We will update the "Last modified" date at the top of these Terms</li>
+<li>We will notify users through the Services or via email at least <strong>30 days</strong> before changes take effect</li>
+</ul>
+<p>Your continued use of the Services after the Notice Period constitutes acceptance of the modified Terms. If you do not agree, you must discontinue using the Services and may request Account termination.</p>
+<hr />
+<h2>16. GENERAL PROVISIONS</h2>
+<h3>16.1 Entire Agreement</h3>
+<p>These Terms, together with the Privacy Policy, Part-Time/Gig Worker Agreement, Company Registration Agreement, and Direct Company-Worker Agreement, constitute the entire agreement between you and Indogig regarding the Services.</p>
+<h3>16.2 Severability</h3>
+<p>If any provision of these Terms is found invalid or unenforceable, the remaining provisions will continue in full force and effect.</p>
+<h3>16.3 No Waiver</h3>
+<p>Indogig's failure to enforce any right or provision of these Terms does not constitute a waiver of that right or provision.</p>
+<h3>16.4 Assignment</h3>
+<p>You may not assign or transfer your rights under these Terms without Indogig's prior written consent. Indogig may assign its rights and obligations in connection with a merger, acquisition, or sale of assets, provided that Indogig notifies users at least 30 days in advance. Users who do not agree with the assignment may terminate their account.</p>
+<h3>16.5 Force Majeure</h3>
+<p>Neither Indogig nor users shall be liable for any failure or delay in performing obligations due to circumstances beyond reasonable control, including natural disasters, pandemics, government actions, internet outages, or other force majeure events. See also Section 7.4 for shift-specific force majeure provisions.</p>
+<h3>16.6 Language</h3>
+<p>These Terms are provided in English and Indonesian (Bahasa Indonesia). In the event of any conflict or inconsistency between the two versions, the Indonesian version shall prevail to the extent required by Indonesian law.</p>
+<hr />
+<h2>17. CONTACT US</h2>
+<p>If you have questions or concerns about these Terms, contact us:</p>
+<p><strong>PT INDOGIG HRTECH INDONESIA</strong>
+Jalan Sunset Road Tengah Building No. 9
+Seminyak, Kuta, Badung, Bali 80361
+Indonesia</p>
+<p>Email: <strong>info@indogig.com</strong>
+Phone: <strong>+62 818 0370 8605</strong></p>
+<p>These Terms were made and take effect on the date stated above.</p>
+<hr />
             </div>
-            <p><strong>Non-Discrimination:</strong> Per UU Ketenagakerjaan Art. 5-6, discrimination on the basis of gender, ethnicity, race, religion, disability, or other protected characteristics is prohibited.</p>
-
-            <h2>3. Eligibility</h2>
-            <ul>
-                <li><strong>Workers:</strong> Minimum <strong>18 years old</strong> (15-17 with parental consent and restrictions per UU 13/2003 Art. 68-69)</li>
-                <li><strong>Companies:</strong> Must have legal authority to act on behalf of the entity</li>
-                <li>Valid Indonesian phone number with WhatsApp required</li>
-            </ul>
-            <div class="highlight-blue">
-                <p style="margin:0;"><strong>Workers aged 15-17:</strong> Written parental consent required, max 3 hours/day (age 15), no night shifts (06:00-18:00 only), no hazardous work (bars, alcohol, heavy lifting, chemicals). Must not interfere with schooling.</p>
-            </div>
-
-            <h2>4. Worker Terms</h2>
-            <h3>Profile & Documents</h3>
-            <p>Workers complete onboarding and should upload CV and video self-presentation to maximize Profile Strength and visibility. Documents are reviewed by admin (24-72 hours). Government IDs (KTP, SKCK, NPWP) are <strong>not</strong> collected.</p>
-
-            <h3>Profile Strength</h3>
-            <table>
-                <tr><th>Action</th><th>Increase</th></tr>
-                <tr><td>CV verified</td><td>+20%</td></tr>
-                <tr><td>Video verified</td><td>+40%</td></tr>
-                <tr><td>Recommendation received</td><td>+10%</td></tr>
-            </table>
-
-            <h3>Applying & Working</h3>
-            <ul>
-                <li>Browse shifts by category, location, date, rate</li>
-                <li>Select specific days when applying</li>
-                <li><strong>Check-in:</strong> Selfie 15 min before shift, starts timer</li>
-                <li><strong>Check-out:</strong> Selfie at end, records completion</li>
-            </ul>
-
-            <h3>Payment</h3>
-            <ul>
-                <li><strong>Direct Payment:</strong> Company pays cash on-site. Indogig not involved.</li>
-                <li><strong>IndoGig Payment:</strong> Admin transfers to Worker's bank/e-wallet within 24 hours after Company confirms.</li>
-            </ul>
-            <p>Workers are responsible for personal taxes and insurance.</p>
-
-            <h3>BPJS Ketenagakerjaan</h3>
-            <p>Workers are encouraged to register for BPJS BPU (JKK/JKM) via official channels. Companies are encouraged to ensure JKK coverage for Workers at their premises.</p>
-
-            <h2>5. Company Terms</h2>
-            <h3>Balance & Payments</h3>
-            <p>For IndoGig Payment: top up balance via bank transfer with unique reference code (INDO-ORG-YYYY-XXXX). Admin verifies within 24h. Funds are earmarked for Worker payments, not general Indogig assets.</p>
-            <p>For Direct Payment: Company pays Workers directly. Indogig shift records serve as evidence of work performed.</p>
-
-            <h3>Company Responsibilities</h3>
-            <ol>
-                <li>Full responsibility for supervision, safety, and legal compliance</li>
-                <li>Workers may only work per posted job scope, hours, and location</li>
-                <li>Responsible for timely payment at posted rate</li>
-                <li>Must comply with Indonesian labor laws</li>
-                <li>Indogig indemnified from claims arising from Company actions</li>
-            </ol>
-
-            <h3>Non-Circumvention</h3>
-            <div class="highlight">
-                <p style="margin:0;">Companies may not hire Workers directly outside the platform for <strong>12 months</strong> after the last shift. <strong>Alternative:</strong> Pay a placement fee (1 month of Worker's average shift earnings) to transition to direct employment.</p>
-            </div>
-
-            <h2>6. Cancellations, No-Shows & Disputes</h2>
-            <h3>Cancellations</h3>
-            <ul>
-                <li><strong>Workers:</strong> May cancel before check-in. Late cancellations (&lt;24h) affect reliability rating. 3+ in 30 days = temporary suspension.</li>
-                <li><strong>Companies:</strong> May cancel before shift. Late cancellations (&lt;12h) acknowledged as impactful to Workers.</li>
-            </ul>
-
-            <h3>No-Shows</h3>
-            <ul>
-                <li>Company may mark no-show after 30 min past start time</li>
-                <li>Recorded on profile, reduces reliability rating</li>
-                <li>Workers may dispute within 48 hours at info@indogig.com</li>
-                <li>3+ no-shows in 30 days = suspension</li>
-            </ul>
-
-            <h3>Hour Adjustment Disputes</h3>
-            <p>Workers may dispute Company hour adjustments within 72 hours. Indogig reviews evidence (selfies, timestamps) and for IndoGig Payment shifts, processes payment based on evidence.</p>
-
-            <h3>Rating Disputes</h3>
-            <p>Workers may dispute unfair ratings within 14 days. Indogig may remove ratings found to be fraudulent, discriminatory, or retaliatory.</p>
-
-            <h3>Force Majeure</h3>
-            <p>No penalties for cancellations/no-shows caused by natural disasters, severe weather, pandemics, or government restrictions.</p>
-
-            <h2>7. Intellectual Property</h2>
-            <p>All platform IP belongs to Indogig. You retain ownership of your submitted content and grant Indogig a non-exclusive license to operate the Services. Work product IP during shifts is between Company and Worker.</p>
-
-            <h2>8. Prohibited Activities</h2>
-            <ul>
-                <li>False information, impersonation, illegal use</li>
-                <li>Harassment, discrimination, threats</li>
-                <li>Scraping, automated data extraction</li>
-                <li>Security compromise, interference</li>
-                <li>Spam, platform circumvention</li>
-                <li>Malware, law violations</li>
-            </ul>
-
-            <h2>9. Limitation of Liability</h2>
-            <p>Services provided "as is." Indogig acknowledges liability for platform malfunctions causing direct financial loss (e.g., failed confirmed payment).</p>
-            <p>Maximum liability: the greater of (a) amount paid to Indogig in preceding 12 months, or (b) <strong>IDR 5,000,000</strong>. Does not exclude liability for willful misconduct or gross negligence.</p>
-
-            <h2>10. Indemnification</h2>
-            <p><strong>Mutual:</strong> Users indemnify Indogig for Terms violations, IP infringement, and gross negligence. Indogig indemnifies users for platform failures and confirmed payment processing errors. Worker indemnification capped at 12-month platform earnings.</p>
-
-            <h2>11. Dispute Resolution</h2>
-            <ol>
-                <li>Good-faith negotiation (30 days)</li>
-                <li>Mediation</li>
-                <li>Competent court in Denpasar, Bali</li>
-            </ol>
-            <p><strong>Labor disputes:</strong> Subject to mandatory procedures under UU 2/2004 (bipartite, Disnaker mediation, PHI).</p>
-            <p><strong>Governing law:</strong> Republic of Indonesia.</p>
-
-            <h2>12. Account Termination</h2>
-            <p><strong>By Indogig:</strong> 7 days' written notice (except fraud/illegal activity). Appeal within 7 days. Earned payments preserved.</p>
-            <p><strong>By you:</strong> Contact info@indogig.com. Outstanding obligations remain.</p>
-
-            <h2>13. Changes to Terms</h2>
-            <p>30 days' notice for significant changes. Continued use = acceptance.</p>
-
-            <h2>14. Contact Us</h2>
-            <p><strong>PT INDOGIG HRTECH INDONESIA</strong><br>
-            Jalan Sunset Road Tengah Building No. 9<br>
-            Seminyak, Kuta, Badung, Bali 80361, Indonesia</p>
-            <p>Email: <strong>info@indogig.com</strong><br>
-            Phone: <strong>+62 818 0370 8605</strong></p>
         </div>
-
-        <!-- INDONESIAN VERSION -->
         <div id="content-id" class="lang-content">
-            <h1>Ketentuan Penggunaan</h1>
-            <p class="subtitle">Berlaku: 1 Mei 2026 &nbsp;|&nbsp; Terakhir diubah: 1 Mei 2026</p>
-
-            <h2>1. Pendahuluan</h2>
-            <p>Ketentuan Penggunaan ("Ketentuan") ini mengatur akses dan penggunaan Anda atas platform Indogig yang dioperasikan oleh <strong>PT INDOGIG HRTECH INDONESIA</strong> ("Indogig," "kami"), terdaftar di Jalan Sunset Road Tengah Bangunan No. 9, Seminyak, Kuta, Badung, Bali, Indonesia (AHU-0090431.AH.01.01.Tahun 2023, NIB 2911230067256, KBLI 78104, TD PSE Domestik).</p>
-            <p>Dengan membuat akun atau menggunakan Layanan, Anda setuju dengan Ketentuan ini, <a href="privacy-policy.html">Kebijakan Privasi</a> kami, dan perjanjian platform yang berlaku.</p>
-
-            <h2>2. Tentang Indogig</h2>
-            <p>Indogig adalah platform teknologi tenaga kerja yang menghubungkan Perusahaan dengan Pekerja untuk kerja berbasis shift di Indonesia. Indogig terdaftar di bawah KBLI 78104 dan beroperasi sebagai <strong>fasilitator penyediaan tenaga kerja berbasis teknologi</strong>.</p>
-            <div class="highlight">
-                <p style="margin:0;">Indogig <strong>bukan</strong> rekan pemberi kerja. Indogig <strong>tidak</strong> mengawasi atau mengendalikan pekerjaan sehari-hari. Hubungan langsung antara Perusahaan dan Pekerja diatur oleh Perjanjian Langsung Perusahaan-Pekerja.</p>
+            <div class="legal-content">
+                <h1>KETENTUAN PENGGUNAAN INDOGIG</h1>
+<p><strong>Tanggal berlaku:</strong> 1 Mei 2026
+<strong>Terakhir diubah:</strong> 1 Mei 2026</p>
+<hr />
+<h2>1. PENDAHULUAN DAN PENERIMAAN</h2>
+<p>Selamat datang di Indogig! Ketentuan Penggunaan ("Ketentuan") ini mengatur akses dan penggunaan Anda atas platform Indogig, termasuk situs web, aplikasi seluler, dan semua layanan terkait (secara kolektif, "Layanan") yang dioperasikan oleh <strong>PT INDOGIG HRTECH INDONESIA</strong> ("Indogig," "kami").</p>
+<p><strong>PT INDOGIG HRTECH INDONESIA</strong> adalah perusahaan teknologi SDM yang terdaftar dan berkedudukan di Jalan Sunset Road Tengah Bangunan No. 9, Seminyak, Kuta, Badung, Bali, Indonesia. Indogig terdaftar secara resmi berdasarkan AHU-0090431.AH.01.01.Tahun 2023 tertanggal 27 November 2023, NIB 2911230067256, memiliki Sertifikat Standar KBLI 78104 (Aktivitas Penyediaan Tenaga Kerja Lainnya) dan TD PSE Domestik.</p>
+<p>Dengan membuat akun, mengakses, atau menggunakan Layanan, Anda setuju untuk terikat oleh Ketentuan ini, Kebijakan Privasi kami, dan perjanjian platform yang berlaku (termasuk Perjanjian Pekerja Paruh Waktu/Gig, Perjanjian Pendaftaran Perusahaan, dan Perjanjian Langsung Perusahaan-Pekerja). Jika Anda tidak setuju dengan Ketentuan ini, jangan gunakan Layanan.</p>
+<p>Untuk pertanyaan tentang Ketentuan ini, hubungi kami di: <strong>info@indogig.com</strong> atau <strong>+62 818 0370 8605</strong>.</p>
+<hr />
+<h2>2. TENTANG INDOGIG DAN LAYANAN</h2>
+<h3>2.1 Deskripsi Platform</h3>
+<p>Indogig adalah platform teknologi tenaga kerja yang menghubungkan bisnis ("Perusahaan") dengan pekerja paruh waktu, sementara, dan berbasis gig ("Pekerja") untuk peluang kerja berbasis shift di Indonesia. Platform ini memungkinkan:</p>
+<ul>
+<li><strong>Pekerja</strong> untuk membuat profil, membangun reputasi profesional, melamar shift yang tersedia, melacak jam kerja, dan menerima pembayaran</li>
+<li><strong>Perusahaan</strong> untuk memasang lowongan kerja berbasis shift, meninjau profil Pekerja, mempekerjakan dan mengelola staf sementara, serta memproses pembayaran</li>
+</ul>
+<h3>2.2 Peran Indogig</h3>
+<p>Indogig terdaftar di bawah KBLI 78104 (Aktivitas Penyediaan Tenaga Kerja Lainnya) dan beroperasi sebagai <strong>fasilitator penyediaan tenaga kerja berbasis teknologi</strong>. Indogig menyediakan infrastruktur digital yang menghubungkan Perusahaan dengan Pekerja, tetapi tidak secara langsung mempekerjakan, mengawasi, atau mengendalikan Pekerja selama penugasan shift mereka.</p>
+<p>Secara khusus:</p>
+<ul>
+<li>Indogig <strong>bukan</strong> rekan pemberi kerja atau pemberi kerja bersama dari Pekerja mana pun</li>
+<li>Indogig <strong>tidak</strong> mengarahkan, mengawasi, atau mengendalikan pekerjaan sehari-hari yang dilakukan oleh Pekerja selama shift</li>
+<li>Hubungan kerja langsung antara Perusahaan dan Pekerja diatur oleh Perjanjian Langsung Perusahaan-Pekerja yang diterima oleh kedua pihak melalui platform</li>
+<li>Indogig memfasilitasi pemrosesan pembayaran sebagai layanan opsional (IndoGig Payment) tetapi bukan pihak dalam perjanjian kompensasi antara Perusahaan dan Pekerja</li>
+</ul>
+<h3>2.3 Non-Diskriminasi</h3>
+<p>Sesuai dengan UU Ketenagakerjaan No. 13/2003 Pasal 5-6, Indogig melarang diskriminasi di platform. Perusahaan dilarang mendiskriminasi Pekerja berdasarkan jenis kelamin, suku, ras, agama, warna kulit, pandangan politik, disabilitas, atau karakteristik dilindungi lainnya saat memasang lowongan, meninjau lamaran, atau membuat keputusan perekrutan. Pekerja yang mengalami diskriminasi dapat melaporkannya ke info@indogig.com. Pelanggaran dapat mengakibatkan penangguhan atau penghentian akun.</p>
+<hr />
+<h2>3. KELAYAKAN DAN PENDAFTARAN AKUN</h2>
+<h3>3.1 Kelayakan</h3>
+<p>Untuk menggunakan Layanan, Anda harus:</p>
+<ul>
+<li>Berusia minimal <strong>18 tahun</strong> (untuk Pekerja), kecuali persyaratan pada Bagian 3.2 terpenuhi</li>
+<li>Memiliki kewenangan hukum untuk bertindak atas nama perusahaan (untuk akun Perusahaan)</li>
+<li>Memiliki nomor telepon Indonesia yang valid dan dapat menerima pesan WhatsApp</li>
+<li>Memberikan informasi pendaftaran yang akurat, lengkap, dan terkini</li>
+</ul>
+<h3>3.2 Pekerja Usia 15-17 Tahun (Dengan Persetujuan Orang Tua)</h3>
+<p>Sesuai dengan UU Ketenagakerjaan No. 13/2003 Pasal 68-69 dan Kepmenaker 235/2003, Pekerja berusia 15-17 tahun hanya dapat mendaftar dengan ketentuan berikut:</p>
+<ul>
+<li><strong>Persetujuan tertulis orang tua atau wali</strong> harus diunggah saat pendaftaran</li>
+<li>Maksimal <strong>3 jam kerja per hari</strong> untuk Pekerja usia 15 tahun</li>
+<li><strong>Dilarang shift malam</strong> (pekerjaan harus dilakukan antara pukul 06:00 dan 18:00)</li>
+<li><strong>Dilarang di lingkungan kerja berbahaya</strong> — kategori terlarang meliputi: bar, tempat yang menyajikan alkohol, pekerjaan yang melibatkan angkat berat, benda tajam, bahan kimia berbahaya, atau kondisi lain yang ditetapkan berdasarkan Kepmenaker 235/2003</li>
+<li>Pekerjaan tidak boleh mengganggu kewajiban sekolah Pekerja</li>
+</ul>
+<p>Indogig berhak membatasi kategori pekerjaan dan waktu shift yang tersedia bagi Pekerja di bawah 18 tahun. Ketidakpatuhan terhadap persyaratan ini dapat mengakibatkan penghentian akun.</p>
+<h3>3.3 Pembuatan Akun</h3>
+<ol>
+<li>Pilih peran Anda: <strong>Pekerja</strong> atau <strong>Perusahaan</strong></li>
+<li>Masukkan nomor telepon dan verifikasi melalui <strong>WhatsApp OTP</strong> (One-Time Password)</li>
+<li>Lengkapi pendaftaran dengan informasi yang diperlukan</li>
+<li>Buat kata sandi yang aman</li>
+<li>Selesaikan proses onboarding</li>
+</ol>
+<h3>3.4 Keamanan Akun</h3>
+<p>Anda bertanggung jawab penuh atas:</p>
+<ul>
+<li>Menjaga kerahasiaan kata sandi dan kode OTP Anda</li>
+<li>Semua aktivitas yang terjadi di bawah Akun Anda</li>
+<li>Segera memberitahu kami di info@indogig.com jika Anda mencurigai akses yang tidak sah</li>
+</ul>
+<p>Anda <strong>tidak boleh</strong>:</p>
+<ul>
+<li>Membagikan kredensial akun Anda kepada pihak ketiga mana pun</li>
+<li>Membuat beberapa akun untuk orang atau entitas yang sama</li>
+<li>Mentransfer atau mengalihkan Akun Anda kepada orang lain</li>
+</ul>
+<p>Indogig tidak bertanggung jawab atas kerugian atau kerusakan yang timbul dari penggunaan Akun Anda secara tidak sah.</p>
+<hr />
+<h2>4. KETENTUAN KHUSUS PEKERJA</h2>
+<h3>4.1 Profil dan Onboarding</h3>
+<p>Pekerja harus menyelesaikan proses onboarding, yang meliputi informasi pribadi, foto profil, lokasi kerja yang diinginkan, kategori pekerjaan, tingkat pengalaman dan ketersediaan, serta preferensi notifikasi.</p>
+<h3>4.2 Pengiriman dan Verifikasi Dokumen</h3>
+<p>Untuk membangun profil yang lengkap dan memaksimalkan visibilitas bagi Perusahaan, Pekerja sebaiknya mengunggah dokumen berikut:</p>
+<ul>
+<li><strong>CV/Resume</strong> (format file apa pun)</li>
+<li><strong>Video presentasi diri</strong> (maksimal 1 menit, MP4/MOV, maks 10 MB, disarankan potret 9:16, 24+ FPS)</li>
+</ul>
+<p>Dokumen-dokumen ini secara signifikan mempengaruhi <em>Profile Strength</em> dan visibilitas Anda dalam hasil pencarian Perusahaan. Semua dokumen tunduk pada peninjauan dan verifikasi oleh administrator Indogig. Dokumen dapat disetujui atau ditolak (dengan alasan yang dinyatakan). Dokumen yang ditolak dapat dikirim ulang. Waktu peninjauan biasanya 24-72 jam.</p>
+<p><strong>Catatan:</strong> Indogig <strong>tidak</strong> mengumpulkan atau menyimpan dokumen identitas yang dikeluarkan pemerintah (KTP, SKCK, NPWP, dll.) di platform.</p>
+<h3>4.3 <em>Profile Strength</em></h3>
+<p>Pekerja memiliki indikator <em>Profile Strength</em> yang mencerminkan kelengkapan profil:</p>
+<table>
+<thead>
+<tr>
+<th>Tindakan</th>
+<th>Peningkatan <em>Profile Strength</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CV diunggah (terverifikasi)</td>
+<td>+20%</td>
+</tr>
+<tr>
+<td>Video presentasi (terverifikasi)</td>
+<td>+40%</td>
+</tr>
+<tr>
+<td>Rekomendasi diterima</td>
+<td>+10%</td>
+</tr>
+<tr>
+<td>Bidang profil lainnya</td>
+<td>Sisa %</td>
+</tr>
+</tbody>
+</table>
+<p><em>Profile Strength</em> mempengaruhi visibilitas bagi Perusahaan dalam hasil pencarian. Pekerja dengan <em>Profile Strength</em> lebih tinggi lebih mungkin ditemukan oleh Perusahaan. Ini merupakan profiling otomatis; Pekerja dapat meminta penjelasan tentang bagaimana <em>Profile Strength</em> dihitung dengan menghubungi info@indogig.com.</p>
+<h3>4.4 Rekomendasi</h3>
+<p>Pekerja dapat meminta rekomendasi profesional dengan membagikan tautan unik. Pemberi Rekomendasi mengisi formulir web (tidak perlu akun aplikasi) yang meliputi:</p>
+<ul>
+<li>Tag kekuatan (Communication, Punctuality, Team Player, Follow Instructions, Dress Code, Fast Learner, Great Attitude, Highly Skilled)</li>
+<li>Komentar teks bebas</li>
+<li>Jenis hubungan (rekan kerja, manajer, bawahan, klien, teman)</li>
+<li>Nama dan nomor telepon (diverifikasi melalui WhatsApp OTP)</li>
+<li>Email opsional</li>
+</ul>
+<p>Pekerja mengontrol visibilitas rekomendasi mereka (menampilkan, menyembunyikan, atau menghapus).</p>
+<h3>4.5 Melamar Shift</h3>
+<ul>
+<li>Pekerja menelusuri posisi yang tersedia dengan filter: kategori, lokasi, tanggal, dan tarif</li>
+<li>Saat melamar, Pekerja memilih hari tertentu yang bersedia untuk bekerja</li>
+<li>Lamaran ditinjau oleh Perusahaan, yang dapat menyetujui hari tertentu dan mempekerjakan (Hire)</li>
+<li>Pekerja dapat melihat status lamaran mereka di "My Gig's Shifts"</li>
+</ul>
+<h3>4.6 Melaksanakan Pekerjaan</h3>
+<p>Setelah dipekerjakan:</p>
+<ul>
+<li>Pekerja dapat melihat detail shift yang dikonfirmasi, jadwal, dan instruksi Perusahaan</li>
+<li><strong>Check-in:</strong> Tersedia 15 menit sebelum shift dimulai. Memerlukan foto selfie (lihat Kebijakan Privasi Bagian 6 untuk penanganan data selfie). Timer kerja dimulai secara otomatis.</li>
+<li><strong>Check-out:</strong> Di akhir shift. Memerlukan foto selfie. Mencatat penyelesaian shift.</li>
+<li>Pekerja harus melaksanakan pekerjaan secara profesional, sesuai dengan hukum yang berlaku, kebijakan tempat kerja, dan aturan keselamatan</li>
+</ul>
+<h3>4.7 Pembayaran</h3>
+<ul>
+<li>Jumlah dan jadwal pembayaran sesuai dengan lowongan pekerjaan yang diterbitkan</li>
+<li>Dua metode pembayaran:</li>
+<li><strong>Direct Payment:</strong> Perusahaan membayar Pekerja di tempat (tunai). Indogig tidak terlibat dalam arus uang dan tidak menjamin Direct Payment.</li>
+<li><strong>IndoGig Payment:</strong> Setelah Perusahaan mengonfirmasi jam kerja yang telah selesai, administrasi Indogig mentransfer pembayaran ke rekening bank atau e-wallet Pekerja yang terdaftar dalam <strong>24 jam</strong>. Pekerja harus menambahkan rekening bank atau e-wallet yang valid untuk menerima pencairan IndoGig Payment.</li>
+<li>Pekerja bertanggung jawab penuh atas pajak pribadi, asuransi, dan kewajiban hukum dari penghasilan</li>
+</ul>
+<h3>4.8 Jaminan Sosial (BPJS Ketenagakerjaan)</h3>
+<p>Sesuai dengan PP 35/2021 dan PP 44/2015, Pekerja yang dipekerjakan melalui platform mungkin berhak atas perlindungan asuransi kecelakaan kerja (JKK) dan asuransi kematian (JKM). Indogig sangat menganjurkan semua Pekerja untuk mendaftar BPJS Ketenagakerjaan BPU (Bukan Penerima Upah) melalui saluran resmi (daftar.bpjsketenagakerjaan.go.id atau aplikasi JMO). Perusahaan yang mempekerjakan Pekerja melalui IndoGig Payment dianjurkan untuk memastikan perlindungan JKK dasar tersedia bagi Pekerja yang melaksanakan shift di lokasi mereka (lihat Bagian 5.7).</p>
+<h3>4.9 Perilaku Pekerja</h3>
+<p>Pekerja setuju untuk:</p>
+<ul>
+<li>Melaksanakan tugas secara profesional dan bertanggung jawab</li>
+<li>Datang tepat waktu dan menyelesaikan shift sesuai kesepakatan</li>
+<li>Mengikuti instruksi Perusahaan dalam lingkup pekerjaan yang diterbitkan</li>
+<li>Menjaga kerahasiaan informasi Perusahaan yang bersifat non-publik yang diperoleh selama bekerja (kewajiban ini berlanjut setelah penugasan berakhir)</li>
+<li>Tidak terlibat dalam perilaku ilegal, tidak aman, atau tidak profesional selama shift</li>
+</ul>
+<hr />
+<h2>5. KETENTUAN KHUSUS PERUSAHAAN</h2>
+<h3>5.1 Pendaftaran dan Onboarding</h3>
+<p>Perusahaan harus menyelesaikan proses onboarding yang meliputi:</p>
+<ul>
+<li>Nama dan jenis perusahaan (Cafe, Restaurant, Bar, Hotel, Event &amp; Catering, Lainnya)</li>
+<li>Lokasi kerja</li>
+<li>Peran pembuat akun dalam perusahaan</li>
+<li>Peran Pekerja yang dibutuhkan</li>
+<li>Preferensi frekuensi dan durasi shift</li>
+<li>Informasi keuangan/penagihan</li>
+</ul>
+<p>Orang yang mendaftar mengonfirmasi bahwa mereka memiliki kewenangan untuk bertindak atas nama Perusahaan.</p>
+<h3>5.2 Saldo dan Pembayaran</h3>
+<p>Untuk menggunakan <strong>IndoGig Payment</strong> (pembayaran yang difasilitasi platform):</p>
+<ol>
+<li>Buka Billing &amp; Wallet dan minta jumlah pengisian saldo</li>
+<li>Sistem menghasilkan <strong>kode referensi</strong> unik (format: INDO-ORG-YYYY-XXXX)</li>
+<li>Lakukan transfer bank dengan menyertakan kode referensi</li>
+<li>Kirim konfirmasi pembayaran melalui aplikasi</li>
+<li>Administrasi Indogig memverifikasi transfer dan mengkreditkan saldo (waktu pemrosesan: hingga 24 jam)</li>
+</ol>
+<p>Dana saldo disimpan oleh Indogig di rekening yang ditunjuk dan dialokasikan untuk pencairan pembayaran Pekerja. Dana ini bukan merupakan aset operasional umum Indogig dan dilindungi untuk tujuan yang dimaksudkan yaitu membayar Pekerja atas shift yang telah diselesaikan.</p>
+<p>Untuk shift <strong>Direct Payment</strong>, Perusahaan membayar Pekerja secara langsung (tunai di tempat). Indogig tidak berpartisipasi dalam atau menjamin pembayaran langsung. Namun, catatan shift Indogig (selfie check-in/out dan cap waktu) merupakan bukti pekerjaan yang telah dilakukan, dan Perusahaan yang memilih Direct Payment mengakui kewajiban untuk membayar tarif yang diterbitkan untuk jam kerja yang dikonfirmasi dan diselesaikan.</p>
+<h3>5.3 Membuat Order dan Posisi</h3>
+<p>Perusahaan membuat order ("Order") yang menentukan:</p>
+<ul>
+<li>Lokasi, rentang tanggal, waktu shift, dan durasi istirahat</li>
+<li>Metode pembayaran (Direct Payment atau IndoGig Payment)</li>
+<li>Manajer yang ditugaskan</li>
+<li>Satu atau lebih Posisi (peran), masing-masing dengan: nama peran, jumlah Pekerja yang dibutuhkan, tarif per jam (IDR), instruksi umum dan khusus per peran, lampiran file opsional (kode berpakaian, formulir, dll.)</li>
+</ul>
+<p><strong>Durasi istirahat</strong> mempengaruhi perhitungan gaji: jam kerja = waktu selesai shift - waktu mulai shift - menit istirahat. Ini ditampilkan dengan jelas dalam tinjauan Order sebelum diterbitkan.</p>
+<h3>5.4 Mempekerjakan dan Mengelola Pekerja</h3>
+<p>Setelah menerbitkan Order:</p>
+<ul>
+<li>Perusahaan meninjau lamaran Pekerja yang masuk termasuk profil, dokumen, dan hari yang dipilih</li>
+<li>Perusahaan dapat menyetujui Pekerja tertentu untuk hari tertentu (Hire)</li>
+<li>Perusahaan dapat membatalkan shift atau penugasan individu sesuai kebutuhan (lihat Bagian 7 untuk kebijakan pembatalan)</li>
+<li>Komunikasi dengan Pekerja difasilitasi melalui integrasi WhatsApp ("Message Worker" membuka WhatsApp)</li>
+</ul>
+<h3>5.5 Konfirmasi Shift dan Penyesuaian Jam</h3>
+<p>Pada hari shift:</p>
+<ul>
+<li>Perusahaan dapat melihat status check-in Pekerja (foto selfie dan cap waktu)</li>
+<li>Setelah shift, Perusahaan meninjau waktu check-in/check-out dan jam kerja yang dihitung otomatis</li>
+<li>Perusahaan dapat menyesuaikan jam yang dilaporkan dengan penjelasan tertulis</li>
+<li>Jika Pekerja tidak setuju dengan penyesuaian jam, Pekerja dapat menghubungi dukungan Indogig untuk mediasi sengketa (lihat Bagian 7.2)</li>
+<li>Perusahaan mengonfirmasi shift sebagai selesai, memicu proses pembayaran (untuk IndoGig Payment)</li>
+<li>Perusahaan dapat menilai Pekerja setelah penyelesaian shift</li>
+</ul>
+<h3>5.6 Tanggung Jawab Perusahaan</h3>
+<p>Perusahaan menyetujui bahwa:</p>
+<ol>
+<li>Bertanggung jawab penuh atas pengawasan Pekerja, keselamatan tempat kerja, dan kepatuhan hukum selama shift</li>
+<li>Pekerja hanya boleh bekerja sesuai dengan <strong>jenis pekerjaan, jam kerja, durasi, dan lokasi</strong> yang tercantum di aplikasi Indogig. Pekerjaan, tugas, atau instruksi di luar detail pekerjaan yang diterbitkan sepenuhnya menjadi tanggung jawab Perusahaan dan Pekerja. Indogig tidak bertanggung jawab atas pekerjaan yang dilakukan di luar detail pekerjaan yang tercantum di platform.</li>
+<li>Bertanggung jawab atas semua pembayaran kepada Pekerja, termasuk pembayaran tepat waktu sesuai tarif yang diterbitkan untuk jam kerja yang dikonfirmasi</li>
+<li>Sengketa diselesaikan langsung antara Perusahaan dan Pekerja, dengan Indogig tersedia untuk menyediakan data platform (catatan shift, selfie, cap waktu) atas permintaan</li>
+<li>Indogig dibebaskan dari klaim, sengketa, atau kerugian yang timbul dari tindakan Perusahaan, kondisi tempat kerja, atau lowongan pekerjaan</li>
+<li>Perusahaan harus mematuhi semua hukum ketenagakerjaan Indonesia yang berlaku, termasuk UU 13/2003 dan UU Cipta Kerja, dalam perekrutan Pekerja</li>
+</ol>
+<h3>5.7 Jaminan Sosial dan Asuransi</h3>
+<p>Perusahaan sangat dianjurkan untuk memastikan bahwa Pekerja yang melaksanakan shift di lokasi mereka memiliki perlindungan asuransi kecelakaan kerja (JKK) dasar di bawah BPJS Ketenagakerjaan, baik melalui pendaftaran BPJS Perusahaan sendiri maupun dengan memverifikasi bahwa Pekerja telah mendaftar sendiri sebagai peserta BPU. Indogig dapat, di masa depan, mengintegrasikan pendaftaran BPJS sebagai fitur platform.</p>
+<h3>5.8 Non-Circumvention</h3>
+<p>Perusahaan dilarang melakukan perjanjian kerja langsung, kontrak jangka panjang, atau bentuk kerja sama di luar platform Indogig dengan Pekerja yang pertama kali diperkenalkan melalui aplikasi, untuk jangka waktu <strong>12 bulan</strong> sejak tanggal shift terakhir yang diselesaikan melalui platform dengan Pekerja tersebut.</p>
+<p><strong>Alternatif:</strong> Sebagai pengganti menghindari platform, Perusahaan dapat:</p>
+<ul>
+<li>Terus mempekerjakan Pekerja melalui fitur platform Indogig untuk pekerjaan yang diperpanjang atau berulang</li>
+<li>Membayar <strong>biaya penempatan</strong> satu kali yang setara dengan gaji shift rata-rata 1 bulan Pekerja di platform untuk mengalihkan Pekerja ke hubungan kerja langsung</li>
+</ul>
+<p>Pelanggaran klausul ini tanpa membayar biaya penempatan dapat mengakibatkan penangguhan atau penghentian akun dan dapat menimbulkan klaim ganti rugi.</p>
+<hr />
+<h2>6. PEMBAYARAN DAN BIAYA</h2>
+<h3>6.1 Biaya Platform</h3>
+<p>Indogig dapat mengenakan biaya layanan untuk penggunaan fitur platform tertentu. Biaya yang berlaku akan dikomunikasikan dengan jelas sebelum Anda mengeluarkannya. Struktur biaya saat ini ditampilkan dalam aplikasi.</p>
+<h3>6.2 Proses IndoGig Payment</h3>
+<table>
+<thead>
+<tr>
+<th>Langkah</th>
+<th>Deskripsi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Perusahaan mendanai saldo melalui transfer bank dengan kode referensi unik</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Admin Indogig memverifikasi dan mengkreditkan saldo</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Pekerja menyelesaikan shift (selfie check-in → bekerja → selfie check-out)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Perusahaan meninjau dan mengonfirmasi jam kerja (dapat menyesuaikan dengan penjelasan)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Admin Indogig mentransfer pembayaran ke bank/e-wallet Pekerja dalam 24 jam</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Status shift diperbarui menjadi "Paid"</td>
+</tr>
+</tbody>
+</table>
+<h3>6.3 Sengketa Pembayaran</h3>
+<ul>
+<li>Ketidaksepakatan tentang jam kerja sebaiknya terlebih dahulu didiskusikan antara Perusahaan dan Pekerja</li>
+<li>Indogig akan menyediakan catatan shift (cap waktu check-in/out, foto selfie, jam yang dikonfirmasi, dan penyesuaian jam beserta penjelasannya) atas permintaan salah satu pihak</li>
+<li>Apabila Perusahaan telah mengonfirmasi penyelesaian shift dan IndoGig Payment dipilih, Indogig akan memproses pembayaran kepada Pekerja sebagaimana dikonfirmasi</li>
+<li>Untuk sengketa Direct Payment, catatan shift Indogig berfungsi sebagai bukti tetapi Indogig tidak menjamin atau menegakkan pembayaran langsung</li>
+</ul>
+<h3>6.4 Pajak</h3>
+<ul>
+<li>Pekerja bertanggung jawab penuh atas pajak penghasilan pribadi dari penghasilan mereka</li>
+<li>Perusahaan bertanggung jawab atas kewajiban pajak yang berlaku terkait dengan perekrutan Pekerja</li>
+<li>Indogig tidak memotong pajak atas nama pihak mana pun kecuali diwajibkan oleh hukum</li>
+</ul>
+<hr />
+<h2>7. PEMBATALAN, KETIDAKHADIRAN (NO-SHOW), DAN SENGKETA SHIFT</h2>
+<h3>7.1 Kebijakan Pembatalan</h3>
+<p><strong>Oleh Pekerja:</strong>
+- Pekerja dapat membatalkan shift yang dikonfirmasi kapan saja sebelum check-in
+- Pembatalan kurang dari <strong>24 jam</strong> sebelum waktu mulai shift dicatat di profil Pekerja dan berdampak negatif pada rating keandalan mereka
+- Pembatalan terlambat berulang (3 kali atau lebih dalam 30 hari) dapat mengakibatkan penangguhan akun sementara</p>
+<p><strong>Oleh Perusahaan:</strong>
+- Perusahaan dapat membatalkan shift atau penugasan Pekerja individu kapan saja sebelum shift dimulai
+- Jika Pekerja sudah dipekerjakan dan Perusahaan membatalkan kurang dari <strong>12 jam</strong> sebelum waktu mulai shift, Perusahaan mengakui bahwa Pekerja mungkin telah melewatkan peluang lain. Perusahaan dianjurkan (tetapi tidak diwajibkan oleh Ketentuan ini) untuk menawarkan kompensasi parsial dalam kasus tersebut.
+- Pembatalan berulang setelah perekrutan dapat berdampak negatif pada reputasi Perusahaan di platform</p>
+<h3>7.2 Ketidakhadiran (No-Show)</h3>
+<ul>
+<li>Jika Pekerja tidak check-in dalam <strong>30 menit</strong> dari waktu mulai shift yang dijadwalkan, Perusahaan dapat menandai Pekerja sebagai <strong>no-show</strong></li>
+<li>No-show dicatat di profil Pekerja, mengurangi rating keandalan, dan mempengaruhi <em>Profile Strength</em></li>
+<li>Pekerja yang percaya mereka salah ditandai sebagai no-show dapat mengajukan sengketa dengan menghubungi info@indogig.com dalam <strong>48 jam</strong>, dengan menyertakan bukti (misalnya komunikasi dengan Perusahaan, gangguan perjalanan)</li>
+<li>No-show berulang (3 kali atau lebih dalam 30 hari) dapat mengakibatkan penangguhan akun sementara atau permanen</li>
+</ul>
+<h3>7.3 Sengketa Penyesuaian Jam</h3>
+<ul>
+<li>Jika Pekerja tidak setuju dengan penyesuaian jam oleh Perusahaan, Pekerja dapat menghubungi info@indogig.com dalam <strong>72 jam</strong> setelah konfirmasi shift</li>
+<li>Indogig akan meninjau cap waktu check-in/check-out dan bukti selfie, alasan yang dinyatakan Perusahaan untuk penyesuaian, dan informasi tambahan dari kedua pihak</li>
+<li>Penentuan Indogig bersifat penasehat dan tidak mengikat, tetapi untuk shift IndoGig Payment, Indogig akan memproses pembayaran berdasarkan bukti yang ditinjau</li>
+</ul>
+<h3>7.4 Keadaan Kahar untuk Shift</h3>
+<p>Perusahaan maupun Pekerja tidak akan dikenai sanksi atas pembatalan atau ketidakhadiran yang disebabkan oleh peristiwa keadaan kahar, termasuk namun tidak terbatas pada: bencana alam (gempa bumi, letusan gunung berapi, banjir), cuaca ekstrem, pandemi, pembatasan yang diberlakukan pemerintah, atau keadaan darurat keselamatan publik. Pekerja dan Perusahaan harus memberitahu satu sama lain dan Indogig sesegera mungkin. Sanksi no-show atau pembatalan tidak akan diterapkan dalam situasi keadaan kahar yang terverifikasi.</p>
+<h3>7.5 Sengketa Rating</h3>
+<ul>
+<li>Perusahaan dapat menilai Pekerja setelah penyelesaian shift (skala 1-5)</li>
+<li>Pekerja yang percaya mereka menerima rating yang tidak adil dapat mengajukan sengketa ke info@indogig.com dalam <strong>14 hari</strong> sejak menerima rating, menjelaskan mengapa rating tersebut tidak adil</li>
+<li>Indogig dapat meninjau sengketa dan, atas kebijakannya, menghapus atau menyesuaikan rating yang ditemukan: jelas-jelas curang, diskriminatif, bersifat pembalasan (misalnya sebagai respons terhadap sengketa yang sah), atau berdasarkan faktor di luar kendali Pekerja</li>
+<li>Rating yang dihapus oleh Indogig tidak mempengaruhi posisi Perusahaan kecuali pola penyalahgunaan teridentifikasi</li>
+</ul>
+<hr />
+<h2>8. HAK KEKAYAAN INTELEKTUAL</h2>
+<h3>8.1 Kekayaan Intelektual Indogig</h3>
+<p>Semua hak, kepemilikan, dan kepentingan dalam Layanan (termasuk perangkat lunak, desain, logo, merek dagang, konten, dan dokumentasi) milik Indogig atau pemberi lisensinya. Anda tidak boleh:</p>
+<ul>
+<li>Menyalin, memodifikasi, mendistribusikan, menjual, atau menyewakan bagian mana pun dari Layanan</li>
+<li>Merekayasa balik, mendekompilasi, atau membongkar Layanan</li>
+<li>Menggunakan merek dagang, logo, atau elemen merek Indogig tanpa izin tertulis sebelumnya</li>
+<li>Membuat karya turunan berdasarkan Layanan</li>
+</ul>
+<h3>8.2 Konten Pengguna</h3>
+<p>Anda tetap memiliki hak atas konten yang Anda kirimkan ke platform (CV, video, informasi profil, lowongan pekerjaan, ulasan). Dengan mengirimkan konten, Anda memberikan Indogig lisensi non-eksklusif, bebas royalti untuk menggunakan, menampilkan, mereproduksi, dan mendistribusikan konten Anda <strong>sebagaimana diperlukan untuk mengoperasikan Layanan di Indonesia dan untuk mempromosikan Layanan</strong>. Lisensi ini tidak meluas ke penggunaan yang tidak terkait dengan platform. Anda dapat memilih untuk tidak menyetujui penggunaan promosional konten Anda dengan menghubungi info@indogig.com.</p>
+<p>Anda setuju untuk tidak mengirimkan konten yang melanggar hukum, mencemarkan nama baik, melanggar hak pihak ketiga, atau tidak layak.</p>
+<h3>8.3 Umpan Balik</h3>
+<p>Jika Anda memberikan saran, ide, atau umpan balik tentang Layanan, Anda memberikan Indogig hak untuk menggunakan umpan balik tersebut tanpa kompensasi atau kewajiban kepada Anda.</p>
+<h3>8.4 Hasil Kerja</h3>
+<p>Ketentuan ini tidak mengatur hak kekayaan intelektual dalam hasil kerja yang dibuat oleh Pekerja selama shift. Hak IP dalam hasil kerja merupakan urusan antara Perusahaan dan Pekerja, diatur oleh perjanjian langsung mereka dan hukum yang berlaku.</p>
+<hr />
+<h2>9. KEGIATAN YANG DILARANG</h2>
+<p>Saat menggunakan Layanan, Anda <strong>tidak boleh</strong>:</p>
+<ul>
+<li>Memberikan informasi palsu, menyesatkan, atau tidak akurat saat pendaftaran atau penggunaan</li>
+<li>Menyamar sebagai orang atau entitas lain</li>
+<li>Menggunakan Layanan untuk tujuan ilegal</li>
+<li>Melecehkan, mendiskriminasi, mengancam, atau menyalahgunakan pengguna lain</li>
+<li>Mendiskriminasi dalam keputusan perekrutan berdasarkan jenis kelamin, suku, ras, agama, warna kulit, pandangan politik, disabilitas, atau karakteristik dilindungi lainnya</li>
+<li>Melakukan <em>scraping</em> (pengambilan otomatis), <em>crawling</em>, atau menggunakan alat otomatis (seperti robot atau spider) untuk mengambil data dari Layanan</li>
+<li>Berusaha mengganggu keamanan atau integritas Layanan</li>
+<li>Mengganggu akses pengguna lain ke Layanan</li>
+<li>Menggunakan Layanan untuk mengirim spam, pesan yang tidak diminta, atau iklan</li>
+<li>Menghindari platform untuk terlibat langsung dengan Pekerja atau Perusahaan melanggar Ketentuan ini</li>
+<li>Memposting konten yang mengandung malware, virus, atau kode berbahaya</li>
+<li>Melanggar hukum, peraturan, atau hak pihak ketiga yang berlaku</li>
+</ul>
+<p>Pelanggaran aturan ini dapat mengakibatkan penangguhan atau penghentian akun secara langsung.</p>
+<hr />
+<h2>10. KERAHASIAAN</h2>
+<h3>10.1 Kewajiban Pengguna</h3>
+<p>Dengan menggunakan Layanan, Anda mungkin mendapatkan akses ke informasi non-publik tentang pengguna lain, Perusahaan, atau Pekerja ("Informasi Rahasia"). Anda setuju untuk:</p>
+<ul>
+<li>Menggunakan Informasi Rahasia semata-mata sehubungan dengan penggunaan Layanan Anda</li>
+<li>Tidak mengungkapkan Informasi Rahasia kepada pihak ketiga mana pun</li>
+<li>Menjaga kerahasiaan informasi operasional Perusahaan, detail pribadi Pekerja, dan data platform</li>
+</ul>
+<h3>10.2 Kerahasiaan Pekerja</h3>
+<p>Pekerja setuju untuk menjaga kerahasiaan informasi non-publik yang diperoleh selama penugasan shift. Kewajiban ini berlanjut setelah penugasan berakhir.</p>
+<hr />
+<h2>11. BATASAN TANGGUNG JAWAB</h2>
+<h3>11.1 Penafian Platform</h3>
+<p>Layanan disediakan atas dasar <strong>"apa adanya"</strong> dan <strong>"sebagaimana tersedia"</strong>. Kami tidak menjamin bahwa:</p>
+<ul>
+<li>Layanan akan tanpa gangguan, tepat waktu, aman, atau bebas kesalahan</li>
+<li>Hasil yang diperoleh dari Layanan akan akurat atau dapat diandalkan</li>
+<li>Sejumlah peluang shift tertentu akan tersedia</li>
+<li>Tingkat kualitas, keandalan, atau kinerja Pekerja tertentu dijamin</li>
+</ul>
+<p><strong>Namun demikian</strong>, Indogig mengakui tanggung jawab atas kerugian langsung yang disebabkan oleh kerusakan platform yang dapat dibuktikan dan berada dalam kendali Indogig (misalnya, IndoGig Payment yang telah dikonfirmasi tetapi tidak dicairkan karena kesalahan sistem). Dalam kasus tersebut, Indogig akan memperbaiki masalah dan memproses pembayaran.</p>
+<h3>11.2 Peran Terbatas Indogig</h3>
+<p>Indogig:</p>
+<ul>
+<li><strong>Tidak memverifikasi</strong> kualifikasi, latar belakang, identitas, atau kemampuan Pekerja di luar tinjauan dokumen di platform</li>
+<li><strong>Tidak mengawasi</strong> pekerjaan yang dilakukan oleh Pekerja selama shift</li>
+<li><strong>Tidak menjamin</strong> kehadiran Pekerja, kualitas kerja, atau perilaku profesional</li>
+<li><strong>Tidak menjamin</strong> pembayaran Perusahaan (untuk shift Direct Payment), keselamatan tempat kerja, atau kepatuhan terhadap hukum ketenagakerjaan</li>
+<li><strong>Tidak bertanggung jawab</strong> atas sengketa, cedera, kerugian, kerusakan properti, atau kerugian apa pun yang timbul dari hubungan kerja antara Perusahaan dan Pekerja</li>
+</ul>
+<h3>11.3 Batasan Ganti Rugi</h3>
+<p>Sejauh diizinkan oleh hukum Indonesia (tunduk pada UU 8/1999 tentang Perlindungan Konsumen):</p>
+<ul>
+<li>Indogig tidak bertanggung jawab atas kerugian tidak langsung, insidental, khusus, konsekuensial, atau hukuman, termasuk kehilangan keuntungan, data, peluang bisnis, atau niat baik</li>
+<li>Total tanggung jawab agregat Indogig untuk semua klaim terkait Layanan tidak melebihi yang lebih besar dari: (a) jumlah yang Anda bayarkan kepada Indogig selama dua belas (12) bulan sebelum klaim, atau (b) <strong>Rp 5.000.000</strong> (lima juta Rupiah)</li>
+<li>Batasan ini berlaku terlepas dari dasar tanggung jawab hukum (kontrak, perbuatan melawan hukum, kelalaian, atau lainnya)</li>
+</ul>
+<p>Tidak ada ketentuan dalam Ketentuan ini yang mengecualikan atau membatasi tanggung jawab yang tidak dapat dikecualikan berdasarkan hukum Indonesia yang berlaku, termasuk tanggung jawab atas kesengajaan atau kelalaian berat.</p>
+<hr />
+<h2>12. GANTI RUGI</h2>
+<h3>12.1 Oleh Pengguna</h3>
+<p>Anda setuju untuk mengganti rugi, membela, dan membebaskan Indogig, direksi, pejabat, karyawan, dan agennya dari klaim, kewajiban, kerugian, biaya, dan pengeluaran (termasuk biaya hukum yang wajar) yang timbul dari:</p>
+<ul>
+<li>Pelanggaran Ketentuan ini atau hukum yang berlaku oleh Anda</li>
+<li>Konten yang Anda kirimkan ke platform yang melanggar hak pihak ketiga</li>
+<li>Kesengajaan atau kelalaian berat Anda sehubungan dengan Layanan</li>
+</ul>
+<h3>12.2 Oleh Indogig</h3>
+<p>Indogig setuju untuk mengganti rugi dan membebaskan pengguna dari klaim, kewajiban, dan kerugian yang secara langsung disebabkan oleh:</p>
+<ul>
+<li>Kesengajaan atau kelalaian berat Indogig dalam mengoperasikan platform</li>
+<li>Kegagalan Indogig untuk memproses IndoGig Payment yang telah dikonfirmasi dalam jangka waktu yang dinyatakan, yang mengakibatkan kerugian finansial langsung bagi Pekerja</li>
+</ul>
+<h3>12.3 Batasan</h3>
+<ul>
+<li>Kewajiban ganti rugi Pekerja individual berdasarkan Bagian 12.1 dibatasi pada jumlah total yang diperoleh Pekerja melalui platform dalam 12 bulan sebelumnya</li>
+<li>Ganti rugi dalam Bagian 12.1 tidak mencakup sengketa antara Perusahaan dan Pekerja yang timbul dari hubungan kerja itu sendiri — sengketa tersebut diatur oleh Perjanjian Langsung Perusahaan-Pekerja</li>
+</ul>
+<hr />
+<h2>13. PENYELESAIAN SENGKETA</h2>
+<h3>13.1 Antar Pengguna</h3>
+<p>Sengketa antara Perusahaan dan Pekerja mengenai hubungan kerja, pembayaran, jam kerja, atau perilaku diselesaikan langsung antara para pihak. Indogig dapat, atas kebijakannya, menyediakan catatan shift dan data platform untuk membantu penyelesaian tetapi tidak berkewajiban untuk memediasi atau menengahi.</p>
+<h3>13.2 Antara Anda dan Indogig</h3>
+<p>Sengketa yang timbul dari Ketentuan ini atau penggunaan Layanan Anda diselesaikan sebagai berikut:</p>
+<ol>
+<li><strong>Negosiasi:</strong> Para pihak terlebih dahulu berupaya menyelesaikan sengketa melalui negosiasi dengan itikad baik dalam waktu 30 hari</li>
+<li><strong>Mediasi:</strong> Jika negosiasi gagal, salah satu pihak dapat meminta mediasi melalui mediator yang disepakati bersama</li>
+<li><strong>Litigasi:</strong> Jika mediasi gagal, sengketa diajukan ke pengadilan yang berwenang di <strong>Denpasar, Bali, Indonesia</strong></li>
+</ol>
+<h3>13.3 Sengketa Ketenagakerjaan</h3>
+<p>Terlepas dari Bagian 13.2, apabila Pekerja mengklaim bahwa hubungan ketenagakerjaan ada dengan Indogig atau Perusahaan, sengketa tersebut dapat tunduk pada prosedur penyelesaian perselisihan hubungan industrial wajib berdasarkan UU No. 2/2004 (Penyelesaian Perselisihan Hubungan Industrial), termasuk negosiasi bipartit, mediasi tripartit melalui Dinas Ketenagakerjaan, dan Pengadilan Hubungan Industrial (PHI). Ketentuan ini tidak dan tidak dapat mengesampingkan prosedur penyelesaian perselisihan hubungan industrial yang bersifat wajib.</p>
+<h3>13.4 Hukum yang Berlaku</h3>
+<p>Ketentuan ini diatur oleh dan ditafsirkan sesuai dengan hukum <strong>Republik Indonesia</strong>.</p>
+<hr />
+<h2>14. PENANGGUHAN DAN PENGHENTIAN AKUN</h2>
+<h3>14.1 Oleh Indogig</h3>
+<p>Kami dapat menangguhkan atau menghentikan Akun Anda jika:</p>
+<ul>
+<li>Anda melanggar Ketentuan ini atau perjanjian platform yang berlaku</li>
+<li>Anda terlibat dalam aktivitas curang, ilegal, atau berbahaya</li>
+<li>Anda menghindari platform untuk mempekerjakan Pekerja/Perusahaan secara langsung tanpa membayar biaya penempatan yang berlaku</li>
+<li>Kami diwajibkan oleh hukum atau perintah pemerintah</li>
+<li>Akun Anda tidak aktif selama lebih dari 12 bulan berturut-turut</li>
+</ul>
+<p><strong>Proses:</strong> Kecuali dalam kasus penipuan, aktivitas ilegal, atau bahaya yang mengancam, Indogig akan memberikan setidaknya <strong>7 hari pemberitahuan tertulis</strong> sebelum menghentikan Akun, dengan menyebutkan alasannya. Anda dapat mengajukan banding atas keputusan tersebut dengan merespons pemberitahuan dalam periode 7 hari. Indogig akan meninjau banding dengan itikad baik.</p>
+<p><strong>Selama penangguhan atau setelah penghentian:</strong> Hak untuk menerima pembayaran atas shift yang telah diselesaikan dan dikonfirmasi tetap terjaga. Indogig akan memproses IndoGig Payment yang tertunda untuk shift yang diselesaikan sebelum tanggal penangguhan/penghentian.</p>
+<h3>14.2 Oleh Anda</h3>
+<p>Anda dapat meminta penghentian Akun kapan saja melalui info@indogig.com. Setelah penghentian:</p>
+<ul>
+<li>Akses Anda ke Layanan akan dicabut</li>
+<li>Kewajiban pembayaran yang belum diselesaikan (dari kedua pihak) tetap berlaku</li>
+<li>Data shift yang telah selesai dan catatan keuangan akan disimpan sesuai Kebijakan Privasi kami</li>
+<li>Konten yang telah Anda bagikan mungkin tetap terlihat oleh pengguna lain sebagaimana diperlukan untuk integritas platform (misalnya catatan shift yang telah selesai, rating)</li>
+</ul>
+<h3>14.3 Kelangsungan</h3>
+<p>Ketentuan berikut tetap berlaku setelah penghentian: Bagian 8 (Kekayaan Intelektual), 10 (Kerahasiaan), 11 (Batasan Tanggung Jawab), 12 (Ganti Rugi), 13 (Penyelesaian Sengketa), dan kewajiban pembayaran yang timbul sebelum penghentian.</p>
+<hr />
+<h2>15. PERUBAHAN KETENTUAN INI</h2>
+<p>Kami dapat memperbarui Ketentuan ini dari waktu ke waktu. Saat kami melakukan perubahan signifikan:</p>
+<ul>
+<li>Kami akan memperbarui tanggal "Terakhir diubah" di bagian atas Ketentuan ini</li>
+<li>Kami akan memberitahu pengguna melalui Layanan atau email setidaknya <strong>30 hari</strong> sebelum perubahan berlaku</li>
+</ul>
+<p>Penggunaan Layanan yang berkelanjutan setelah Periode Pemberitahuan merupakan penerimaan atas Ketentuan yang dimodifikasi. Jika Anda tidak setuju, Anda harus menghentikan penggunaan Layanan dan dapat meminta penghentian Akun.</p>
+<hr />
+<h2>16. KETENTUAN UMUM</h2>
+<h3>16.1 Keseluruhan Perjanjian</h3>
+<p>Ketentuan ini bersama dengan Kebijakan Privasi, Perjanjian Pekerja Paruh Waktu/Gig, Perjanjian Pendaftaran Perusahaan, dan Perjanjian Langsung Perusahaan-Pekerja merupakan keseluruhan perjanjian antara Anda dan Indogig mengenai Layanan.</p>
+<h3>16.2 Keterpisahan</h3>
+<p>Jika ada ketentuan yang dianggap tidak sah atau tidak dapat dilaksanakan, ketentuan lainnya tetap berlaku sepenuhnya.</p>
+<h3>16.3 Tidak Ada Pengabaian</h3>
+<p>Kegagalan Indogig untuk menegakkan hak atau ketentuan tidak merupakan pengabaian hak atau ketentuan tersebut.</p>
+<h3>16.4 Pengalihan</h3>
+<p>Anda tidak boleh mengalihkan atau mentransfer hak Anda berdasarkan Ketentuan ini tanpa persetujuan tertulis Indogig. Indogig dapat mengalihkan hak dan kewajibannya sehubungan dengan penggabungan, akuisisi, atau penjualan aset, dengan ketentuan bahwa Indogig memberitahu pengguna setidaknya 30 hari sebelumnya. Pengguna yang tidak setuju dengan pengalihan tersebut dapat menghentikan akun mereka.</p>
+<h3>16.5 Keadaan Kahar</h3>
+<p>Baik Indogig maupun pengguna tidak bertanggung jawab atas kegagalan atau keterlambatan dalam melaksanakan kewajiban yang disebabkan oleh keadaan di luar kendali yang wajar, termasuk bencana alam, pandemi, tindakan pemerintah, gangguan internet, atau peristiwa keadaan kahar lainnya. Lihat juga Bagian 7.4 untuk ketentuan keadaan kahar khusus shift.</p>
+<h3>16.6 Bahasa</h3>
+<p>Ketentuan ini disediakan dalam Bahasa Inggris dan Bahasa Indonesia. Dalam hal terjadi pertentangan atau ketidaksesuaian antara kedua versi, versi Bahasa Indonesia yang berlaku sejauh diwajibkan oleh hukum Indonesia.</p>
+<hr />
+<h2>17. HUBUNGI KAMI</h2>
+<p><strong>PT INDOGIG HRTECH INDONESIA</strong>
+Jalan Sunset Road Tengah Bangunan No. 9
+Seminyak, Kuta, Badung, Bali 80361
+Indonesia</p>
+<p>Email: <strong>info@indogig.com</strong>
+Telepon: <strong>+62 818 0370 8605</strong></p>
+<p>Ketentuan ini dibuat dan berlaku efektif pada tanggal yang tercantum di atas.</p>
             </div>
-            <p><strong>Non-Diskriminasi:</strong> Sesuai UU Ketenagakerjaan Pasal 5-6, diskriminasi berdasarkan jenis kelamin, suku, ras, agama, disabilitas, atau karakteristik dilindungi lainnya dilarang.</p>
-
-            <h2>3. Kelayakan</h2>
-            <ul>
-                <li><strong>Pekerja:</strong> Minimal <strong>18 tahun</strong> (15-17 dengan persetujuan orang tua dan pembatasan sesuai UU 13/2003 Pasal 68-69)</li>
-                <li><strong>Perusahaan:</strong> Harus memiliki kewenangan hukum untuk bertindak atas nama entitas</li>
-                <li>Nomor telepon Indonesia yang valid dengan WhatsApp diperlukan</li>
-            </ul>
-            <div class="highlight-blue">
-                <p style="margin:0;"><strong>Pekerja usia 15-17:</strong> Persetujuan tertulis orang tua wajib, maks 3 jam/hari (usia 15), dilarang shift malam (hanya 06:00-18:00), dilarang pekerjaan berbahaya (bar, alkohol, angkat berat, bahan kimia). Tidak boleh mengganggu sekolah.</p>
-            </div>
-
-            <h2>4. Ketentuan Pekerja</h2>
-            <h3>Profil & Dokumen</h3>
-            <p>Pekerja menyelesaikan onboarding dan sebaiknya mengunggah CV dan video presentasi diri untuk memaksimalkan <em>Profile Strength</em> dan visibilitas. Dokumen ditinjau oleh admin (24-72 jam). ID pemerintah (KTP, SKCK, NPWP) <strong>tidak</strong> dikumpulkan.</p>
-
-            <h3><em>Profile Strength</em></h3>
-            <table>
-                <tr><th>Tindakan</th><th>Peningkatan</th></tr>
-                <tr><td>CV terverifikasi</td><td>+20%</td></tr>
-                <tr><td>Video terverifikasi</td><td>+40%</td></tr>
-                <tr><td>Rekomendasi diterima</td><td>+10%</td></tr>
-            </table>
-
-            <h3>Melamar & Bekerja</h3>
-            <ul>
-                <li>Telusuri shift berdasarkan kategori, lokasi, tanggal, tarif</li>
-                <li>Pilih hari tertentu saat melamar</li>
-                <li><strong>Check-in:</strong> Selfie 15 menit sebelum shift, mulai timer</li>
-                <li><strong>Check-out:</strong> Selfie di akhir, mencatat penyelesaian</li>
-            </ul>
-
-            <h3>Pembayaran</h3>
-            <ul>
-                <li><strong>Direct Payment:</strong> Perusahaan membayar tunai di tempat. Indogig tidak terlibat.</li>
-                <li><strong>IndoGig Payment:</strong> Admin mentransfer ke bank/e-wallet Pekerja dalam 24 jam setelah Perusahaan mengonfirmasi.</li>
-            </ul>
-            <p>Pekerja bertanggung jawab atas pajak pribadi dan asuransi.</p>
-
-            <h3>BPJS Ketenagakerjaan</h3>
-            <p>Pekerja dianjurkan mendaftar BPJS BPU (JKK/JKM) melalui saluran resmi. Perusahaan dianjurkan memastikan perlindungan JKK bagi Pekerja di lokasi mereka.</p>
-
-            <h2>5. Ketentuan Perusahaan</h2>
-            <h3>Saldo & Pembayaran</h3>
-            <p>Untuk IndoGig Payment: isi saldo melalui transfer bank dengan kode referensi unik (INDO-ORG-YYYY-XXXX). Admin memverifikasi dalam 24 jam. Dana dialokasikan untuk pembayaran Pekerja, bukan aset umum Indogig.</p>
-            <p>Untuk Direct Payment: Perusahaan membayar Pekerja secara langsung. Catatan shift Indogig berfungsi sebagai bukti pekerjaan.</p>
-
-            <h3>Tanggung Jawab Perusahaan</h3>
-            <ol>
-                <li>Tanggung jawab penuh atas pengawasan, keselamatan, dan kepatuhan hukum</li>
-                <li>Pekerja hanya boleh bekerja sesuai lingkup, jam, dan lokasi yang diterbitkan</li>
-                <li>Bertanggung jawab atas pembayaran tepat waktu sesuai tarif</li>
-                <li>Harus mematuhi hukum ketenagakerjaan Indonesia</li>
-                <li>Indogig dibebaskan dari klaim yang timbul dari tindakan Perusahaan</li>
-            </ol>
-
-            <h3>Non-Circumvention</h3>
-            <div class="highlight">
-                <p style="margin:0;">Perusahaan dilarang mempekerjakan Pekerja secara langsung di luar platform selama <strong>12 bulan</strong> setelah shift terakhir. <strong>Alternatif:</strong> Bayar biaya penempatan (gaji shift rata-rata 1 bulan Pekerja) untuk beralih ke hubungan kerja langsung.</p>
-            </div>
-
-            <h2>6. Pembatalan, Ketidakhadiran & Sengketa</h2>
-            <h3>Pembatalan</h3>
-            <ul>
-                <li><strong>Pekerja:</strong> Dapat membatalkan sebelum check-in. Pembatalan terlambat (&lt;24 jam) mempengaruhi rating. 3+ dalam 30 hari = penangguhan sementara.</li>
-                <li><strong>Perusahaan:</strong> Dapat membatalkan sebelum shift. Pembatalan terlambat (&lt;12 jam) diakui berdampak pada Pekerja.</li>
-            </ul>
-
-            <h3>Ketidakhadiran (No-Show)</h3>
-            <ul>
-                <li>Perusahaan dapat menandai no-show setelah 30 menit lewat waktu mulai</li>
-                <li>Dicatat di profil, mengurangi rating keandalan</li>
-                <li>Pekerja dapat mengajukan sengketa dalam 48 jam ke info@indogig.com</li>
-                <li>3+ no-show dalam 30 hari = penangguhan</li>
-            </ul>
-
-            <h3>Sengketa Penyesuaian Jam</h3>
-            <p>Pekerja dapat menyengketakan penyesuaian jam dalam 72 jam. Indogig meninjau bukti (selfie, cap waktu) dan untuk shift IndoGig Payment, memproses pembayaran berdasarkan bukti.</p>
-
-            <h3>Sengketa Rating</h3>
-            <p>Pekerja dapat menyengketakan rating tidak adil dalam 14 hari. Indogig dapat menghapus rating yang curang, diskriminatif, atau bersifat pembalasan.</p>
-
-            <h3>Keadaan Kahar</h3>
-            <p>Tidak ada sanksi atas pembatalan/ketidakhadiran akibat bencana alam, cuaca ekstrem, pandemi, atau pembatasan pemerintah.</p>
-
-            <h2>7. Kekayaan Intelektual</h2>
-            <p>Semua IP platform milik Indogig. Anda tetap memiliki konten yang dikirimkan dan memberikan Indogig lisensi non-eksklusif untuk mengoperasikan Layanan. IP hasil kerja selama shift merupakan urusan Perusahaan dan Pekerja.</p>
-
-            <h2>8. Kegiatan yang Dilarang</h2>
-            <ul>
-                <li>Informasi palsu, penyamaran, penggunaan ilegal</li>
-                <li>Pelecehan, diskriminasi, ancaman</li>
-                <li>Scraping, pengambilan data otomatis</li>
-                <li>Gangguan keamanan, interferensi</li>
-                <li>Spam, penghindaran platform</li>
-                <li>Malware, pelanggaran hukum</li>
-            </ul>
-
-            <h2>9. Batasan Tanggung Jawab</h2>
-            <p>Layanan disediakan "apa adanya." Indogig mengakui tanggung jawab atas kerusakan platform yang menyebabkan kerugian finansial langsung (misalnya kegagalan pembayaran yang dikonfirmasi).</p>
-            <p>Tanggung jawab maksimum: yang lebih besar dari (a) jumlah yang dibayarkan ke Indogig dalam 12 bulan sebelumnya, atau (b) <strong>Rp 5.000.000</strong>. Tidak mengecualikan tanggung jawab atas kesengajaan atau kelalaian berat.</p>
-
-            <h2>10. Ganti Rugi</h2>
-            <p><strong>Timbal balik:</strong> Pengguna mengganti rugi Indogig atas pelanggaran Ketentuan, pelanggaran IP, dan kelalaian berat. Indogig mengganti rugi pengguna atas kegagalan platform dan kesalahan pemrosesan pembayaran. Ganti rugi Pekerja dibatasi pada penghasilan platform 12 bulan.</p>
-
-            <h2>11. Penyelesaian Sengketa</h2>
-            <ol>
-                <li>Negosiasi itikad baik (30 hari)</li>
-                <li>Mediasi</li>
-                <li>Pengadilan yang berwenang di Denpasar, Bali</li>
-            </ol>
-            <p><strong>Sengketa ketenagakerjaan:</strong> Tunduk pada prosedur wajib UU 2/2004 (bipartit, mediasi Disnaker, PHI).</p>
-            <p><strong>Hukum yang berlaku:</strong> Republik Indonesia.</p>
-
-            <h2>12. Penghentian Akun</h2>
-            <p><strong>Oleh Indogig:</strong> 7 hari pemberitahuan tertulis (kecuali penipuan/ilegal). Banding dalam 7 hari. Pembayaran yang telah diperoleh tetap terjaga.</p>
-            <p><strong>Oleh Anda:</strong> Hubungi info@indogig.com. Kewajiban yang belum diselesaikan tetap berlaku.</p>
-
-            <h2>13. Perubahan Ketentuan</h2>
-            <p>Pemberitahuan 30 hari untuk perubahan signifikan. Penggunaan berkelanjutan = penerimaan.</p>
-
-            <h2>14. Hubungi Kami</h2>
-            <p><strong>PT INDOGIG HRTECH INDONESIA</strong><br>
-            Jalan Sunset Road Tengah Bangunan No. 9<br>
-            Seminyak, Kuta, Badung, Bali 80361, Indonesia</p>
-            <p>Email: <strong>info@indogig.com</strong><br>
-            Telepon: <strong>+62 818 0370 8605</strong></p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Indogig. All rights reserved.</p>
+        <p>&copy; 2026 PT INDOGIG HRTECH INDONESIA. All rights reserved.</p>
         <p style="margin-top: 0.5rem;">
-            <a href="user-agreement.html">Terms</a>
-            <a href="privacy-policy.html">Privacy</a>
+            <a href="user-agreement.html">Terms of Use</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
             <a href="index.html">Home</a>
         </p>
         <p style="margin-top: 0.5rem; font-size: 0.8rem;">Jalan Sunset Road Tengah Building No. 9, Seminyak, Kuta, Badung, Bali 80361</p>
@@ -430,6 +1124,7 @@
             document.querySelectorAll('.lang-switch button').forEach(el => el.classList.remove('active'));
             document.getElementById('content-' + lang).classList.add('active');
             document.getElementById('btn-' + lang).classList.add('active');
+            document.title = lang === 'id' ? 'Ketentuan Penggunaan — Indogig' : 'Terms of Use — Indogig';
         }
     </script>
 </body>
