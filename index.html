@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indogig — Coming Soon | Indonesia's Future of Flexible Work</title>
-    <meta name="description" content="Join the waitlist for Indonesia's first flexible staffing platform. Connect with gig opportunities in hospitality, retail, events & logistics. Launching soon in Bali.">
+    <title>Indogig — Indonesia's Flexible Staffing Platform</title>
+    <meta name="description" content="Indonesia's first flexible staffing platform. Connect with gig opportunities in hospitality, retail, events & logistics. Now live in Bali.">
     <meta name="keywords" content="gig work Indonesia, flexible jobs Bali, part-time jobs Jakarta, hire workers Indonesia, temporary staff Bali, event staff Indonesia, warehouse jobs, barista jobs, server jobs">
     <link rel="canonical" href="https://indogig.com">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://indogig.com">
-    <meta property="og:title" content="Indogig — Coming Soon | Indonesia's Future of Flexible Work">
-    <meta property="og:description" content="Be among the first to join Indonesia's flexible staffing platform. Launching soon in Bali.">
+    <meta property="og:title" content="Indogig — Indonesia's Flexible Staffing Platform">
+    <meta property="og:description" content="Indonesia's flexible staffing platform. Now live in Bali.">
     <meta property="og:image" content="https://indogig.com/og-image.jpg">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="id_ID">
@@ -20,8 +20,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://indogig.com">
-    <meta name="twitter:title" content="Indogig — Coming Soon">
-    <meta name="twitter:description" content="Indonesia's first flexible staffing platform. Join the waitlist today.">
+    <meta name="twitter:title" content="Indogig — Indonesia's Flexible Staffing Platform">
+    <meta name="twitter:description" content="Indonesia's first flexible staffing platform. Now live in Bali.">
     <meta name="twitter:image" content="https://indogig.com/twitter-image.jpg">
     
     <!-- Schema.org JSON-LD -->
@@ -1737,6 +1737,50 @@
             transform: translateY(-4px);
         }
 
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--text-dark);
+            margin: 6px 0;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        .mobile-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+
+        .mobile-overlay.active {
+            display: block;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 1024px) {
             .hero-container,
@@ -1766,12 +1810,31 @@
         }
 
         @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
             .nav-links {
                 display: none;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 280px;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 5rem 2rem 2rem;
+                gap: 1.5rem;
+                box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+                z-index: 1000;
+            }
+
+            .nav-links.active {
+                display: flex;
             }
 
             .language-switcher {
-                display: none;
+                margin-left: 0;
             }
 
             .nav-container {
@@ -1884,6 +1947,12 @@
     <nav>
         <div class="nav-container">
             <a href="index.html" class="logo">Indogig</a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-overlay"></div>
             <div class="nav-links">
                 <a href="#find-work">Find Work</a>
                 <a href="#find-workers">Find Workers</a>
@@ -1894,7 +1963,7 @@
                     <span class="lang-divider">|</span>
                     <button class="lang-btn" data-lang="id">ID</button>
                 </div>
-                <a href="https://app.indogig.com/" class="btn btn-primary">Join Waitlist</a>
+                <a href="https://app.indogig.com/" class="btn btn-primary">Get Started</a>
             </div>
         </div>
     </nav>
@@ -1904,17 +1973,17 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-trust-badge">
-                    <span class="launch-badge">🚀</span>
-                    <span class="rating-text">Launching Soon in Bali</span>
+                    <span class="launch-badge">🟢</span>
+                    <span class="rating-text">Now Live in Bali</span>
                 </div>
                 <h1>Work Today. <span>Get Paid Today.</span></h1>
-                <p class="hero-description">Be among the first to join Indonesia's flexible staffing platform. Connect with verified gig opportunities in hospitality, retail, events, logistics, and more. Join our founding community.</p>
+                <p class="hero-description">Indonesia's flexible staffing platform is here. Connect with verified gig opportunities in hospitality, retail, events, logistics, and more. Sign up and start today.</p>
                 <div class="hero-cta">
-                    <a href="https://app.indogig.com/" class="btn btn-primary">Join Waitlist →</a>
-                    <a href="https://app.indogig.com/" class="btn btn-secondary">Learn More</a>
+                    <a href="https://app.indogig.com/" class="btn btn-primary">Get Started →</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
                 </div>
                 <div class="trust-line">
-                    <span class="trust-item">Launching Q1 2026</span>
+                    <span class="trust-item">Live in Bali</span>
                     <span class="trust-item">Weekly payouts</span>
                     <span class="trust-item">Verified opportunities</span>
                 </div>
@@ -2089,7 +2158,7 @@
                     <li>Official partnerships — high trust & safety</li>
                     <li>Weekly payouts directly to your account</li>
                 </ul>
-                <a href="https://app.indogig.com/" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%; text-align: center;">Join Waitlist →</a>
+                <a href="https://app.indogig.com/" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%; text-align: center;">Get Started →</a>
             </div>
             <div class="value-column businesses">
                 <div class="value-header">
@@ -2104,7 +2173,7 @@
                     <li>Automated scheduling & attendance tracking</li>
                     <li>24/7 support from local team</li>
                 </ul>
-                <a href="https://app.indogig.com/" class="btn btn-secondary" style="margin-top: 1.5rem; width: 100%; text-align: center;">Join Waitlist →</a>
+                <a href="https://app.indogig.com/" class="btn btn-secondary" style="margin-top: 1.5rem; width: 100%; text-align: center;">Get Started →</a>
             </div>
         </div>
     </section>
@@ -2207,14 +2276,14 @@
     <section class="stats fade-in-section">
         <div style="max-width: 1600px; margin: 0 auto; padding: 0 4rem;">
             <div class="section-header">
-                <h2 class="section-title">Join Our Founding Community</h2>
-                <p class="section-subtitle">Be part of Indonesia's flexible work revolution from day one</p>
+                <h2 class="section-title">Join Indonesia's Gig Economy</h2>
+                <p class="section-subtitle">The flexible work revolution is here</p>
             </div>
             <div class="stats-grid">
                 <div class="stat">
-                    <div class="stat-number">Q1 2026</div>
-                    <div class="stat-label">Official Launch</div>
-                    <div class="stat-growth">Bali & Jakarta</div>
+                    <div class="stat-number">Bali</div>
+                    <div class="stat-label">Now Live</div>
+                    <div class="stat-growth">Expanding soon</div>
                 </div>
                 <div class="stat">
                     <div class="stat-number">100%</div>
@@ -2239,7 +2308,7 @@
     <section class="fade-in-section" style="background: white; padding: 80px 0;">
         <div style="max-width: 1600px; margin: 0 auto; padding: 0 4rem;">
             <div class="section-header">
-                <h2 class="section-title">Why Join Our Waitlist?</h2>
+                <h2 class="section-title">Why Choose Indogig?</h2>
                 <p class="section-subtitle">Be part of the founding community and get exclusive early access benefits</p>
             </div>
             <div class="testimonials-grid">
@@ -2300,7 +2369,7 @@
                     <li>Attendance tracking & automated payroll</li>
                 </ul>
             </div>
-            <a href="https://app.indogig.com/" class="btn btn-secondary">Join Waitlist →</a>
+            <a href="https://app.indogig.com/" class="btn btn-secondary">Get Started →</a>
         </div>
         <div class="hero-visual">
             <div class="industry-cards">
@@ -2360,7 +2429,7 @@
             </div>
         </div>
         <div style="text-align: center; margin-top: 3rem;">
-            <a href="https://app.indogig.com/" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 3rem;">Join Waitlist →</a>
+            <a href="https://app.indogig.com/" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 3rem;">Get Started →</a>
         </div>
     </section>
 
@@ -2402,7 +2471,7 @@
             </div>
             <div class="calculator-cta">
                 <p style="text-align: center; font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1.5rem;">Interested in flexible gig work?</p>
-                <a href="https://app.indogig.com/" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 3rem;">Join Waitlist →</a>
+                <a href="https://app.indogig.com/" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 3rem;">Get Started →</a>
             </div>
         </div>
     </section>
@@ -2444,7 +2513,7 @@
                     <li>Dedicated account manager</li>
                     <li>Volume discounts available</li>
                 </ul>
-                <a href="https://app.indogig.com/" class="btn btn-secondary" style="width: 100%; text-align: center;">Join Waitlist (Business) →</a>
+                <a href="https://app.indogig.com/" class="btn btn-secondary" style="width: 100%; text-align: center;">Get Started (Business) →</a>
             </div>
         </div>
     </section>
@@ -2517,8 +2586,8 @@
         <div class="cta-section">
             <h2>Ready to Join the Revolution?</h2>
             <p>Be among the first to experience Indonesia's flexible work platform</p>
-            <a href="https://app.indogig.com/" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.25rem 3rem; background: white; color: var(--text-dark); box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-top: 2rem;">Join Waitlist Now →</a>
-            <p style="font-size: 0.9rem; margin-top: 1.5rem; opacity: 0.8;">Launching Q1 2026 • Early access benefits available</p>
+            <a href="https://app.indogig.com/" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.25rem 3rem; background: white; color: var(--text-dark); box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-top: 2rem;">Get Started Now →</a>
+            <p style="font-size: 0.9rem; margin-top: 1.5rem; opacity: 0.8;">Now live in Bali • Free for workers</p>
         </div>
     </section>
 
@@ -2675,16 +2744,15 @@ const translations = {
         'Find Workers': 'Cari Pekerja', 
         'Features': 'Fitur',
         'Pricing': 'Harga',
-        'Join Waitlist': 'Daftar Sekarang',
+        'Get Started': 'Daftar Sekarang',
         
         // Hero
-        '🚀 Launching Soon in Bali': '🚀 Segera Diluncurkan di Bali',
-        'Launching Soon in Bali': 'Segera Diluncurkan di Bali',
+        'Now Live in Bali': 'Sudah Beroperasi di Bali',
         'Work Today.': 'Bekerja Hari Ini.',
         'Get Paid Today.': 'Dibayar Hari Ini.',
         'Be among the first to join Indonesia\'s flexible staffing platform. Connect with verified gig opportunities in hospitality, retail, events, logistics, and more. Join our founding community.': 
             'Jadilah yang pertama bergabung dengan platform staffing fleksibel Indonesia. Hubungkan dengan peluang gig terverifikasi di hospitality, retail, acara, logistik, dan banyak lagi. Bergabunglah dengan komunitas pendiri kami.',
-        'Join Waitlist →': 'Daftar Sekarang →',
+        'Get Started →': 'Daftar Sekarang →',
         'Learn More': 'Pelajari Lebih Lanjut',
         'Launching Q1 2026': 'Peluncuran Q1 2026',
         'Weekly payouts': 'Pembayaran mingguan',
@@ -2805,7 +2873,7 @@ const translations = {
         'Pay only when you hire': 'Bayar hanya ketika Anda mempekerjakan',
         'Dedicated account manager': 'Manajer akun khusus',
         'Automated invoicing': 'Penagihan otomatis',
-        'Join Waitlist (Business) →': 'Daftar Sekarang (Bisnis) →',
+        'Get Started (Business) →': 'Daftar Sekarang (Bisnis) →',
         
         // FAQ
         'Frequently Asked Questions': 'Pertanyaan Umum',
@@ -2814,7 +2882,7 @@ const translations = {
         // CTA
         'Ready to Join the Revolution?': 'Siap Bergabung dengan Revolusi?',
         'Be among the first to experience Indonesia\'s flexible work platform': 'Jadilah yang pertama mengalami platform kerja fleksibel Indonesia',
-        'Join Waitlist Now →': 'Daftar Sekarang →',
+        'Get Started Now →': 'Daftar Sekarang →',
         'Launching Q1 2026 • Early access benefits available': 'Peluncuran Q1 2026 • Manfaat akses awal tersedia',
         
         // Footer
@@ -3278,6 +3346,30 @@ function initializeEventHandlers() {
     
     // Also try after delay
     setTimeout(initTabs, 1500);
+})();
+
+// Mobile menu
+(function() {
+    const btn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('.nav-links');
+    const overlay = document.querySelector('.mobile-overlay');
+    if (!btn || !nav || !overlay) return;
+
+    function toggleMenu() {
+        btn.classList.toggle('active');
+        nav.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+    }
+
+    btn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (nav.classList.contains('active')) toggleMenu();
+        });
+    });
 })();
     </script>
 </body>
