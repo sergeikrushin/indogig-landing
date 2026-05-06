@@ -77,6 +77,16 @@
             box-sizing: border-box;
         }
 
+        /* Hide body until translation is applied to prevent English flash */
+        body.loading {
+            opacity: 0;
+        }
+
+        body.loaded {
+            opacity: 1;
+            transition: opacity 0.15s ease;
+        }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             color: var(--text-dark);
@@ -1946,7 +1956,7 @@
         }
     </style>
 </head>
-<body>
+<body class="loading">
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
@@ -2721,11 +2731,12 @@ const translations = {
         'Get Paid Today.': 'Dibayar Hari Ini.',
         'Be among the first to join Indonesia\'s flexible staffing platform. Connect with verified gig opportunities in hospitality, retail, events, logistics, and more. Join our founding community.': 
             'Jadilah yang pertama bergabung dengan platform staffing fleksibel Indonesia. Hubungkan dengan peluang gig terverifikasi di hospitality, retail, acara, logistik, dan banyak lagi. Bergabunglah dengan komunitas pendiri kami.',
-        'Get Started →': 'Daftar Sekarang →',
+        'Get Started →': 'Mulai Sekarang →',
         'Learn More': 'Pelajari Lebih Lanjut',
-        'Launching Q1 2026': 'Peluncuran Q1 2026',
+        'Live in Bali': 'Beroperasi di Bali',
         'Weekly payouts': 'Pembayaran mingguan',
         'Verified opportunities': 'Peluang terverifikasi',
+        'Indonesia\'s flexible staffing platform is here. Connect with verified gig opportunities in hospitality, retail, events, logistics, and more. Sign up and start today.': 'Platform staffing fleksibel Indonesia sudah hadir. Temukan peluang gig terverifikasi di hospitality, retail, acara, logistik, dan lainnya. Daftar dan mulai hari ini.',
         
         // Stats
         'Q1 2026': 'Q1 2026',
@@ -2991,7 +3002,25 @@ const translations = {
         'Post a Shift': 'Posting Shift',
         'Create your shift in under 2 minutes': 'Buat shift Anda dalam waktu kurang dari 2 menit',
         'Get Matched': 'Dapatkan Pencocokan',
-        'Pay for Results': 'Bayar untuk Hasil'
+        'Pay for Results': 'Bayar untuk Hasil',
+
+        // Updated sections
+        'Why Indogig?': 'Mengapa Indogig?',
+        'Indonesia\'s first flexible staffing platform — built for workers and businesses alike': 'Platform staffing fleksibel pertama Indonesia — dibuat untuk pekerja dan bisnis',
+        '100% free — no fees, no commissions': '100% gratis — tanpa biaya, tanpa komisi',
+        'Same-day booking — fill shifts in minutes': 'Pemesanan hari ini — isi shift dalam hitungan menit',
+        'Real-time notifications & confirmations': 'Notifikasi & konfirmasi real-time',
+        'Get Started (Business) →': 'Mulai Sekarang (Bisnis) →',
+        'Get Started Now →': 'Mulai Sekarang →',
+        'Now live in Bali': 'Sudah beroperasi di Bali',
+        'Free for workers': 'Gratis untuk pekerja',
+        'Now Live': 'Beroperasi',
+        'Expanding soon': 'Segera berkembang',
+        'Join Indonesia\'s Gig Economy': 'Bergabung dengan Ekonomi Gig Indonesia',
+        'The flexible work revolution is here': 'Revolusi kerja fleksibel sudah hadir',
+        'Why Choose Indogig?': 'Mengapa Memilih Indogig?',
+        'Sign Up Free →': 'Daftar Gratis →',
+        'Interested in flexible gig work?': 'Tertarik dengan pekerjaan gig fleksibel?'
     },
     en: {} // English is default text in HTML
 };
@@ -3100,9 +3129,12 @@ function initializeLanguageSystem() {
     // Apply initial translation if ID
     if (currentLang === 'id') {
         translatePage('id');
-        // Re-initialize event handlers after translation
     }
-    
+
+    // Show page after translation
+    document.body.classList.remove('loading');
+    document.body.classList.add('loaded');
+
     console.log(`🌐 Initial language: ${currentLang.toUpperCase()}`);
     
     // Initialize tab switcher after language system
@@ -3157,6 +3189,12 @@ if (document.readyState === 'loading') {
 
 // Also try after a short delay as fallback
 setTimeout(initializeLanguageSystem, 1000);
+
+// Safety: show page after 2s even if translation fails
+setTimeout(function() {
+    document.body.classList.remove('loading');
+    document.body.classList.add('loaded');
+}, 2000);
 
 // Function to re-initialize event handlers after HTML restoration
 function initializeEventHandlers() {
